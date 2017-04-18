@@ -7,7 +7,8 @@
 ### Uživatelé a rozhraní a interakce
 
 1. Uživatel může spravovat wiki skrze přímý přístup přes git pomocí SSH nebo přes webové rozhraní (podobně jako u služeb GitHub, GitLab, Bitbucket, ...). Narozdíl od těchto služeb, je však v aplikaci akcentováno použití webového rozhraní pro plnohodnotné rozhraní pro editaci. Zmíněné služby totiž často nabízejí editaci obsahu skrz webové rozhraní, ale v například v omezené míře (editace README), předpokládá se webové rozhraní spíše pro čtení a sledování historie repozitáře.
-2. Před použitím si musí užiatel vytvořit účet přes webové rozhraní. Po přihlášení do aplikace může spravovat wiki přes toto rozhraní, nebo uložit veřejný klíč pro autentizaci SSH přístupu.
+2. Před použitím může užiatel vytvořit účet přes webové rozhraní a po přihlášení do aplikace může spravovat wiki přes toto rozhraní, nebo uložit veřejný klíč pro autentizaci SSH přístupu.
+Do veřejného repozitáře může přispět i jako neregistrovaný uživatel. Takto bude evidován pouze pod tzv. git identitou a bude mu zaslán autentizační token pro přihlášení do WUI (například pomocí git hook).
 3. Při přímém přístupu přes git je uživatel plně zodpovědný za změny, které provede a aplikace provádí pouze kontrolu autorizace vůči repozitáři.
 
 ### ACL
