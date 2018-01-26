@@ -1,8 +1,9 @@
+# Latex files
 /*.aux
 /*.lof
 /*.log
 /*.out
-/*.pdf
+/DP_Smolik_Jaroslav_2018.pdf
 /*.toc
 /*.bbl
 /*.blg
