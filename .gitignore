@@ -9,3 +9,6 @@
 /*.blg
 /*.fdb_latexmk
 /*.fls
+
+# Source text files
+/src/**/*.tex
