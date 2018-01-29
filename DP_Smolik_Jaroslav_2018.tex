@@ -1,0 +1,74 @@
+\documentclass[thesis=M,english]{FITthesis}[2012/10/20]
+
+\usepackage{fontspec}
+
+\usepackage{graphicx}
+
+\usepackage{dirtree} %directory tree visualisation
+
+\department{Department of Software Engineering}
+\title{Git-based Wiki System}
+\authorGN{Jaroslav} %author's given name/names
+\authorFN{Šmolík} %author's surname
+\author{Jaroslav Šmolík} %author's name without academic degrees
+\authorWithDegrees{Bc. Jaroslav Šmolík} %author's name with academic degrees
+\supervisor{Ing. Jakub Jirůtka}
+\acknowledgements{\input{src/meta/thanks}}
+\abstractEN{\input{src/meta/abstract}}
+\abstractCS{\input{src/meta/abstract-cs}}
+\placeForDeclarationOfAuthenticity{Prague}
+\keywordsCS{\input{src/meta/keywords-cs}}
+\keywordsEN{\input{src/meta/keywords}}
+\declarationOfAuthenticityOption{1} %select as appropriate, according to the desired license (integer 1-6)
+
+\begin{document}
+\newcommand{\autocite}[1]{\cite{#1}}
+
+\setsecnumdepth{part}
+\chapter{Introduction}
+\input{src/introduction}
+
+
+\setsecnumdepth{all}
+\chapter{State-of-the-art}
+
+\chapter{Analysis and design}
+
+\chapter{Realisation}
+
+\setsecnumdepth{part}
+\chapter{Conclusion}
+
+
+\bibliographystyle{iso690}
+\bibliography{mybibliographyfile}
+
+\setsecnumdepth{all}
+\appendix
+
+\chapter{Acronyms}
+% \printglossaries
+\begin{description}
+	\item[GUI] Graphical user interface
+	\item[XML] Extensible markup language
+\end{description}
+
+
+\chapter{Contents of enclosed CD}
+
+% TODO change appropriately
+
+\begin{figure}
+	\dirtree{%
+		.1 readme.txt\DTcomment{the file with CD contents description}.
+		.1 exe\DTcomment{the directory with executables}.
+		.1 src\DTcomment{the directory of source codes}.
+		.2 wbdcm\DTcomment{implementation sources}.
+		.2 thesis\DTcomment{the directory of \LaTeX{} source codes of the thesis}.
+		.1 text\DTcomment{the thesis text directory}.
+		.2 thesis.pdf\DTcomment{the thesis text in PDF format}.
+		.2 thesis.ps\DTcomment{the thesis text in PS format}.
+	}
+\end{figure}
+
+\end{document}

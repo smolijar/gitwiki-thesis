@@ -1,0 +1,14 @@
+# Latex files
+/*.aux
+/*.lof
+/*.log
+/*.out
+/DP_Smolik_Jaroslav_2018.pdf
+/*.toc
+/*.bbl
+/*.blg
+/*.fdb_latexmk
+/*.fls
+
+# Source text files
+/src/**/*.tex
