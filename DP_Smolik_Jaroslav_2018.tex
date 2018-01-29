@@ -6,19 +6,19 @@
 
 \usepackage{dirtree} %directory tree visualisation
 
-\department{Department of \ldots (SPECIFY)}
-\title{Thesis title (SPECIFY)}
-\authorGN{Your Given Name(s) (SPECIFY)} %author's given name/names
-\authorFN{Your Family Name (surname, SPECIFY)} %author's surname
-\author{Your Name (SPECIFY)} %author's name without academic degrees
+\department{Department of Software Engineering}
+\title{Git-based Wiki System}
+\authorGN{Jaroslav} %author's given name/names
+\authorFN{Šmolík} %author's surname
+\author{Jaroslav Šmolík} %author's name without academic degrees
 \authorWithDegrees{Bc. Jaroslav Šmolík} %author's name with academic degrees
-\supervisor{Your Supervisor's Name (SPECIFY)}
-\acknowledgements{THANKS}
-\abstractEN{Summarize the contents and contribution of your work in a few sentences in English language.}
-\abstractCS{V n{\v e}kolika v{\v e}t{\' a}ch shr{\v n}te obsah a p{\v r}{\' i}nos t{\' e}to pr{\' a}ce v {\v c}esk{\' e}m jazyce.}
+\supervisor{Ing. Jakub Jirůtka}
+\acknowledgements{\input{src/meta/thanks}}
+\abstractEN{\input{src/meta/abstract}}
+\abstractCS{\input{src/meta/abstract-cs}}
 \placeForDeclarationOfAuthenticity{Prague}
-\keywordsCS{Replace with comma-separated list of keywords in Czech.}
-\keywordsEN{Replace with comma-separated list of keywords in English.}
+\keywordsCS{\input{src/meta/keywords-cs}}
+\keywordsEN{\input{src/meta/keywords}}
 \declarationOfAuthenticityOption{1} %select as appropriate, according to the desired license (integer 1-6)
 
 \begin{document}
