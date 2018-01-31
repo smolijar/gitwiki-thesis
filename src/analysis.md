@@ -15,7 +15,7 @@ The system in general recognizes only two types of users
 2. Administrator
 
   Is a user with direct access to the hosted machine.
-  Since all data are stored on the server filesystem, administrator unlimited power over repositories with wiki and ACL content.
+  Since all data are stored on the server FS, administrator unlimited power over repositories with wiki and ACL content.
 
 TODO: NOTE ABOUT ACCESS UI
 
@@ -61,3 +61,21 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 
   With sufficient authorization or administration access, user can edit ACL for given repositories.
   For each registered user and individual repository a read write access can be explicitly allowed or disallowed.
+
+### Non-functional requirements
+
+- NF-1\. **Storage**
+
+  The system will store all data only in a set of git[@git] repositories on single server machine.
+  That includes the wiki content itself as well as e.g. ACL.
+  System might use the server's FS for reasonable exceptions (SSH keys, cache files etc.)
+
+- NF-2\. **UI**
+
+  The system will provide WUI as well as an SSH direct access to git repositories.
+  For non-trivial administration tasks CLI is offered (e.g. adding user).
+  System's CLI should not substitute simple git commands.
+
+- NF-2\. **Platform**
+
+  The system will be implemented in JS (web interface) and Node.js (server-side).
