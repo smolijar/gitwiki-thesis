@@ -2,6 +2,22 @@
 
 ## Requirements model
 
+### Roles
+
+The system in general recognizes only two types of users
+
+1. Regular user
+
+  Regular user can by either anonymous or registered.
+  Anonymous user can browse or even contribute to a public repository if it's authorization policy allows that.
+  Registered user can access even private repositories if they have sufficient access.
+
+2. Administrator
+
+  Is a user with direct access to the hosted machine.
+  Since all data are stored on the server filesystem, administrator unlimited power over repositories with wiki and ACL content.
+
+TODO: NOTE ABOUT ACCESS UI
 
 ### Functional requirements
 
@@ -43,5 +59,5 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 
  - F-5\. **Authorization management**
 
-  With sufficient authorization, or administration access, user can edit ACL for given repositories.
+  With sufficient authorization or administration access, user can edit ACL for given repositories.
   For each registered user and individual repository a read write access can be explicitly allowed or disallowed.
