@@ -1,0 +1,15 @@
+@startuml
+skinparam packageStyle rectangle
+actor "Anonymous User" as u
+rectangle "web application" {
+    (Swich revision preview) ..> (Select revision) : <<include>>
+    (Select revision) ..> (Preview file) : <<extends>>
+    (Preview file) ..> (Browse repository) : <<extends>>
+    (Show file's history) ..> (Preview file) : <<extends>>
+    u --> (Browse repository)
+    u --> (Show repository's activity)
+    u --> (Swich revision preview)
+    u --> (Search content)
+    u --> (Show revisions differance)
+}
+@enduml
