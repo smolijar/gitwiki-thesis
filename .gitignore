@@ -12,3 +12,6 @@
 
 # Source text files
 /src/**/*.tex
+
+# Compiled uml diagrams
+/src/assets/diagram/**/*.png

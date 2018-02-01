@@ -7,7 +7,10 @@ md:
 bibtex:
 	bibtex DP_Smolik_Jaroslav_2018
 
-arara: md
+diagrams:
+	./bin/diagrams.sh
+
+arara: md diagrams
 	make pdf
 	make bibtex
 	make pdf
