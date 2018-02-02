@@ -89,8 +89,43 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 
 @fig:uc:actors
 
+TODO DESCRIBE ACTORS
+
 ### Browsing
 
 ![caption](./src/assets/diagram/browsing){#fig:uc:browsing width=100%}
 
 @fig:uc:browsing
+
+- UC\. **Git remote access**
+
+  User remotely modifies git repository via SSH standard git interface.
+  The power of the following editing interaction is limitless and not related to described system, for the changes happen at user's local station.
+
+  The user's interaction falls into one of the following commands (or their similar or related)
+
+  1. `git clone` for local repository mirror initialization,
+  1. `git pull`, `git fetch` for local mirror updates,
+  1. and `git push` for publishing local changes.
+
+  If user is not registered and tries to access a private repository^[Meaning any repository with restricted access for given operation for individual user], operation is not permitted.
+
+- UC\. **Change content**
+
+  User if user is not authenticated or unauthorized to perform edits on given repository, use case scenario ends.
+
+  User performs any number of *Edit contents* and *Manage files* use cases in any order.
+
+  User must perform *Create a revision* use case to complete scenario.
+
+- UC\. **Edit contents**
+
+  TODO DESCRIBE MARKUP EDITING
+
+- UC\. **Manage files**
+
+  TODO DESCRIBE CRUD FILES, FILE RENAMING
+
+- UC\. **Manage files**
+
+  TODO DESCRIBE REVISION CREATION
