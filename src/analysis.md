@@ -79,3 +79,18 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 - NF-2\. **Platform**
 
   The system will be implemented in JS (web interface) and Node.js (server-side).
+
+
+## Use case model
+
+### Actors
+
+![Use case actors](./src/assets/diagram/actors){#fig:uc:actors}
+
+@fig:uc:actors
+
+### Browsing
+
+![caption](./src/assets/diagram/browsing){#fig:uc:browsing width=100%}
+
+@fig:uc:browsing

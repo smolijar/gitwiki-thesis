@@ -8,5 +8,5 @@ for f in $(find $DIR/../src -name '*.md'); do
   # --biblatex for [@biblesrc] citations
   # "${f%.*}" is presumably filename withou suffix :O
   # I don't understand the thing either see SO if you care
-  pandoc $f --biblatex -t latex > "${f%.*}".tex
+  pandoc $f --biblatex --filter pandoc-fignos -t latex > "${f%.*}".tex
 done
