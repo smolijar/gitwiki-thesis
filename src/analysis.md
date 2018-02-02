@@ -1,8 +1,6 @@
-# Analysis
+# Requirements model
 
-## Requirements model
-
-### Roles
+## Roles
 
 The system in general recognizes only two types of users
 
@@ -19,7 +17,7 @@ The system in general recognizes only two types of users
 
 TODO: NOTE ABOUT ACCESS UI
 
-### Functional requirements
+## Functional requirements
 
 Wiki system works with text files formatted in a specific markup syntax.
 System must provide support for Asciidoc[@asciidoctor] and Markdown[@gruber:markdown] and must allow extensibility for other LML.
@@ -62,7 +60,7 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
   With sufficient authorization or administration access, user can edit ACL for given repositories.
   For each registered user and individual repository a read write access can be explicitly allowed or disallowed.
 
-### Non-functional requirements
+## Non-functional requirements
 
 - NF-1\. **Storage**
 
@@ -81,9 +79,9 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
   The system will be implemented in JS (web interface) and Node.js (server-side).
 
 
-## Use case model
+# Use case model
 
-### Actors
+## Actors
 
 ![Use case actors](./src/assets/diagram/actors){#fig:uc:actors}
 
@@ -91,7 +89,7 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 
 TODO DESCRIBE ACTORS
 
-### Browsing
+## Browsing
 
 ![caption](./src/assets/diagram/browsing){#fig:uc:browsing width=100%}
 
