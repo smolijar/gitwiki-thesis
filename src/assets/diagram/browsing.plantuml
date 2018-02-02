@@ -14,9 +14,9 @@ rectangle "web application" {
     contents ..> change : <<extends>>
 }
 rectangle "SSH access" {
-    usecase "SSH authentication" as sshauth
+    ' usecase "SSH authentication" as sshauth
     usecase "Git remote access" as gitr
     ausr --> gitr
-    gitr ..> sshauth : <<include>>    
+    ' gitr ..> sshauth : <<include>>    
 }
 @enduml
