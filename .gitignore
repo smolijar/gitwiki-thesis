@@ -14,4 +14,4 @@
 /src/**/*.tex
 
 # Compiled uml diagrams
-/src/assets/diagram/**/*.png
+/src/assets/diagram/**/*.pdf

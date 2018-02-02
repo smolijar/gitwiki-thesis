@@ -15,6 +15,7 @@ More like notes for myself anyway.
  * texlive-full (probably too greedy, lazy to nitpick the subpackages)
  * pandoc (for markdown to latex)
  * plantuml (for UML diagrams; must be available under this name in PATH)
+ * inkscape (for SVG to PDF)
 
 == Drafts
 See link:./drafts/[drafts folder]
