@@ -1,0 +1,5 @@
+VCS-Version control system
+WUI-Web user interface
+UI-User interface
+API-Application programming interface
+LML-Lightweight markup language
