@@ -1,0 +1,19 @@
+@startuml
+|Head|
+start
+:Announce hotfix;
+|Developers|
+repeat
+  :Fetch next\nmaintained version;
+  :Update section;
+repeat while (more versions?)
+|Reviewer|
+repeat
+  :Fix errors;
+repeat while (more revisions?)
+|Publisher|
+:Create manual;
+|Head|
+:Submit the results;
+stop
+@enduml
