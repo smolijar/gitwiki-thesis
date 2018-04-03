@@ -23,3 +23,26 @@ _Wikipedia_ [@wikipedia] is an encyclopedia,
 _WikiWikiWeb_ [@wikiwikiweb], often considered to be the first wiki, was designed to discuss design patterns,
 or _Wiktionary_ [@wiktionary] as a community developed multilingual open dictionary are all fine examples of such trait.
 
+### Side-note on wiki topic
+
+The reasonable question before we proceed would be: _"What is the topic of gitwiki"_?
+_Gitwiki_ is not a _wiki_ as Wikipedia.
+It is a _wiki software_ which can be used to create a topic oriented _wiki_.
+A great example of a wiki software is Github Wikis [@github:wikis], for instance.
+It is a part of Github web application that allows users to provide e.g. user manuals to software repositories etc.
+Github Wikis have no topic though it is expected to be used to create an elaborate software documentation.
+
+
+## Real world usage of the system?
+
+While the target system is potentially a universal document management platform, usable for a wide variety of applications,
+an example archetypal usage scenario has been set. 
+The system is considered for the purpose of design decision making, interface design etc as a platform for API documentation or user manual collaborative creation.
+
+This brings us to the following subsection of defining the special traits of the system, which makes it distinguish itself amongst others.
+
+Before we move on, other applications I the system should satisfy with little effort would be
+a publishing platform, 
+collaborative maintenance of large documents that are too large for online services such as Google Docs [@gdocs] or Microsoft Word Online [@mso:word-online],
+a students' hub or
+a university's tool for final thesis writing and submission.
