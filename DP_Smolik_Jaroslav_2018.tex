@@ -6,6 +6,7 @@
 \usepackage{listings}
 \usepackage{minted}
 \usepackage{dirtree} %directory tree visualisation
+\usepackage[figuresright]{rotating} % sideways figures
 
 % minted - color listings
 \usemintedstyle{perldoc}	% color style
@@ -39,14 +40,14 @@ fontsize=\small
 \setsecnumdepth{part}
 \chapter{Introduction}
 \input{src/introduction}
+\setsecnumdepth{all}
 
 \chapter{Thesis' goal}
 \input{src/goal}
 
-
-\setsecnumdepth{all}
 \chapter{Analysis}
-\input{src/analysis}
+\input{src/analysis/business-process}
+\input{src/analysis/requirements}
 
 \chapter{State-of-the-art}
 
