@@ -1,10 +1,21 @@
-\documentclass[thesis=M,english]{FITthesis}[2012/10/20]
+\documentclass[thesis=M,english,10pt]{FITthesis}[2012/10/20]
 
 \usepackage{fontspec}
 
 \usepackage{graphicx}
 \usepackage{listings}
+\usepackage{minted}
 \usepackage{dirtree} %directory tree visualisation
+
+% minted - color listings
+\usemintedstyle{perldoc}	% color style
+\setminted{
+startinline,	% not sure, but php doesnt need <?php
+linenos,		% line numbers
+breaklines,		% break lines, else flows off the page
+autogobble,		% ignore common leading whitespaces (tabs)
+fontsize=\small
+}
 
 \department{Department of Software Engineering}
 \title{Git-based Wiki System}
@@ -23,6 +34,7 @@
 
 \begin{document}
 \newcommand{\autocite}[1]{\cite{#1}}
+\listoflistings
 
 \setsecnumdepth{part}
 \chapter{Introduction}

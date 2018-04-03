@@ -17,4 +17,4 @@ arara: md diagrams
 	make pdf
 
 pdf: md
-	xelatex DP_Smolik_Jaroslav_2018.tex
+	xelatex -shell-escape -8bit DP_Smolik_Jaroslav_2018.tex

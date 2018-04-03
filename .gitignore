@@ -9,6 +9,8 @@
 /*.blg
 /*.fdb_latexmk
 /*.fls
+/*.lol
+/_minted-*
 
 # Source text files
 /src/**/*.tex
