@@ -33,7 +33,7 @@ It is a part of Github web application that allows users to provide e.g. user ma
 Github Wikis have no topic though it is expected to be used to create an elaborate software documentation.
 
 
-## Real world usage of the system?
+## Real world usage of the system
 
 While the target system is potentially a universal document management platform, usable for a wide variety of applications,
 an example archetypal usage scenario has been set. 
@@ -46,3 +46,46 @@ a publishing platform,
 collaborative maintenance of large documents that are too large for online services such as Google Docs [@gdocs] or Microsoft Word Online [@mso:word-online],
 a students' hub or
 a university's tool for final thesis writing and submission.
+
+
+## Distinctive features
+
+* **Emphasize lightweight markup languages**
+
+Markdown has become more or less a standard for README and documentation, and no wonder.
+It is easy to learn, intuitive to read even if you are not familiar with the syntax, machine readable and it has many tools for comfortable writing for users familiar with RTEs.
+Once familiar with the basic syntax, it is not an issue to write documents in a simple text editor.
+
+Most of these features, though not necessarily all are typical for most LMLs.
+A form of a simpler markup language is used in almost every wiki system.
+The reason to favor Markdown [@gruber:markdown] and Asciidoc [@asciidoctor] over Wikitext [@wikitext], used by MediaWiki for example, is that the former are rooted in the developer community.
+It brings advantage of familiar syntax to users for the archetypal usage as well as prioritized special syntax features, such as source code snippets etc.
+
+* **Focus on advanced users**
+
+As already mentioned, easy to use interface is a core feature of a wiki system.
+The problem is that majority of wiki UI rely on many new users making very few contributions to the content.
+That means that that the UI must be fool-proof, forgiving and guide the user through editing process.
+
+Our documentation platform is not like that. Our users write often.
+It is part of their job and they know the syntax by heart.
+They do not need the system to slow them down by clicking formatting buttons for the few formatting options e.g. Markdown has.
+
+The system should by all means provide an intuitive interface, but not on for the cost of use efficiency of the advanced users.
+
+* **Use robust non-linear VCS**
+
+We want to be able to track changes and their authors as well as be able to return to previous revision.
+This feature is fairly common and almost required for all wiki software, because the opened collaboration might be dangerous.
+
+What we would like for our documentation platform is to develop parallel versions of the content, to be able to maintain API documentation for distinct versions of the software for instance.
+This technique is usually called "feature branch" from the software development, where the developer creates new features in version branches detached from the master branch to add the feature as a single atomic revision, when it is properly tested.
+
+* **Provide direct access to the repository**
+
+Many wiki systems provide only access via WUI.
+This might be sufficient in many cases, when the only presentation of the content is on the web in the exactly same form.
+It is a common practice that user manuals are linked together into a single large document, that is provided as a whole in a printable or online format.
+It is not important what tools are used to do so, but it is important to provide the user (or their script or plug-in) to access the files directly for easy access.
+
+This access should be provided for read as well as write operations, to allow users to edit the repository in their own environment.
