@@ -9,6 +9,11 @@
 /*.blg
 /*.fdb_latexmk
 /*.fls
+/*.lol
+/_minted-*
 
 # Source text files
 /src/**/*.tex
+
+# Compiled uml diagrams
+/src/assets/diagram/**/*.pdf

@@ -1,6 +1,21 @@
 = GitWiki
-== PDF
-`make`
+
+== PDF generate
+
+`make arara` For full blown render (re-render diagrams, transform all markdown sources, bibtex and multiple xelatex passes)
+
+`make pdf` for only minor changes (only latex + markdown, one pass)
+
+== Requirements
+
+Not sure it's complete.
+More like notes for myself anyway.
+
+ * xelatex (typesetting)
+ * texlive-full (probably too greedy, lazy to nitpick the subpackages)
+ * pandoc (for markdown to latex)
+ * plantuml (for UML diagrams; must be available under this name in PATH)
+ * inkscape (for SVG to PDF)
 
 == Drafts
-See [drafts folder](./drafts/)
+See link:./drafts/[drafts folder]

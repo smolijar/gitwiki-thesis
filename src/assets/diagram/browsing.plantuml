@@ -1,0 +1,22 @@
+@startuml
+' left to right direction
+skinparam packageStyle rectangle
+actor "Anonymous User" as ausr
+rectangle "web application" {
+    usecase "Change content" as change
+    usecase "Manage files" as files
+    usecase "Edit contents" as contents
+    usecase "Create a revision" as commit
+    ausr --> change
+    change ..> commit : <<include>>
+    (Sign in) ..> change : <<extends>>
+    files ..> change : <<extends>>
+    contents ..> change : <<extends>>
+}
+rectangle "SSH access" {
+    ' usecase "SSH authentication" as sshauth
+    usecase "Git remote access" as gitr
+    ausr --> gitr
+    ' gitr ..> sshauth : <<include>>    
+}
+@enduml
