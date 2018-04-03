@@ -1,0 +1,24 @@
+@startuml
+|Head|
+start
+:Announce release;
+|Developers|
+fork
+  repeat
+    :add or edit section\nin module A;
+  repeat while (more work?)
+fork again
+  repeat
+    :add or edit section\nin module B;
+  repeat while (more work?)
+end fork
+|Reviewer|
+repeat
+  :Fix errors;
+repeat while (more work?)
+|Publisher|
+:Create manual;
+|Head|
+:Submit the results;
+stop
+@enduml
