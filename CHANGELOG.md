@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.2.0] - 2018-04-04
 ### Added
 - Requirements draft
 - Plantuml scripts with vector outputs
@@ -32,6 +34,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.0.0] - 2017-03-29
 
-[Unreleased]: https://github.com/grissius/markup-editor/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/grissius/markup-editor/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/grissius/markup-editor/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/grissius/markup-editor/compare/v0.0.0...v0.1.0
 [0.0.0]: https://github.com/grissius/markup-editor/compare/f14184e...v0.0.0
