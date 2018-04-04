@@ -5,7 +5,7 @@ Hence I might be forced to make some fatal decisions, which are left for interpr
 
 This section is a brief user persona definition.
 I intentionally draw back from the lengthly formal persona definition from usability testing, since detailed persona definition would prove less useful for a one man team.
-I describe system users from their perspectives, their knowlidge and skills regarding the system and give them names for further convenience of the thesis, but neglect the part of persona definition regarding their personal life and whole personification of the archetypes.
+I describe system users from their perspectives, their knowledge and skills regarding the system and give them names for further convenience of the thesis, but neglect the part of persona definition regarding their personal life and whole personification of the archetypes.
 
 The head of department is a lady called Hump and she just organizes the flow.
 Her job related to the system is very limited, but includes potential access control setting.
