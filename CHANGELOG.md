@@ -5,6 +5,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Requirements draft
+- Plantuml scripts with vector outputs
+- Minted listings
+- Gitolite install drafts
+- Thesis goal section
+- Business process model
+- User analysis section
+- Readme list of readable sections
+
 ### Fixed
 - Makefile for bibliography
 
