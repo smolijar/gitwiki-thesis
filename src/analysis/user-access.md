@@ -59,3 +59,31 @@ A file locking feature exists in GitLab, but is only available in GitLab Premium
 
 One of the problems with GitLab is, as officially stated, that it is a _single application_.
 I cannot be used modularly for our specific purpose.
+
+
+## Gitolite
+
+_"Gitolite allows you to setup git hosting on a central server, with fine-grained access control and many more powerful features."_ [@gitolite]
+Gitolite, presumably developed since 2009^[September 17, 2009 is the first tagged release on GitHub, v0.50] is an open source authorization layer atop SSH to control user access over Git repositories.
+
+The advantage over GitLab for our usage is that it does just what we need, so I will not need to use a large monolithic application to leave most of its features unused.
+
+Gitolite unlike GitLab offers a truly powerful access control configuration.
+It features wild card regular expression defined repository names [@gitolite:wild], and much more advanced feature similar to _protected branches_ from Gitolite.
+This offers means of controlling not only branch names, but even tags, paths within a repository and even push meta rules, such as file count changed per push, all using its _vref_^[Abbreviation for virtual reference] and _refex_^[Neologism formed of _reference_ and _regex_] [@gitolite:vref] as seen in listing \ref{lst:gitolite:sample}.
+
+
+```{language=elixir caption="Gitolite configuration example" label="lst:gitolite:sample"}
+repo foo
+    RW+                     =   @alldevs
+
+    -   VREF/COUNT/5        =   @juniordevs
+    -   VREF/NAME/Makefile  =   @juniordevs
+```
+
+The sample gitolite configuration \ref{lst:gitolite:sample} taken from [@gitolite:vref] showcases access settings for repository _foo_.
+It grants unrestricted read-write access (`RW+`^[the `+` symbol means advanced access to e.g. force push branches]) to all developers (group called `@alldevs`) and then restricts access to junior developers (restriction using `-` symbol) to push more than 5 files and to change `Makefile`.
+
+This configuration sample demonstrates the power of fine grain access control Gitolite offers, which is not just superior to GitLab in its power and expressiveness, but is also stored in simple configuration files in a Git repository available through Gitolite itself.
+
+Apart from that, Gitolite features group management like GitLab.
