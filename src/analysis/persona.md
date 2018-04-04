@@ -4,7 +4,7 @@ In previous section we cracked into business process of a small department, deve
 Hence I might be forced to make some fatal decisions, which are left for interpretation in the task description with great impact, let us discuss the archetypal users mentioned in business process model.
 
 This section is a brief user persona definition.
-I intentionally draw back from the lengthly formal persona definition from usability testing, since detailed persona definition would prove less useful for a one man team.
+I intentionally draw back from the lengthly formal persona definition from usability testing [@usability:persona], since detailed persona definition would prove less useful for a one man team.
 I describe system users from their perspectives, their knowledge and skills regarding the system and give them names for further convenience of the thesis, but neglect the part of persona definition regarding their personal life and whole personification of the archetypes.
 
 The head of department is a lady called Hump and she just organizes the flow.
