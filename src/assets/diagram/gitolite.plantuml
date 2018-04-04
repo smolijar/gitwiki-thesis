@@ -1,0 +1,19 @@
+@startuml
+|Workstation|
+start
+:git push git@server:repo;
+:ssh;
+|Server|
+:sshd;
+:gitolite-shell;
+if (exit error?) then (no)
+  :git-recieve-pack;
+  :update hook;
+else (yes)
+  end
+endif
+if (exit error?) then (yes)
+  end
+endif
+stop
+@enduml

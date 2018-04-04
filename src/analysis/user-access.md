@@ -149,6 +149,12 @@ This is important for the further discussion of authentication, inasmuch as this
 Gitolite authorization runs in two steps.
 We know how it got here as mentioned before in SSH authentication.
 
+![Gitolite two step authorization](./src/assets/diagram/gitolite){#fig:gitolite width=300}
+
+This process is depicted on diagram @fig:gitolite.
+The activity diagram, though simplifying the details to display higher order concepts, contains all essential components in the communication for the demonstration of discussed issue.
+The diagram presumes that SSH authentication succeeds. 
+
 First step is `gitolite-shell` run with username and repository name, supplied via SSH.
 Here, Gitolite can deny the access, because it already knows the authenticated username, as well as repository name and action (is it a read action, like fetch, or write like push).
 It Gitolite does not deny access at this point, git standard command is invoked, e.g. `git-upload-pack` for cloning or pulling form a repository.
@@ -158,3 +164,4 @@ However that is not true for writing operations such as `push`.
 For that after `gitolite-shell` command passes, `git-recieve-pack` is invoked instead.
 This receives and applies data from the initial push, which eventually triggers `update` hook.
 The hook does additional checks for each updated ref and may partially or totally abort the update by exiting with an error.
+
