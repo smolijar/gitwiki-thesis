@@ -6,3 +6,4 @@ LML-Lightweight markup language
 DTP-Desktop publishing
 IDE-Integrated Development Environment
 LOC-Lines of code
+SSH-Secure shell
