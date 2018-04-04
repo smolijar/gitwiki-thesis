@@ -19,7 +19,7 @@ The department is using markdown, since all developers who are writing the most 
 
 \begin{sidewaysfigure}[!htbp]\centering
 	\includegraphics[width=0.85\textwidth]{./src/assets/diagram/bp-release}
-	\caption{Business proces: Release}\label{fig:bp:release}
+	\caption{Business process: Release}\label{fig:bp:release}
 \end{sidewaysfigure}
 
 In diagram \ref{fig:bp:release}, there is a possible scenario of the department's workflow on updating user manual after software release.
@@ -39,12 +39,12 @@ The same way a source code can be reviewed and individual lines annotated. VCS a
 
 \begin{sidewaysfigure}[!htbp]\centering
 	\includegraphics[width=0.7\textwidth]{./src/assets/diagram/bp-hotfix}
-	\caption{Business proces: hotfix}\label{fig:bp:hotfix}
+	\caption{Business process: hotfix}\label{fig:bp:hotfix}
 \end{sidewaysfigure}
 
 The diagram \ref{fig:bp:hotfix} showcases department action flow, when hotfix, which requires user manual update, is issued.
-The process is very similiar, because we are at very high level of abstaction.
-The notable difference is however, that multiple maintained versions of the manual need to be accessed and updated individially. Let us form our next observation:
+The process is very similar, because we are at very high level of abstraction.
+The notable difference is however, that multiple maintained versions of the manual need to be accessed and updated individually. Let us form our next observation:
 If a hotfix is created that requires a change in user manual, it is demanded to patch previous version of the manual, without introducing changes already applied to current version of the manual.
 In the same manner as applying changes to source code. This calls for VCS with parallel branch support.
 
