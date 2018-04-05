@@ -8,6 +8,9 @@
 \usepackage{dirtree} %directory tree visualisation
 \usepackage[figuresright]{rotating} % sideways figures
 
+\usepackage[acronym,nonumberlist,toc,numberedsection=autolabel]{glossaries}
+\makeglossaries
+
 % minted - color listings
 \usemintedstyle{perldoc}	% color style
 \setminted{
@@ -36,7 +39,7 @@ fontsize=\small
 \begin{document}
 \newcommand{\autocite}[1]{\cite{#1}}
 \listoflistings
-
+\input{src/meta/abbreviations}
 \setsecnumdepth{part}
 \chapter{Introduction}
 \input{src/introduction}
@@ -66,12 +69,13 @@ fontsize=\small
 \setsecnumdepth{all}
 \appendix
 
+
 \chapter{Acronyms}
-% \printglossaries
-\begin{description}
-	\item[GUI] Graphical user interface
-	\item[XML] Extensible markup language
-\end{description}
+\printglossaries
+% \begin{description}
+% 	\item[GUI] Graphical user interface
+% 	\item[XML] Extensible markup language
+% \end{description}
 
 
 \chapter{Contents of enclosed CD}

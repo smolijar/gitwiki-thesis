@@ -10,6 +10,14 @@
 /*.fdb_latexmk
 /*.fls
 /*.lol
+/*.acn
+/*.acr
+/*.alg
+/*.glg
+/*.glo
+/*.gls
+/*.glsdefs
+/*.ist
 /_minted-*
 
 # Source text files

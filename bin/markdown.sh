@@ -13,5 +13,10 @@ for f in $(find $DIR/../src -name '*.md'); do
     # begin
     sed -r "s@^\\\begin\{lstlisting\}\[language=(\w+), caption=([^,]+), label=(\S+)\]@\\\begin{listing}\n\\\caption{\2}\\\label{\3}\n\\\begin{minted}{\1}@g" |
     # end
-    sed "s@\\\end{lstlisting}@\\\end{minted}\n\\\end{listing}@g" > "${f%.*}".tex
+    sed "s@\\\end{lstlisting}@\\\end{minted}\n\\\end{listing}@g" |
+    
+    $DIR/abbr.rb |
+    # mint inline isntead of lstinline
+    sed "s@\\\lstinline@\\\mintinline{latex}@g"> "${f%.*}".tex
+
 done
