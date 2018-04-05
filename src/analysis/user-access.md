@@ -165,3 +165,24 @@ For that after `gitolite-shell` command passes, `git-recieve-pack` is invoked in
 This receives and applies data from the initial push, which eventually triggers `update` hook.
 The hook does additional checks for each updated ref and may partially or totally abort the update by exiting with an error.
 
+## Authentication
+
+Now, knowing how the underlaying authorization layer works, we can safety say, it has been theoretically conceptually taken care of.
+We know its power and its limits.
+We know that user is authenticated via SSH key-pair authentication.
+Can we bring the same concept to the web?
+
+Though not technically impossible, it is not definitely a standard approach for authentication on web.
+If this caught your attention, I suggest you read [@security:key-auth] for further details.
+The main problem of the issue is access to the local files from JS in browser and using browser extension for that, as suggested in [@security:key-auth] seems like a terrible idea for many reasons, e.g. cross browser support and _requirement_ of user extension for something as everyday as user authentication.
+
+For the solution we must think outside the box (and perhaps take a peep how similar services handle the exact same issue).
+If we cannot authenticate user via key-pair, yet must ensure the user, no matter the authentication method, is correctly paired with the key-pair, then we cannot have the key-pair before the first authentication, as in case of SSH.
+Let us use standard ways of authentication on web and let user upload their public key via web application, performing an authorized request under the identity of authenticated user.
+
+This solution is used by giants amongst SCM services like GitHub [@github], GitLab [@gitlab] or BitBucket [@bitbucket].
+
+## Summary
+
+We have successfully gone through possible ways to approach user access.
+I found it imperative to discuss this issue, since e.g. authentication method might very easily alter the requirements in next section.
