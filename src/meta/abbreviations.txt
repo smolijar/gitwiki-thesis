@@ -8,3 +8,7 @@ IDE-Integrated Development Environment
 LOC-Lines of code
 SSH-Secure shell
 JS-JavaScript
+SCM-Source Code Management
+ACL-Access control list
+CLI-Command Line Interface
+UC-Use case

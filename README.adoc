@@ -8,6 +8,8 @@
 ** link:./src/analysis/business-process.md[Business process]
 ** link:./src/analysis/persona.md[Persona]
 ** link:./src/analysis/user-access.md[User access]
+** link:./src/analysis/requirements.md[Requirements]
+** link:./src/analysis/use-case.md[Use case]
 
 == PDF generate
 

@@ -1,0 +1,29 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "Anonymous User" as ausr
+actor "Authenticated User" as usr
+rectangle "WUI" {
+    usecase "Traverse tree" as traverse
+    usecase "Select repository" as repo
+    usecase "Select revision" as revision
+    usecase "Show file" as file
+    usr --> traverse
+    ausr --> traverse
+    usr --> file
+    ausr --> file
+    (Sign in) ..> traverse : <<extends>>
+    repo ..> traverse : <<extends>>
+    revision ..> traverse : <<extends>>
+
+    (Sign in) ..> file : <<extends>>
+    repo ..> file : <<extends>>
+    revision ..> file : <<extends>>
+}
+rectangle "CLI" {
+    ' usecase "SSH authentication" as sshauth
+    usecase "Git remote access" as gitr
+    usr --> gitr
+    ' gitr ..> sshauth : <<include>>    
+}
+@enduml

@@ -1,8 +1,8 @@
 @startuml
 skinparam packageStyle rectangle
-actor "Registred User" as usr
+actor "Authenticated User" as usr
 actor "Anonymous User" as ausr
-actor "Super User" as susr
+actor "Administrator" as susr
 
 susr <|-- usr
 usr <|-- ausr

@@ -1,0 +1,18 @@
+@startuml
+' left to right direction
+skinparam packageStyle rectangle
+actor "Administrator" as admin
+rectangle "WUI" {
+    usecase "Change content" as content
+    usecase "Manage user\naccess permissions" as perm
+    admin --> content
+    perm ..> (Sign in) : <<include>>
+    content ..> perm : <<extends>>
+}
+rectangle "CLI" {
+    usecase "Git remote access" as gitr
+    usecase "Manage user\naccess permissions" as cperm
+    gitr ..> cperm : <<extends>>
+    admin --> gitr
+}
+@enduml

@@ -19,7 +19,7 @@ The department is using markdown, since all developers who are writing the most 
 
 \begin{sidewaysfigure}[!htbp]\centering
 	\includegraphics[width=0.85\textwidth]{./src/assets/diagram/bp-release}
-	\caption{Business process: Release}\label{fig:bp:release}
+	\caption{Business process model: Release}\label{fig:bp:release}
 \end{sidewaysfigure}
 
 In diagram \ref{fig:bp:release}, there is a possible scenario of the department's workflow on updating user manual after software release.
@@ -39,7 +39,7 @@ The same way a source code can be reviewed and individual lines annotated. VCS a
 
 \begin{sidewaysfigure}[!htbp]\centering
 	\includegraphics[width=0.7\textwidth]{./src/assets/diagram/bp-hotfix}
-	\caption{Business process: hotfix}\label{fig:bp:hotfix}
+	\caption{Business process model: Hotfix}\label{fig:bp:hotfix}
 \end{sidewaysfigure}
 
 The diagram \ref{fig:bp:hotfix} showcases department action flow, when hotfix, which requires user manual update, is issued.

@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+' rectangle "UC" {
+    usecase "UC1 **Git remote**\n**access**" as uc1
+    usecase "UC2 **Sign in**" as uc2
+    usecase "UC3 **Traverse tree**" as uc3
+    usecase "UC4 **Show file**" as uc4
+    usecase "UC5 **Select**\n**repository**" as uc5
+    usecase "UC6 **Select**\n**revision**" as uc6
+    usecase "UC7 **Change**\n**content**" as uc7
+    usecase "UC8 **Edit**\n**contents**" as uc8
+    usecase "UC9 **Manage**\n**files**" as uc9
+    usecase "UC10 **Create**\n**revision**" as uc10
+    usecase "UC11 **Manage user**\n**access permissions**" as uc11
+' }
+' rectangle "FREQ" {
+    rectangle "F1 **Authentication**" as f1
+    rectangle "F2 **Authorization**" as f2
+    rectangle "F3 **Content management**" as f3
+    rectangle "F4 **Content browsing**" as f4
+    rectangle "F5 **Authorization management**" as f5
+' }
+
+f1 -- uc1
+f1 -- uc2
+
+f2 -- uc3
+f2 -- uc4
+f2 -- uc7
+f2 -- uc11
+
+f3 -- uc8
+f3 -- uc9
+f3 -- uc10
+f3 -- uc7
+f3 -- uc11
+
+f4 -- uc3
+f4 -- uc4
+f4 -- uc5
+f4 -- uc6
+
+f5 -- uc11
+@enduml
