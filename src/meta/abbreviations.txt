@@ -13,3 +13,4 @@ ACL-Access control list
 CLI-Command Line Interface
 UC-Use case
 RTE-Rich text editor
+CRUD-Create Read Update Delete

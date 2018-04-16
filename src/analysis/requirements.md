@@ -6,7 +6,7 @@ The former shall be referred to as WUI and latter as CLI.
 ## Functional requirements
 
 Wiki system works with text files formatted in a specific markup syntax.
-System must provide support for Asciidoc[@asciidoctor] and Markdown[@gruber:markdown] and must allow extensibility for other LML.
+System must provide support for Asciidoc[@asciidoctor] and Markdown[@gruber:markdown] and must allow extensibility for other LMLs.
 The set of at least two mentioned LMLs possibly extended by additional ones will be referred to as *supported markup*.
 
  - F-1\. **Authentication**
@@ -21,8 +21,8 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 
  - F-3\. **Content management**
 
-  Authorized users can manage wiki contents.
-  Users can preform general CRUD operation on any content based on their authorization level.
+  Authorized users can manage wiki's contents.
+  Users can preform general CRUD operation on any content, based on their authorization level.
 
   The system uses VCS to track changes in the content.
   Submitted changes create new revisions in a history log, which can be accessed to review individual revisions or restore content from a specific point in time.
@@ -53,14 +53,14 @@ The set of at least two mentioned LMLs possibly extended by additional ones will
 - NF-1\. **Storage**
 
   The system will store all data only in a set of Git [@git] repositories on single server machine.
-  That includes the wiki content itself as well as e.g. ACL.
+  That includes the wiki's content itself as well as e.g. ACL.
+
+  The system may use other technologies for other data than wiki's contents and ACL when convenient for e.g. cache, session management etc.
 
 - NF-2\. **UI**
 
-  The system will provide WUI as well as an SSH direct access to git repositories.
-  For non-trivial administration tasks CLI is offered (e.g. adding user).
-  System's CLI should not substitute simple git commands.
+  The system will provide WUI as well as an SSH direct access (CLI) to Git repositories.
 
 - NF-2\. **Platform**
 
-  The system will be implemented in JS (web interface) and Node.js (server-side).
+  The system will be implemented in JS (web client interface) and Node.js (server-side).
