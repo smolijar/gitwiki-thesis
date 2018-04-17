@@ -14,3 +14,4 @@ CLI-Command Line Interface
 UC-Use case
 RTE-Rich text editor
 CRUD-Create Read Update Delete
+OSS-Open source software
