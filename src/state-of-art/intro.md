@@ -1,5 +1,3 @@
-# Introduction
-
 In this section I shall compare several existing OSS wiki systems, that by design and feature set most strongly resemble traits described in previous chapter.
 
 Since the requirements are too restrictive, I shall examine systems using Git VCS for data storage, regardless of how they satisfy remaining demands.

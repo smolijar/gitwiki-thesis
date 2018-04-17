@@ -15,3 +15,6 @@ UC-Use case
 RTE-Rich text editor
 CRUD-Create Read Update Delete
 OSS-Open source software
+GNU-GNU's Not Unix!
+GPL-General Public License
+CGI-Common Gateway Interface
