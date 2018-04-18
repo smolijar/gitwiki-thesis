@@ -77,3 +77,13 @@ Apart from website navigation there is a document navigation placed under it in 
 Wiki.js offers custom Markdown editor with features focused on the language, as seen in figure @fig:wikijs:edit.
 The editor features hybrid life preview of formatted source code (using proportional sizes and font styles and colors for formatted markup), as well as toolbar for users unfamiliar with Markdown, who can use editor as a form of RTE.
 
+## Summary
+
+- A user friendly, relatively powerful permission control is provided.
+- Possible though inconvenient branch support.
+- SSH authorization not handled and burdensome to sync with existing authorization settings, since front-end and back-end API decoupling is in progress a scheduled[@wikijs:dev] for version `2.0`.
+- Only Markdown supported
+- Hybrid advanced RTE provided.
+- Git repository mirroring available.
+
+Wiki.js provides convenient user permission configuration, modern UI and specialized Markdown editor.

@@ -18,4 +18,5 @@ OSS-Open source software
 GNU-GNU's Not Unix!
 GPL-General Public License
 CGI-Common Gateway Interface
-YAML Ain't Markup Language
+YAML-Ain't Markup Language
+YFM-Yaml front matter

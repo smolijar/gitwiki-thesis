@@ -42,3 +42,15 @@ This is whence Gollum truly excels.
 Not only are many document formats supported, as discussed, but Gollum also provides a toolbar (seen in figure @fig:gollum:edit) customized for given format and features preview as well as live preview^[That is available when started with option `--live-preview`].
 
 ![Gollum: Page edit](./src/assets/images/gollum-edit){#fig:gollum:edit width=100%}
+
+
+## Summary
+
+- Gollum is just a web interface for repository editing and lack any form of permission control or even authentication.
+- Software supports many LMLs
+- Superior document editing UI with impressive options including tool-bars for users unfamiliar with the syntax and live-preview.
+- Direct access not considered by the application.
+- Possible though inconvenient branch support, requiring multiple instances to run in order to manage parallel versions.
+
+Gollum steps out of the line amongst considered systems, being "a mere" WUI for repository management.
+It has exceptional LML support with admirable UI.

@@ -59,7 +59,7 @@ It might lack specialized tools for selected LMLs, but it offers
 2. Export of the page into even richer set of document formats, including other LMLs (Markdown, MediaWiki, AsciiDoc, etc.), typesetting formats (e.g. \LaTeX, ConTeXt), office document formats, DocBook, sideshow formats and much more, using Pandoc[@pandoc].
 
 Documents are implicitly written in Pandoc's extended version of Markdown.
-In document preamble, meta-data including format can be set, as seen in \ref{lst:gitit:preamble}.
+In document preamble (YFM), meta-data including format can be set, as seen in \ref{lst:gitit:preamble}.
 The supported formats include reStructuredText, LaTeX, HTML, DocBook and Emacs Org-mode markup. [@gitit]
 
 ```{language=latex caption="Gitit: Page preamble example" label="lst:gitit:preamble"}
@@ -94,3 +94,12 @@ This design option, known from other popular wiki software, like [@mediawiki] is
 
 As half expected of format variability, no tool is used for document editing, but plain textarea. The form UI and component layout is in this case almost identical to the previous entry, as seen in image @fig:gitit:edit.
 
+## Summary
+
+- Gitit can be backed by a Git, Mercurial or Darcs repository.
+- System lack any form of authorization options and leaves only for user to select private or public wiki.
+- A wide variety of supported markup is provided.
+- Notable export options are offered via Pandoc conversion tool.
+- Interesting usage of YFM is used for meta-data, which is independent of LML from Pandoc's perspective.
+
+Gitit profits from its generic approach of using a Pandoc meta document format, allowing it to store meta-data in unified manner as well as providing extensive export abilities.

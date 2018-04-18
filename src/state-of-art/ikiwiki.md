@@ -7,8 +7,6 @@ This is exciting but could result in lack of some features such as in browser ac
 
 Ikiwiki is, as stated, primary a _wiki compiler_, meaning its main goal is to compile document pages into given format (presentable format from LML).
 
-
-
 ## User access control
 
 For the Git SSH access there is no form of user control when using Ikiwiki with Git.
@@ -56,10 +54,21 @@ Parallel version maintenance through WUI is unlikely.
 
 UI of the wiki is not affected by the underlaying VCS layer, as seen on page preview on image @fig:ikiwiki:page.
 Meaning on conceptual level as described in the introduction of the chapter; there are tools in WUI, such as history preview, that take advantage of the VCS background.
-Atop of wiki page content with outline by its side, there is a tool bar with with links like _Edit_, _History_, etc. and a search form.
+Atop of wiki page content with outline by its side, there is a toolbar with with links like _Edit_, _History_, etc. and a search form.
 At the bottom there are pages linking to this and last edit meta-data.
 
 ![Ikiwiki: Page edit](./src/assets/images/ikiwiki-edit){#fig:ikiwiki:edit width=100%}
 
 On edit page there apart from bare text-area as mentioned a standard static preview button.
 This is depicted on image @fig:ikiwiki:edit.
+
+## Summary
+
+- PageSpec tool is powerful, but very hard to use for basic configuration and clunky to maintain.
+- SSH authorization not handled and burdensome to sync with existing authorization settings.
+- Authentication is blended with authorization.
+- Bizarre Git branch usage.
+- Plain-text editing.
+
+Ikiwiki being the oldest project in the chapter suffers from historical decisions, which might have been valid at its time, nevertheless are but burdens now.
+This includes complex PageSpec implementation and unfortunate fusion of authentication and authorization.
