@@ -21,7 +21,7 @@ The only tools it offers for user restriction are:
 * require correct answer for access question before registering a new user.
 
 These options are available in configuration as seen in its sample in \ref{lst:gitit:conf},
-which is a snippet from Gitit config^[Which is a result of `gitit --print-default-config`].
+which is a snippet from Gitit configuration^[Which is a result of `gitit --print-default-config`].
 
 ```{language=yaml caption="Gitit: Configuration sample" label="lst:gitit:conf"}
 require-authentication: modify
@@ -60,7 +60,7 @@ It might lack specialized tools for selected LMLs, but it offers
 
 Documents are implicitly written in Pandoc's extended version of Markdown.
 In document preamble (YFM), meta-data including format can be set, as seen in \ref{lst:gitit:preamble}.
-The supported formats include reStructuredText, LaTeX, HTML, DocBook and Emacs Org-mode markup. [@gitit]
+The supported formats include reStructuredText, LaTeX, HTML, DocBook and Org[@org] markup. [@gitit]
 
 ```{language=latex caption="Gitit: Page preamble example" label="lst:gitit:preamble"}
 ---
