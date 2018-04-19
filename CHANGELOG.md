@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Glossaries
+- Chapter state of the art
+- `make clean` task
 
 ## [0.3.1] - 2018-04-16
 
