@@ -14,3 +14,15 @@ CLI-Command Line Interface
 UC-Use case
 RTE-Rich text editor
 CRUD-Create Read Update Delete
+OSS-Open source software
+GNU-GNU's Not Unix!
+GPL-General Public License
+CGI-Common Gateway Interface
+YAML-Ain't Markup Language
+YFM-Yaml front matter
+HTML-Hypertext Markup Language
+%glossaries
+textarea-An HTML element
+Git-Popular distributed VCS for non-linear workflow
+Pandoc-A universal document converter tool
+toolbar-A row of symbols (icons) on a screen that show the different things that you can do with a particular program
