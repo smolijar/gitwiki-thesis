@@ -10,6 +10,12 @@
 ** link:./src/analysis/user-access.md[User access]
 ** link:./src/analysis/requirements.md[Requirements]
 ** link:./src/analysis/use-case.md[Use case]
+* link:./src/state-of-art/_intro.md[State-of-the-art]
+** link:./src/state-of-art/ikiwiki.md[Ikiwiki]
+** link:./src/state-of-art/gitit.md[Gitit]
+** link:./src/state-of-art/gollum.md[Gollum]
+** link:./src/state-of-art/wikijs.md[Wiki.js]
+** link:./src/state-of-art/_summary.md[Summary]
 
 == PDF generate
 
