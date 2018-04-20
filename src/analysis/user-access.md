@@ -6,7 +6,7 @@ That is, how are the documents going to be persisted, and how users are going to
 To this moment in order to stay in the abstract conceptual level, which was convenient for e.g. business process modeling,
 I never implied a specific VCS to use within the system, though it is given in thesis description.
 Git VCS shall be used to wiki contents persistence, as given in the task.
-It has many advantages, including branch model, CLI repository access via SSH and it is decentralized, which might be of convenient for Dump and Lump to work out of the office.
+It has many advantages, including branch model, CLI repository access via SSH and it is decentralized, which might be of convenient for Dump and Lump (the developers) to work out of the office.
 Apart from that, it is fairly popular.
 According to [@openhub:vcs] up to 50% of existing open source projects use Git, while the second place goes to Subversion with 42%.
 That goes only for open source projects.
@@ -18,29 +18,29 @@ Using Git as an underlaying VCS layer brings two important questions to discuss.
 1. Access control gets more complicated.
 In centralized VCSs, it is natural to have the feature of file locks, which is e.g. available in Subversion.
 Though there are tools to simulate this in Git, it gets far more challenging.
-How do we solve access control within a Git repository?
+How to solve access control within a Git repository?
 
 2. Git provides a useful interface for repository cloning, granting us an elegant solution for direct file access, familiar to Dump, Lump and Pump.
 Users are authenticated through SSH authentication layer, once they deliver their public keys to the hosting server, which is a standard practice used by popular Git hosting providers.
-The question is, how do we authenticate the user in WUI and pair them with their stored public key?
+The question is, how to authenticate the user in WUI and pair them with their stored public key?
 
 ## Authorization
 
 We need a tool for an authorization layer atop SSH to manage Git repository access for our Git hosting.
 Let us go over few possible open source options we have.
 
-There are many Git hosting services with a swarm of supportive features, such as code review, issue tracking and even access control.
+There are many Git hosting services with a swarm of supportive features, such as the code review, issue tracking and even access control.
 These self-hosted services include e.g. Gogs [@gogs], GitBucket [@gitbucket] or GitLab [@gitlab].
 This is not primary what we are after, since none of them by this time offer modular usage, to use just the mere SSH authorization layer.
 I will pick GitLab as an example of this group.
 
-Since none of the examples from said group are convenient, let us take a look on software that serves only that purpose.
+Since none of the examples from the said group are convenient^[Not impossible -- we could use them. They are inconvenient because we would need to take thole system, while only utilizing a mere fraction of it, since we don't need many provided SCM features.], let us take a look on software that serves only that purpose.
 Here we have two fine examples.
 That is Gitorious [@gitorious] and Gitolite [@gitolite].
 Gitorious however is no longer maintained, since it has been acquired by GitLab in 2015 [@gitorious:gitlab].
-The fact that Gitolite, which is still maintained, was for some time used by GitLab as an authorization layer, makes it even more relevant, given GitLab's popularity.
+The fact that Gitolite, which is still maintained, was for some time used by GitLab as an authorization layer, makes it even more relevant, given the GitLab's popularity.
 One of the reasons for that is that GitLab faced performance issues with extensive count of repositories and users. [@gitolite:gitlab]
-This might be an issue for massive corporations, but since Gitolite has reached performance issues with configuration parsing at 560K+ LOC of configuration files and 42K repositories reached by Fedora, it should be just fine for our purpose. [@gitolite:perf]
+This might be an issue for massive corporations, but since Gitolite has reached performance issues with configuration parsing at over 560 thousand LOC of configuration files and 42 thousand repositories reached by Fedora, it should be just fine for our purpose. [@gitolite:perf]
 
 
 I have distinguished two examples to compare in this section as possible candidates for the authorization tool to use in the project.
@@ -49,7 +49,7 @@ Now we shall look at GitLab and Gitolite closely.
 ### GitLab
 
 _"GitLab is a single application with features for the whole software development and operations (DevOps) lifecycle."_ [@gitlab:about]
-It is an open source project started in 2011 with more than 1900 contributors and used by over 100K organizations as a self hosted Git server with many development supportive features [@gitlab:about].
+It is an open source project started in 2011 with more than 1900 contributors and used by over 100 thousand organizations as a self hosted Git server with many development supportive features [@gitlab:about].
 
 It offers a rich, well documented GraphQL API (as well as still maintained REST API), which could be well used to our benefit for application control.
 
@@ -61,7 +61,7 @@ This however remains to be the only level of control it offers within a single r
 A file locking feature exists in GitLab, but is only available in GitLab Premium, where it is available since GitLab Premium 8.9 [@gitlab:files].
 
 One of the problems with GitLab is, as officially stated, that it is a _single application_.
-I cannot be used modularly for our specific purpose.
+It cannot be used modularly for the thesis' specific purpose.
 
 
 ### Gitolite
@@ -102,7 +102,7 @@ Before resolving the second issue of user access revealed earlier, which is appr
 
 This is important because the system will need to have means of authenticating user on the web as well as check authorization rules for repository access, which behaves in the exactly same fashion as the one over SSH.
 
-Note that these are neither installation instructions, nor in depth explanation of Gitolite works inside.
+Note that these are neither an installation instructions, nor an in depth explanation of Gitolite works inside.
 Just bare essential to understand it's basic concepts.
 
 #### Install
@@ -128,7 +128,7 @@ It is relying on the SSH layer to perform a secure authentication via key-pair a
 Gitolite must just take a good care of managing the `authorized_keys` file.
 
 A valid security question might be, how does Gitolite prevent full SSH access for remote user logging in via SSH as Git user on Gitolite server.
-This is interesting, but is already taken care of by the SSH layer and Gitolite just needs to manage SSH files cautiously.
+This is interesting, but is already taken care of by the SSH layer and Gitolite just needs to manage SSH files cautiously.^[Gitolite is given power to manage the `authorized_keys` file, which is a great security thread, for if mis-configured, for example if `command` option (explained in following paragraph) is missing, remote user could access the server with all rights of the `git` user.]
 
 
 ```{language=sh caption="Gitolite git user authorized keys file" label="lst:gitolite:authkeys"}
@@ -145,47 +145,47 @@ It _"specifies that the command is executed whenever this key is used for authen
 
 Which means UNIX user on a machine with running `sshd` [@openbsd:sshd] can control what command is executed for key authenticated users, which can be used to run different shell, modify the environment or as in this case, to forbid user to run anything except this single program, which is gitolite-shell with fixed username argument.
 
-This is important for the further discussion of authentication, inasmuch as this makes other than key based authentication impossible to use.
+This is important for the further discussion of authentication, inasmuch as this makes other than the key based authentication impossible to use.
 
 #### Authorization
 
 Gitolite authorization runs in two steps.
-We know how it got here as mentioned before in SSH authentication.
+We know how it got here as mentioned before in SSH authentication in this section.
 
 ![Gitolite two step authorization](./src/assets/diagram/gitolite){#fig:gitolite width=300}
 
 This process is depicted on diagram @fig:gitolite.
-The activity diagram, though simplifying the details to display higher order concepts, contains all essential components in the communication for the demonstration of discussed issue.
+The activity diagram, though simplifying the details to display the higher order concepts, contains all the essential components in the communication for the demonstration of the discussed issue.
 The diagram presumes that SSH authentication succeeds. 
 
-First step is `gitolite-shell` run with username and repository name, supplied via SSH.
-Here, Gitolite can deny the access, because it already knows the authenticated username, as well as repository name and action (is it a read action, like `git fetch`, or write like `git push`).
+The first step is to run the `gitolite-shell` with the username and the repository name, supplied via SSH.
+Here, Gitolite can deny the access, because it already knows the authenticated username, as well as the repository name and the action (is it a read action, like `git fetch`, or write like `git push`).
 If Gitolite does not deny access at this point, Git standard command is invoked, e.g. `git-upload-pack` for cloning or pulling form a repository.
 
-For read operations the first step would also be its final.
-However that is not true for writing operations such as `push`.
-For that after `gitolite-shell` command passes, `git-recieve-pack` is invoked instead.
-This receives and applies data from the initial push, which eventually triggers `update` hook.
+For the read operations the first step would also be its final.
+However that is not true for the writing operations such as `push`.
+For that after the `gitolite-shell` command passes, `git-recieve-pack` is invoked instead.
+This receives and applies the data from the initial push, which eventually triggers an `update` hook.
 The hook does additional checks for each updated ref and may partially or totally abort the update by exiting with an error.
 
 ## Authentication
 
-Now, knowing how the underlaying authorization layer works, we can safety say, it has been theoretically conceptually taken care of.
+Now, knowing how the underlaying authorization layer works, we can safety say that it has been theoretically conceptually taken care of.
 We know its power and its limits.
 We know that user is authenticated via SSH key-pair authentication.
-Can we bring the same concept to the web?
+Can the same concept be brought to the web?
 
 Though not technically impossible, it is not definitely a standard approach for authentication on web.
 If this caught your attention, I suggest you read [@security:key-auth] for further details.
-The main problem of the issue is access to the local files from JS in browser and using browser extension for that, as suggested in [@security:key-auth] seems like a terrible idea for many reasons, e.g. cross browser support and _requirement_ of user extension for something as everyday as user authentication.
+The main problem of the issue is the access to the local files from JS in the browser and using the browser extension for that, as suggested in [@security:key-auth] seems like a terrible idea for many reasons, e.g. cross browser support and _requirement_ of user extension for something as everyday as user authentication.
 
 For the solution we must think outside the box (and perhaps take a peep how similar services handle the exact same issue).
 If we cannot authenticate user via key-pair, yet must ensure the user, no matter the authentication method, is correctly paired with the key-pair, then we cannot have the key-pair before the first authentication, as in case of SSH.
-Let us use standard ways of authentication on web and let the user upload their public key via web application, performing an authorized request under the identity of authenticated user.
+Let us use the standard ways of authentication on the web and let the user upload their public key via a web application, performing an authorized request under the identity of authenticated user.
 
 This solution is used by giants amongst SCM services like GitHub [@github], GitLab [@gitlab] or BitBucket [@bitbucket].
 
 ## Summary
 
 We have successfully gone through possible ways to approach user access.
-I found it imperative to discuss this issue, since e.g. authentication method might very easily alter the requirements in next section.
+I found it imperative to discuss this issue, since e.g. authentication method might very easily alter the requirements in the next section.

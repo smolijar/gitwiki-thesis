@@ -26,7 +26,7 @@ Diagram @fig:uc:browsing displays use cases for browsing section.
 
 - UC-1 **Git remote access**
 
-  User remotely modifies git repository via SSH standard Git interface.
+  User remotely modifies git repository via the SSH standard Git interface.
   The power of the following editing interaction is limitless and not related to described system, for the changes happen at user's local workstation.
 
   The user's interaction falls into either of category:

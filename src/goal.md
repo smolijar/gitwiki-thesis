@@ -1,15 +1,15 @@
-The target of the thesis is to explore the state of art of version controlled wiki systems,
+The target of the thesis is to explore the state of the art of version controlled wiki systems,
 find the most appropriate solution for designing a implementing a system with the special features vaguely described in this section and fully specified in analysis.
 
 # What is a _wiki_?
 
 The system is a version controlled, document oriented, text-based wiki software.
 
-But what is a _wiki_? According to Oxford dictionaries it is a _"a website that allows any user to change or add to the information it contains"_ [@oald:wiki] a longer and certainly more entertaining description from WikiWikiWeb^[WikiWikiWeb is often considered to be the first wiki being launched in 1995. [@wikiwikiweb:history]]
+But what is a _wiki_? According to the Oxford dictionaries it is a _"a website that allows any user to change or add to the information it contains"_ [@oald:wiki] a longer and certainly more entertaining description from WikiWikiWeb^[WikiWikiWeb is often considered to be the first wiki being launched in 1995. [@wikiwikiweb:history]]
 states: _"The idea of a Wiki may seem odd at first, but dive in, explore its links and it will soon seem familiar. Wiki is a composition system; it's a discussion medium; it's a repository; it's a mail system; it's a tool for collaboration. We don't know quite what it is, but we do know it's a fun way to communicate asynchronously across the network."_^[The insecurity in the description (_"We don't know quite what it is, (...)"_) is understandable from WikiWikiWeb, since its creator chose a name and needed to explain the concept to visitors at the time, when it was not entirely sure, how is the system going to evolve.] [@wikiwikiweb:front].
 Those are both obviously vague concepts, but set up a reasonable foundation of what wiki is.
 
-The essential idea behind wiki has always been to put users into the role of not just mere consumers, but producers of the content, which is the true concept of _Web 2.0_ and simultaneously its cheesiest example trait, when describing, what _Web 2.0_ actually is.
+The essential idea behind wiki has always been to put the users into the role of not just mere consumers, but producers of the content, which is the true concept of _Web 2.0_ and simultaneously its cheesiest example trait, when describing, what _Web 2.0_ actually is.
 Wiki is a platform for document oriented, organically created structured content.
 
 Documents are typically managed by administrators (performing corrections, topic creation etc.) and written by a community of users.
@@ -37,7 +37,7 @@ Such product is a _wiki_ as we described it binding its contents by a specific t
 
 While the target system is potentially a universal document management platform, usable for a wide variety of applications,
 an example archetypal usage scenario has been set. 
-The system is considered (for the purpose of design decision making, interface design, etc.) as a platform for API documentation or user manual collaborative creation.
+The system is considered (for the purpose of design decision making, interface design, etc.) as a platform for the API documentation or user manual collaborative creation.
 
 This brings us to the following subsection of defining the special traits of the system, which makes it distinguish itself amongst others.
 
@@ -52,7 +52,7 @@ a university's tool for final thesis writing and submission.
 
 * **Emphasize lightweight markup languages**
 
-Markdown has become more or less a standard for README files and documentation, and no wonder.
+Markdown has become more or less a standard for the _readme_ files and documentation, and no wonder.
 It is easy to learn, intuitive to read even if you are not familiar with the syntax, machine readable and it has many tools for comfortable writing for users familiar with RTEs.
 Once familiar with the basic syntax, it is not an issue to write documents in a simple text editor.
 
@@ -71,7 +71,7 @@ Our documentation platform is not like that. Our users write often.
 It is part of their job and they know the syntax by heart.
 They do not need the system to slow them down by clicking formatting buttons for the few formatting options e.g. Markdown has.
 
-The system should by all means provide an intuitive interface, but not at the cost of use efficiency for the advanced users.
+The system should by all means provide an intuitive interface, but not at the cost of use efficiency for the advanced users.^[This does not mean that the UI should be unintuitive for new users, but rather it should focus on advanced features allowing the experienced user a swift interaction resembling the one they know from IDEs.]
 
 * **Use robust non-linear VCS**
 
@@ -88,4 +88,4 @@ This might be sufficient in many cases, when the only presentation of the conten
 It is a common practice that user manuals are linked together into a single large document, that is provided as a whole in a printable or online format.
 It is not important what tools are used to do so, but it is important to provide the user (or their script or plug-in) to access the files directly.
 
-This access should be provided for read as well as write operations, to allow users to edit the repository in their own environment.
+This access should be provided for the read as well as the write operations, to allow users to edit the repository in their own environment.

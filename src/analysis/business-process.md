@@ -5,6 +5,12 @@ In this section, being a part of the problem analysis, I shall formalize abstrac
 As stated before, the system at hand has potential to be far more than a documentation platform.
 For the discussion of user's needs and preferences, the mentioned referential application shall be used throughout the thesis.
 
+Here in bussiness process model, I shall describe the workflow of a company using the system.
+While taking a very specific direction, the example case is convenient for two main reasons:
+
+1. it portraits usage of the system by software developers, who are example of _technically oriented users_, as stated in the thesis instructions,
+2. it is elaborate enough to demonstrate several user types with different needs and expectations of the system, which helps to model the system and its variability.
+
 In the scenarios I assume a part of development team is working on a user manual for their software product.
 The team consists of:
 
@@ -15,7 +21,9 @@ The team consists of:
 
 The department is using markdown, since all developers who are writing the most of the texts are familiar with it and use it efficiently.
 
-## Release
+In the following two subsections I will demonstrate the interactions of the development team with the system from business process perspective.
+
+## Business process scenario: Release
 
 \begin{sidewaysfigure}[!htbp]\centering
 	\includegraphics[width=0.85\textwidth]{./src/assets/diagram/bp-release}
@@ -36,7 +44,7 @@ VCS and revision updates are required.
 * Publisher needs direct access to the files.
 * First developer only writes in pages regarding module A, second for module B. Publisher only needs read access to the files. Some mistakes could be avoided if the VCS repository could be divided into namespaces and edited separately with access control.
 
-## Hotfix
+## Business process scenario: Hotfix
 
 \begin{sidewaysfigure}[!htbp]\centering
 	\includegraphics[width=0.7\textwidth]{./src/assets/diagram/bp-hotfix}

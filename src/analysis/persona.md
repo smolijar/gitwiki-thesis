@@ -1,7 +1,7 @@
 # User analysis
 
 In previous section we mapped the business processes of a small department, developing a user manual for their software.
-Hence I might be forced to make some fatal decisions having a great impact, which are left for interpretation in the task description, let us discuss the archetypal users mentioned in business process model.
+Hence I might be forced to make few decisions with fatal impact, which are left for interpretation in the task description, let us discuss the archetypal users mentioned in business process model.
 
 This section is a brief user persona definition.
 I intentionally draw back from the lengthly formal persona definition from usability testing [@usability:persona], since detailed persona definition would prove less useful for a one man team.
@@ -16,7 +16,7 @@ The developers are programmers gentlemen called Dump and Lump.
 They are working in an IDE or coding editor and are very efficient using it.
 It is best to let them work in their natural environment.
 Dump and Lump know selected LML by heart and are skilled at reading it from source code, as well as writing it, without fancy visualization tools.
-They are familiar with VCS principals and use one on their daily bases when coding in team.
+They are familiar with VCS principals and use one on their daily bases when coding in the team.
 
 Reviewer Rump is not a developer and just checks for readability, typos, etc.
 He is making subtle changes in the manual.
