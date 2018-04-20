@@ -11,7 +11,7 @@ I will not deny that any SCM service^[Though including GitLab, BitBucket and sim
 In the same manner I could have used Google, Yahoo or any other service with OAuth or OpenID protocol support.
 GitHub is a reasonable choice in scope of OSS projects hosting statistics
 
-![Analysis: Authentication via external provider](./src/assets/diagram/login){#fig:design:auth width=100%}
+![Design: Authentication via external provider](./src/assets/diagram/login){#fig:design:auth width=100%}
 
 
 The sequence diagram @fig:design:auth displays the authentication process using external authority.

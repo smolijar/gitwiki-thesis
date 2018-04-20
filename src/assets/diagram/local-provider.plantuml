@@ -1,0 +1,51 @@
+@startuml
+actor Alice as usr
+participant Application as app
+participant "Local Provider" as prov
+participant "Gitolite wrapper" as wrap
+participant "Gitolite CLI" as git
+participant "Localhost" as localhost
+
+usr -> app: List repos
+app -> prov: List repositories\nfor Alice
+alt Alice has Gitolite username
+  prov -> wrap: Repos for Alice
+  wrap -> git: list: Alice
+else else
+  prov -> wrap: Public repos
+  wrap -> git: list: @all
+end
+git --> wrap:
+wrap --> prov:
+prov --> app:
+app --> usr:
+
+usr -> app: Show Foo repository
+app -> prov: Get Foo repo
+prov -> wrap: Alice can access Foo?
+wrap -> git: access: Alice Foo
+git --> wrap
+wrap --> prov
+alt Alice can access Foo
+  prov -> localhost: git clone git@localhost:foo
+  localhost --> prov
+  prov --> app: Foo
+  app --> usr: Foo
+else else
+  prov --> app: Error
+  app -->x usr
+end
+
+usr -> app: Change Foo
+alt Alice has W access to given reference
+app -> prov: Commit and push
+prov -> prov: Commit on Foo
+prov -> localhost: git push ...
+  localhost --> prov
+  prov --> app
+  app --> usr
+else else
+  app -->x usr
+end
+
+@enduml
