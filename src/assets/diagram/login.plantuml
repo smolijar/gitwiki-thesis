@@ -1,0 +1,39 @@
+@startuml
+actor Alice as usr
+participant "Browser / Gitwiki\nfront-end" as fe
+participant "Gitwiki\nback-end" as be
+participant "Authentication\nauthority" as auth
+
+usr -> fe: Login via selected authority
+fe -> be: Login
+be -> auth: Authorize Alice\nscopes = [userdata, public_keys]
+auth -> fe: Display form
+fe --> usr
+usr -> fe: Log in
+usr -> fe: Authorize belication
+fe -> auth: Submit
+auth -> be: Redirect callback
+be -> auth: Acquire access token
+auth --> be
+
+be -> auth: Get user info
+auth --> be
+alt Is this first login?
+  be -> auth: Acquire Alice public key
+  auth --> be
+  alt Is username Alice taken?
+    be -> be: Store Alice, username Alice
+  else else
+    be -> be: Generate Gitolite username for Alice
+    be -> be: Store Alice, username <generated>    
+  end
+  be -> be: Store key
+end
+
+be --> fe
+fe -> fe: Remember user
+fe --> usr
+
+
+
+@enduml

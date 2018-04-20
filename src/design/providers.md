@@ -53,3 +53,14 @@ Not relying on the local repositories and always aiming for a mirror of a remote
 
 Repository provider module has control over every action of the repository: access, edit and publish.
 It can, on application level, deny access depending on its own logic.
+
+## Designed providers
+
+I have discussed the usage of local provider.
+To showcase the flexibility of the system as described in two design pillars in _\hyperref[design-foundations]{Design foundations}_, I decided to implement one more provider.
+There were several options available from Git hosting services, but for its popularity amongst OSS community I chose as leading example GitHub.
+
+This brings two main advantages for Gitwiki:
+
+* GitHub is still easily the most popular SCM service in comparison to GitLab or BitBucket; addressing GitHub's user base is far more efficient than other services'.
+* GitHub OAuth 2 can be used in the system as authentication method and public keys can be loaded into Gitolite.
