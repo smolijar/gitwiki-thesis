@@ -22,10 +22,7 @@ YAML-Ain't Markup Language
 YFM-Yaml front matter
 HTML-Hypertext Markup Language
 FS-File system
-<<<<<<< d24a4e64b1062c5306c7e5f68c5ee8ed67a12d7a
 TOC-Table of contents
-=======
->>>>>>> Add intro, foundations and providers sections
 %glossaries
 textarea-An HTML element
 Git-Popular distributed VCS for non-linear workflow

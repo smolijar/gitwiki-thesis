@@ -1,1 +1,1 @@
-# Emily eidtor
+# Emily editor
