@@ -21,6 +21,8 @@ CGI-Common Gateway Interface
 YAML-Ain't Markup Language
 YFM-Yaml front matter
 HTML-Hypertext Markup Language
+FS-File system
+TOC-Table of contents
 %glossaries
 textarea-An HTML element
 Git-Popular distributed VCS for non-linear workflow
