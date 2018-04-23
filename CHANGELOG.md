@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.4.1] - 2018-04-23
+### Fixed
+- Chapter 3 from somliji and myself
+
 ## [0.4.0] - 2018-04-19
 ### Added
 - Glossaries
@@ -49,7 +53,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.0.0] - 2017-03-29
 
-[Unreleased]: https://github.com/grissius/markup-editor/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/grissius/markup-editor/compare/v0.4.1...HEAD
+[0.4.1]: https://github.com/grissius/markup-editor/compare/v0.4.0...v0.4.1
 [0.4.0]: https://github.com/grissius/markup-editor/compare/v0.3.1...v0.4.0
 [0.3.1]: https://github.com/grissius/markup-editor/compare/v0.3.0...v0.3.1
 [0.3.0]: https://github.com/grissius/markup-editor/compare/v0.2.0...v0.3.0
