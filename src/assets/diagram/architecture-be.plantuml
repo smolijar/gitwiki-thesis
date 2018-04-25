@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+
+
+card "Back-end\napplication" as be {
+  folder Routers as r {
+    component "API Router" as rapi
+    component "FE Router" as rfe
+  }
+  folder "Repository providers" as p {
+    component "GitHub Provider" as github
+    component "Local Provider" as local
+  }
+  component git
+  component gitolite
+  gitolite -- local
+  git -- github
+  git -- local
+  r -- p
+}
+
+@enduml

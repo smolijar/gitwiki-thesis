@@ -23,7 +23,21 @@ YFM-Yaml front matter
 HTML-Hypertext Markup Language
 FS-File system
 TOC-Table of contents
+FE-Front-end
+BE-Back-end
+SSHD-SSH daemon
+DOM-Document Object Model
+JSX-JavaScript XML
+UX-User Experience
+MVC-Model-View-Controller
+SSR-Server-Side rendering
 %glossaries
+Angular 2-A TypeScript-based open-source front-end web application platform
+React-A JavaScript library for building user interfaces.
+Vue-An open-source JavaScript framework for building user interfaces.
+Ember-An open-source JavaScript web framework, based on the Model–view–viewmodel (MVVM) pattern.
+Redux-An open-source JavaScript library for managing application state.
+Next.js-Framework for server-rendered or statically-exported React applications.
 textarea-An HTML element
 Git-Popular distributed VCS for non-linear workflow
 Pandoc-A universal document converter tool

@@ -1,4 +1,4 @@
-# Repository providers - Unified authorization
+# Repository providers - Unified authorization {#sec:repository-providers}
 
 The key to bringing benefits of both, radically different architectural approaches, is to create a solid abstraction layer for the repository within the application as well for the means of retrieving and publishing them -- the repository providers.
 
