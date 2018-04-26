@@ -1,0 +1,9 @@
+Section,Method,Url template
+Tree,GET,/api/v1/repos/<provider>/<name>/tree/<ref>/<path>
+Tree,PATCH,/api/v1/repos/<provider>/<name>/tree/<ref>
+Tree,GET,/api/v1/repos/<provider>/<name>/refs
+Repo,GET,/api/v1/repos
+Auth,GET,/api/v1/user
+Auth,GET,/api/v1/auth/github
+Auth,POST,/api/v1/auth/github/personal-access-token
+Auth,GET,/api/v1/auth/github/cb

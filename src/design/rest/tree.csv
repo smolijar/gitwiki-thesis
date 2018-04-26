@@ -1,0 +1,5 @@
+Response code;When
+200;success
+401;user not authenticated and accessing private data
+403;user authenticated but unauthorized
+404;provider, repository, ref or path not found
