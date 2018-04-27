@@ -1,4 +1,4 @@
-# FE
+# Front-End
 
 The FE application is build of the following composites:
  

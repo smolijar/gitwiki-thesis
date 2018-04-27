@@ -1,0 +1,43 @@
+@startuml
+left to right direction
+
+folder "Emily editor" {
+  folder Components {
+    component Editor
+    component CommandPalette
+    component Outline
+    component StatusBar
+    folder editor {
+      card autosave
+      card commands
+      card lineNinja
+    }
+    folder outline {
+      component SortableList
+    }
+  }
+  folder Modes {
+    component Asciidoc
+    component Markdown
+    card bootstrap
+  }
+  folder Helpers {
+    card helpers
+  }
+}
+
+Editor *-- CommandPalette
+Editor *-- Outline
+Editor *-- StatusBar
+
+Editor o-- Modes
+
+Editor -- editor
+Outline -- outline
+
+Asciidoc -- bootstrap
+Markdown -- bootstrap
+
+Components - helpers
+Modes - helpers
+@enduml

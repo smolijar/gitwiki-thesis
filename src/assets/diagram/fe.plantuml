@@ -62,18 +62,18 @@ folder "Front-end application" {
   }
 }
 
-Pages -left- layout
-Pages -- breadcrumbs
-Pages -- sidemenu
-layout -- widget
+Pages *-left- layout
+Pages o-- breadcrumbs
+Pages o-- sidemenu
+layout o-- widget
 index -- personalToken
-breadcrumbs -- references
+breadcrumbs *-- references
 
-index -- indexEntry
-repoIndex -- index
-sidemenu -- modal
-repoTree -- preview
-repoEdit -- edit
+index o-- indexEntry
+repoIndex o-- index
+sidemenu *-- modal
+repoTree o-- preview
+repoEdit o-- edit
 
 Reducers -- types
 Sagas -- actions

@@ -37,6 +37,7 @@ JSON-JavaScript Object Notation
 SHA-Secure Hash Algorithm
 HOC-Higher-Order Component
 XHR-XMLHttpRequest
+CSS-Cascading Style Sheets
 %glossaries
 Angular 2-A TypeScript-based open-source front-end web application platform
 React-A JavaScript library for building user interfaces.
