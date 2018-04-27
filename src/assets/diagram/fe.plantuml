@@ -1,0 +1,88 @@
+@startuml
+' left to right direction
+
+folder "Front-end application" {
+  folder ReactComponents {
+    folder Pages {
+      folder Repo as repoPages {
+        frame "Index" as repoIndex
+        frame "Edit" as repoEdit
+        frame "Tree" as repoTree
+      }
+      frame "Index" as indexPage
+    }
+    folder Components {
+      component "Breadcrumbs" as breadcrumbs
+      component "Layout" as layout
+      component "SideMenu" as sidemenu
+      folder Repo as repoComponents {
+        component "References" as references
+        folder Revision as revisionComponents {
+          component "Modal" as modal
+        }
+        folder Index as indexComponents {
+          component "Index" as index
+          component "IndexEntry" as indexEntry
+        }
+        folder Blob as blobComponents {
+          component "Preview" as preview
+          component "Edit" as edit
+        }
+      }
+      folder User as userComponents {
+        component "PersonalToken" as personalToken
+        component "Widget" as widget
+      }
+    }
+  }
+  folder Redux as redux {
+    folder Actions {
+      card "actions" as actions
+      card "types" as types
+    }
+    folder Reducers {
+      card "repoReducer" as repoReducer
+      card "userReducer" as userReducer
+    }
+    folder Sagas {
+      card "apiSaga" as apiSaga
+    }
+    folder Store {
+      card "configureStore" as configureStore
+      storage store
+    }
+  }
+  folder Client as client {
+    card "auth" as auth
+    card "propTypes" as propTypes
+  }
+  folder Common as common {
+    card "endpoints" as endpoints
+    card "fetchApi" as fetchApi
+  }
+}
+
+Pages -left- layout
+Pages -- breadcrumbs
+Pages -- sidemenu
+layout -- widget
+index -- personalToken
+breadcrumbs -- references
+
+index -- indexEntry
+repoIndex -- index
+sidemenu -- modal
+repoTree -- preview
+repoEdit -- edit
+
+Reducers -- types
+Sagas -- actions
+
+ReactComponents -- store
+ReactComponents -- actions
+ReactComponents -up- fetchApi
+ReactComponents -up- endpoints
+ReactComponents - propTypes
+
+widget -- auth
+@enduml

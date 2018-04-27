@@ -35,6 +35,8 @@ REST-Representational State Transfer
 HTTPS-Secure Hyper Text Transfer Protocol
 JSON-JavaScript Object Notation
 SHA-Secure Hash Algorithm
+HOC-Higher-Order Component
+XHR-XMLHttpRequest
 %glossaries
 Angular 2-A TypeScript-based open-source front-end web application platform
 React-A JavaScript library for building user interfaces.
@@ -46,4 +48,5 @@ textarea-An HTML element
 Git-Popular distributed VCS for non-linear workflow
 Pandoc-A universal document converter tool
 toolbar-A row of symbols (icons) on a screen that show the different things that you can do with a particular program
-Flow-TODO
+Flow-Static Type Checker for JavaScript
+PropTypes-Type-checking definitions for React components
