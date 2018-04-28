@@ -22,10 +22,37 @@ As seen in the diagram, server's repositories are exposed via SSH protocol.
 ## BE structure
 
 
-![Design: Architecture of the application](./src/assets/diagram/architecture-be){#fig:design:architecture:be width=90%}
+![Design: Architecture of the application](./src/assets/diagram/architecture-be){#fig:design:architecture:be width=100%}
 
-Basic BE structure is visible on the diagram @fig:design:architecture:be.
+Essential BE structure is visible on the diagram @fig:design:architecture:be.
+
+### Routers and controllers
+
+Routers bind routes defined in endpoints to controllers and transform known errors to HTTP codes and appropriate responses.
+
+Notice that there is no controller for FE requests, nor for static files.
+FE requests are passed onto Next.js handlers, which responds to basic error codes and static router is as well handled by an existing service -- express.js static router.
+No further decoupling is necessary.
+
+The controllers always return a Promise^[for the convenience of uniform handling by routers] and prepare response after gathering required data from the application.
+
+This are usually repository providers or user information form Auth package.
 
 Though the diagram might seem simple it shows all the main components.
 
-TODO ELABORATE
+### Repository providers
+
+All providers decorate and setup parameters for the git package.
+This includes setting the authentication callbacks, repository URLs etc.
+
+Local provider communicates with the gitolite module, which is an interface for the gitolite CLI wrapper.
+
+Providers generally access API for shared configuration through Config module, which is an interface for easy access to required part of the hierarchical configuration file.
+
+### Git module
+
+Git module is a set of higher-abstraction methods over Git repositories to suit Gitwiki needs.
+
+It uses third party library NodeGit, which provides libgit2 bindings to Node.js.
+These two libraries are shown on the diagram, but only for the sake of communication.
+They are not part of the implementation.

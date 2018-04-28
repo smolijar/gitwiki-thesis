@@ -1,22 +1,59 @@
 @startuml
 left to right direction
 
-
 card "Back-end\napplication" as be {
   folder Routers as r {
+    component "Root Router" as rroot
     component "API Router" as rapi
     component "FE Router" as rfe
+    component "Static Router" as rsta
+    rroot -- rapi
+    rroot -- rfe
+    rroot -- rsta
+  }
+  folder Controllers as c {
+    component "API Controller" as capi
+  }
+  folder Auth as a {
+    card "authentication" as authentication
+    card "github" as github
   }
   folder "Repository providers" as p {
-    component "GitHub Provider" as github
-    component "Local Provider" as local
+    component "GitHub Provider" as githubProv
+    component "Local Provider" as localProv
   }
-  component git
-  component gitolite
-  gitolite -- local
-  git -- github
-  git -- local
-  r -- p
+  folder Common as common {
+    card "endpoints" as endpoints
+  }
+  ' folder Src as s {
+    component "Logger" as logger
+    component "Storage" as storage
+    component "Config" as config
+    component git as git {
+      card browse
+      card commit
+      card refs
+      card transport
+    }
+    component gitolite
+    component NodeGit
+    component libgit2
+  ' }
+  gitolite -- localProv
+  git -- githubProv
+  git -- localProv
+  rapi -- capi
+  rapi -- a
+  r - logger
+  c - a
+  storage -- a
+  p -- config
+  gitolite -- config
+  c -- p
+  r -- endpoints
+  git -- NodeGit
+  NodeGit -- libgit2 
+
 }
 
 @enduml
