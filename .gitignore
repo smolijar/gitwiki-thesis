@@ -18,6 +18,8 @@
 /*.gls
 /*.glsdefs
 /*.ist
+/*.lot
+/*.mw
 /_minted-*
 
 # Source text files

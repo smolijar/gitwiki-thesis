@@ -5,10 +5,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Chapter Design
+- Chapter UI wireframe testing
 
 ## [0.4.1] - 2018-04-23
 ### Fixed
-- Chapter 3 from somliji and myself
+- Chapter 3 from smoliji and myself
 
 ## [0.4.0] - 2018-04-19
 ### Added

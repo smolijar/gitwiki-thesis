@@ -43,3 +43,13 @@ sudo chmod -R 0775 /home/git/
 
 PRAVA PRO GITOLITE https://unix.stackexchange.com/questions/37164/ssh-and-home-directory-permissions
 
+
+
+chmod g+s <directory>  //set gid 
+
+
+https://unix.stackexchange.com/questions/1314/how-to-set-default-file-permissions-for-all-folders-files-in-a-directory
+
+sudo setfacl -d -m g::rwx /home/git/.gitolite/logs/
+
+getfacl /home/git/.gitolite/logs/

@@ -1,0 +1,33 @@
+@startuml
+' left to right direction
+
+
+node Server {
+  cloud "Local SSHD\nwith Gitolite" as gitolite
+  card "Back-end\napplication" as be
+}
+
+cloud GitHub as gh
+
+node "Client's Browser" as client {
+  card "Front-end\napplication" as fe
+}
+
+actor Alice
+
+
+fe -0)- be : "\n   REST API"
+be -right0)- gitolite : "SSH"
+be -0)- gh : "REST    \nAPI    "
+be -0)- gh : "  HTTPS"
+note right on link
+This is used
+for remote
+repository
+manipulation
+end note
+
+Alice -left0)- client: "   WUI    "
+Alice -(0- gitolite: "  SSH"
+
+@enduml

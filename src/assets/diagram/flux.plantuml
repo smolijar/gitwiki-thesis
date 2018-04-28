@@ -1,0 +1,17 @@
+@startuml
+' left to right direction
+
+state "Action" as a
+state "Action" as a2
+state "Dispatcher" as d
+state "Store" as s
+state "View" as v
+
+a -> d
+d -> s
+s -> v
+v --> a2
+a2 -> d
+
+
+@enduml

@@ -43,3 +43,5 @@ clean:
 	rm -f DP_Smolik_Jaroslav_2018.gls
 	rm -f DP_Smolik_Jaroslav_2018.glsdefs
 	rm -f DP_Smolik_Jaroslav_2018.ist
+	rm -f DP_Smolik_Jaroslav_2018.lot
+	rm -f DP_Smolik_Jaroslav_2018.mw

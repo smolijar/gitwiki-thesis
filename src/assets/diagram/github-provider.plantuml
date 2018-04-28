@@ -1,0 +1,30 @@
+@startuml
+actor Alice as usr
+participant Application as app
+participant "GitHub Provider" as prov
+participant "GitHub" as github
+participant "GitHub API" as api
+
+usr -> app: List repos
+app -> prov: List repositories\nfor Alice
+prov -> api: GET /list\n(Alice access_token)
+api --> prov:
+prov --> app:
+app --> usr:
+
+usr -> app: Show Foo repository
+app -> prov: Get Foo repo
+prov -> github: git clone https://github.com:foo\nalice:access_token
+github --> prov
+prov --> app:
+app --> usr:
+
+usr -> app: Change Foo
+app -> prov: Commit and push
+prov -> prov: Commit on Foo
+prov -> github: git push ...\nalice:access_token
+github --> prov
+prov --> app
+app --> usr
+
+@enduml
