@@ -16,6 +16,18 @@
 ** link:./src/state-of-art/gollum.md[Gollum]
 ** link:./src/state-of-art/wikijs.md[Wiki.js]
 ** link:./src/state-of-art/_summary.md[Summary]
+* link:./src/design/_intro.md[Design]
+** link:./src/design/foundations.md[Foundations]
+** link:./src/design/providers.md[Repository Providers]
+** link:./src/design/authentication.md[Authentication]
+** link:./src/design/tools.md[Tools]
+** link:./src/design/architecture.md[Architecture]
+** link:./src/design/rest.md[Rest API]
+** link:./src/design/ui.md[UI]
+** link:./src/design/fe.md[Front end]
+** link:./src/design/emily.md[Emily]
+** link:./src/design/_summary.md[Summary]
+* link:./src/heuristics.md[UI wireframe testing]
 
 == PDF generate
 
