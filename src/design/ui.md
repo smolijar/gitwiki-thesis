@@ -1,4 +1,4 @@
-# UI
+# UI {#sec:design:ui}
 
 In this section the designed wireframe UI will be presented.
 
