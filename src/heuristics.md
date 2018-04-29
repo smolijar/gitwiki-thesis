@@ -1,9 +1,9 @@
-In this chapter I shall subdue the designed wireframes to a static form of usability testing, heuristic analysis.
+In this chapter I shall subdue the designed wireframes to a static form of usability testing, the heuristic analysis.
 
 Jakob Nielsen's heuristics[@nn:heuristics] will be used to analyze existing wireframes.
-
 I will go through the 10 points of the heuristics individually and discuss how the design holds up to them.
-The names and brief descriptions are cited from [@nn:heuristics].
+
+_The names and brief descriptions are directly quoted from [@nn:heuristics]._
 
 # Analysis
 
@@ -11,7 +11,7 @@ The names and brief descriptions are cited from [@nn:heuristics].
 _"The system should always keep users informed about what is going on, through appropriate feedback within reasonable time."_
 
 The trying part of the status are the changes.
-Though system provides summary through the commit modal, perhaps the status should be visible even without extra interaction, at least in form of binary _clear -- no changes_ vs _modified -- some pending changes_.
+Though system provides summary through the commit modal, perhaps the status should be visible even without extra interaction, at least in form of binary indicator _clear -- no changes_ vs _modified -- some pending changes_.
 
 The repository index is missing the breadcrumbs menu, which should be available, no matter it is less important than in the tree traversing.
 
@@ -25,10 +25,10 @@ What is confusing is the usage of tabular menu for views of the file as well as 
 Perhaps the tabular menu should only hold the different read-only views of the file and write-operations moved elsewhere.
 
 3. **User control and freedom**
-_"Users often choose system functions by mistake and will need a clearly marked "emergency exit" to leave the unwanted state without having to go through an extended dialogue. Support undo and redo."_
+_"Users often choose system functions by mistake and will need a clearly marked 'emergency exit' to leave the unwanted state without having to go through an extended dialogue. Support undo and redo."_
 
 This is achieved through the cumulative changes.
-Need of user to commit is thusly reduced to the bare minimum, whence they can review changes before submitting.
+Need of user to commit is thusly reduced to the bare minimum, when they can review changes before submitting.
 
 4. **Consistency and standards**
 _"Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions."_
@@ -84,8 +84,8 @@ Each bullet also includes a number of the figure with corrected wireframe.
 ![Wireframe: File preview  after heuristic analysis](./src/assets/images/ui/blob-fixed){#fig:ui:blob-fix width=100%}
 
 
-- Added breadcrumbs menu to repository index @fig:ui:index-fix
-- Visually distinguishable (via icons) provider indication added @fig:ui:index-fix
-- Restructured tabular menu and moved items resembling actions into side menu @fig:ui:blob-fix
-- Added simple indicator to pending changes for the commit^[Similar mechanism is used in Git CLI, when CLI prompt is decorated to indicate there are pending changes in working directory, index or in stash.] @fig:ui:blob-fix
+- Added breadcrumbs menu to repository index -- image @fig:ui:index-fix
+- Visually distinguishable (via icons) provider indication added -- image @fig:ui:index-fix
+- Restructured tabular menu and moved items resembling actions into side menu -- image @fig:ui:blob-fix
+- Added simple indicator to pending changes for the commit^[Similar mechanism is used in Git CLI, when CLI prompt is decorated to indicate there are pending changes in working directory, index or in stash.] -- image @fig:ui:blob-fix
 - Prompt confirm for discarding changes in modal commit will be required.
