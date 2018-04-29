@@ -17,6 +17,6 @@ for f in $(find $DIR/../src -name '*.md'); do
     
     $DIR/abbr.rb |
     # mint inline isntead of lstinline
-    sed "s@\\\lstinline@\\\mintinline{latex}@g"> "${f%.*}".tex
+    sed "s@\\\lstinline@\\\mintinline{text}@g"> "${f%.*}".tex
 
 done
