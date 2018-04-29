@@ -41,6 +41,8 @@ HOC-Higher-Order Component
 XHR-XMLHttpRequest
 CSS-Cascading Style Sheets
 NUR-Návrh uživatelského rozhraní (User Interface Design)
+UID-User ID
+UNIX-Uniplexed Information Computing System
 %glossaries
 Angular 2-A TypeScript-based open-source front-end web application platform
 React-A JavaScript library for building user interfaces.
