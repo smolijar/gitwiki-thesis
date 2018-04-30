@@ -26,6 +26,7 @@ FS-File system
 TOC-Table of contents
 FE-Front-end
 BE-Back-end
+PR-Pull Request
 SSHD-SSH daemon
 DOM-Document Object Model
 JSX-JavaScript XML
@@ -43,6 +44,7 @@ CSS-Cascading Style Sheets
 NUR-Návrh uživatelského rozhraní (User Interface Design)
 UID-User ID
 UNIX-Uniplexed Information Computing System
+NPM-Node.js Package Manager
 %glossaries
 Angular 2-A TypeScript-based open-source front-end web application platform
 React-A JavaScript library for building user interfaces.
