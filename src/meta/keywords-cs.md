@@ -1,1 +1,1 @@
-TODO czech keywords
+wiki systém, webová aplikace, Git, jednoduché značkovací jazyky, JavaScript, Node.js
