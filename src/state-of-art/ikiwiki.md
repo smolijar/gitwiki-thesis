@@ -19,9 +19,9 @@ This allows to create a private wiki as a whole, as well as to pinpoint the page
 The page selection for required authentication is defined using _PageSpec_[@ikiwiki:pagespec].
 This allows to define the pages as mere list of their names but also using advanced functions for matching links to pages, date creation or users' pages.
 PageSpec is a surprisingly powerful tool, as shown in the following sample.
-"_For example, to match all pages in a blog that link to the page about music and were written in 2005_"[@ikiwiki:pagespec] use PageSpec displayed in listing \ref{lst:ikiwiki:pagespec}.
+"_For example, to match all pages in a blog that link to the page about music and were written in 2005_"[@ikiwiki:pagespec] use PageSpec displayed in listing \ref{lst:ikiwiki:pagespec}[@ikiwiki:pagespec].
 
-```{language=lisp caption="Ikiwiki: PageSpec example \cite{@ikiwiki:pagespec}" label="lst:ikiwiki:pagespec"}
+```{language=lisp caption="Ikiwiki: PageSpec example" label="lst:ikiwiki:pagespec"}
 blog/* and link(music) and creation_year(2005)
 ```
 
