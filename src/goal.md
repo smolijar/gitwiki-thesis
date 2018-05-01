@@ -27,9 +27,9 @@ or _Wiktionary_ [@wiktionary] as a community developed multilingual open diction
 The reasonable question before we proceed would be: _"What is the topic of gitwiki"_?
 _Gitwiki_ is not a _wiki_ as Wikipedia.
 It is a _wiki software_ which can be used to create a topic oriented _wikis_.
-A great example of a wiki software is Github Wikis [@github:wikis], for instance.
-It is a part of Github web application that allows users to provide e.g. user manuals to software repositories etc.
-Github Wikis have no topic though it is expected to be used to create an elaborate software documentation, for a specific software.
+A great example of a wiki software is GitHub Wikis [@github:wikis], for instance.
+It is a part of GitHub web application that allows users to provide e.g. user manuals to software repositories etc.
+GitHub Wikis have no topic though it is expected to be used to create an elaborate software documentation, for a specific software.
 Such product is a _wiki_ as we described it binding its contents by a specific topic.
 
 
