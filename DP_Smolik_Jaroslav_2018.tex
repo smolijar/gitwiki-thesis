@@ -111,18 +111,29 @@ fontsize=\small
 
 \chapter{Contents of enclosed CD}
 
-% TODO change appropriately
-
 \begin{figure}
 	\dirtree{%
-		.1 readme.txt\DTcomment{the file with CD contents description}.
-		.1 exe\DTcomment{the directory with executables}.
-		.1 src\DTcomment{the directory of source codes}.
-		.2 wbdcm\DTcomment{implementation sources}.
-		.2 thesis\DTcomment{the directory of \LaTeX{} source codes of the thesis}.
-		.1 text\DTcomment{the thesis text directory}.
-		.2 thesis.pdf\DTcomment{the thesis text in PDF format}.
-		.2 thesis.ps\DTcomment{the thesis text in PS format}.
+		.1 emily-editor\DTcomment{the repository of source codes of the LML editor}.
+		.1 gitwiki\DTcomment{the repository of source codes of the gitwiki system}.
+		.1 gitwiki-thesis\DTcomment{the directory of the thesis, including source codes}.
+		.2 bin\DTcomment{various scripts for thesis generation}.
+		.2 src\DTcomment{thesis source codes}.
+		.3 meta\DTcomment{markdown sources for meta texts}.
+		.3 analysis\DTcomment{markdown sources for chapter analysis}.
+		.3 state-of-art\DTcomment{markdown sources for chapter state-of-art}.
+		.3 design\DTcomment{markdown sources for chapter design}.
+		.3 implementation\DTcomment{markdown sources for chapter implementation}.
+		.3 test\DTcomment{markdown sources for chapter test}.
+		.3 listing\DTcomment{listings used in the thesis}.
+		.3 assets\DTcomment{static assets of the thesis}.
+		.4 diagram\DTcomment{plantuml source codes of used diagrams}.
+		.4 images\DTcomment{bitmap images}.
+		.2 Makefile\DTcomment{make scripts for diagrams, pandoc and xelatex}.
+		.2 bibliography.bib\DTcomment{the bibliography file}.
+		.2 CHANGELOG.md\DTcomment{the changelog file}.
+		.2 VERSION\DTcomment{the version file}.
+		.2 DP\_Smolik\_Jaroslav\_2018.tex\DTcomment{the thesis root \LaTeX{} file}.
+		.2 DP\_Smolik\_Jaroslav\_2018.pdf\DTcomment{the thesis text in the PDF format}.
 	}
 \end{figure}
 
