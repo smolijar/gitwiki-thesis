@@ -28,6 +28,12 @@
 ** link:./src/design/emily.md[Emily]
 ** link:./src/design/_summary.md[Summary]
 * link:./src/heuristics.md[UI wireframe testing]
+* link:./src/implementation/_intro.md[Implementation]
+** link:./src/implementation/tools.md[Tools]
+** link:./src/implementation/gitolite-permissions.md[Gitolite Permissions]
+** link:./src/implementation/routes.md[Routes]
+** link:./src/implementation/nodegit.md[Nodegit]
+** link:./src/implementation/scrolling.md[Emily -- synchronized scrolling]
 
 == PDF generate
 
