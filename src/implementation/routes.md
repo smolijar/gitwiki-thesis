@@ -163,7 +163,7 @@ Luckily package `path-to-regexp` used by Express.js [@path-to-regexp] provides n
 
 All `generate` function are thus redundant, obsolete and can be generated with with the help of this library.
 
-You can see the differance in the definition in listing \ref{lst:impl:routes:6}, where is the impact most drastic, removing the duplicate isomorphic definitions.
+You can see the difference in the definition in listing \ref{lst:impl:routes:6}, where is the impact most drastic, removing the duplicate isomorphic definitions.
 
 ```{language=js caption="Implementation: Routes uniform definition module -- definition" label="lst:impl:routes:6"}
 const endpoints = {
@@ -176,7 +176,7 @@ const endpoints = {
 exports = endpoints;
 ```
 
-The usage of the new route definition in the BE is almost identical, though we have gotten rid of the wrapper fucntion, returning the `express` pattern from the endpoint, as seen in \ref{lst:impl:routes:7}.
+The usage of the new route definition in the BE is almost identical, though we have gotten rid of the wrapper function, returning the `express` pattern from the endpoint, as seen in \ref{lst:impl:routes:7}.
 
 ```{language=js caption="Implementation: Routes uniform definition module -- back-end" label="lst:impl:routes:7"}
 const { front } = require('../../common/endpoints');

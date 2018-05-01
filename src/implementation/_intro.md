@@ -26,7 +26,7 @@ Both projects have been developed with good manners at heart, thus both include:
 
 - the readme file,
 - the version file with current version of the project,
-- and the changelog file following the _keepachangelog_[@keepachangelog] _"standard"_^[Though beign perhaps the only changelog guideline (thusly I refer to it as standard) its format is more akin to best pracitces and reccomendation on how to write the changelog.].
+- and the changelog file following the _keepachangelog_[@keepachangelog] _"standard"_^[Though being perhaps the only changelog guideline (thusly I refer to it as standard) its format is more akin to best practices and reccomendation on how to write the changelog.].
 
 The projects also:
 
@@ -35,5 +35,5 @@ The projects also:
 
 The editor `grissius/emily-editor` is published[@npm:emily] on NPM.
 
-This introduction sums up the aggregate information about the implementation source codes and in the rest of the chapter, instead of describing the whole process, I shall cover the major difficulties I faced throughout the implementation process and describe the soltion I provided for each one.
+This introduction sums up the aggregate information about the implementation source codes and in the rest of the chapter, instead of describing the whole process, I shall cover some of the major difficulties I faced throughout the implementation process and describe the solution I provided for each one.
 
