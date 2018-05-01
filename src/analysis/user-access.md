@@ -128,7 +128,7 @@ It is relying on the SSH layer to perform a secure authentication via key-pair a
 Gitolite must just take a good care of managing the `authorized_keys` file.
 
 A valid security question might be, how does Gitolite prevent full SSH access for remote user logging in via SSH as Git user on Gitolite server.
-This is interesting, but is already taken care of by the SSH layer and Gitolite just needs to manage SSH files cautiously.^[Gitolite is given power to manage the `authorized_keys` file, which is a great security thread, for if mis-configured, for example if `command` option (explained in following paragraph) is missing, remote user could access the server with all rights of the `git` user.]
+This is interesting, but is already taken care of by the SSH layer and Gitolite just needs to manage SSH files cautiously.^[Gitolite is given power to manage the `authorized_keys` file, which is a great security threat, for if mis-configured, for example if `command` option (explained in following paragraph) is missing, remote user could access the server with all rights of the `git` user.]
 
 
 ```{language=sh caption="Gitolite git user authorized keys file" label="lst:gitolite:authkeys"}
