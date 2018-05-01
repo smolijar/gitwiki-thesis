@@ -31,12 +31,11 @@ $HOME/bin/gitolite setup -pk /tmp/gitolite-admin.pub
 
 
 ## PERSMISIONS
-sudo chmod -R 0775 /home/git/
-
- ~ sudo groupadd gitolite
- ~ sudo usermod -a -G gitolite smolijar 
- ~ sudo chgrp -R gitolite /home/git/
- ~ sudo chmod -R 2775 /home/git/
+sudo groupadd gitolite
+sudo usermod -a -G gitolite smolijar 
+sudo usermod -a -G gitolite git
+sudo chgrp -R gitolite /home/git/
+sudo chmod -R 2775 /home/git/
 
 # SET /etc/ssh/sshd_config StrictModes no
 ~~~

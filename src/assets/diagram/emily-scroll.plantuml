@@ -1,0 +1,20 @@
+@startuml
+actor Alice as u
+participant "Editor" as e
+participant "onEditorScroll" as es
+participant "Preview" as p
+participant "onPreviewScroll" as ps
+
+u -> e: scroll editor
+e -> es: ScrollEvent
+es -> es: find Editor's line
+es -> p: scroll to line
+note right
+Scrolling even programmatically
+will trigger the ScrollEvent
+end note
+p -> ps: ScrollEvent
+ps -> ps: find Preview's line
+ps -> e: scroll to line
+
+@enduml
