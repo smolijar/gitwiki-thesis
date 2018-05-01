@@ -1,0 +1,24 @@
+@startuml
+actor Alice as u
+participant "Editor" as e
+participant "onEditorScroll" as es
+participant "Preview" as p
+participant "onPreviewScroll" as ps
+
+u -> e: scroll editor
+note right: clear
+e -> es: ScrollEvent
+note right: clear
+es -> es: set last scroller
+note right: editor
+es -> es: find Editor's line
+note right: editor
+es -> p: scroll to line
+note right: editor
+p -> ps: ScrollEvent
+note right: editor
+ps -> ps: reset last scroller
+note right: clear
+ps ->x e:
+
+@enduml
