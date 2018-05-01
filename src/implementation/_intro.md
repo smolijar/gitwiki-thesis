@@ -30,10 +30,12 @@ Both projects have been developed with good manners at heart, thus both include:
 
 The projects also:
 
-- adhere to _Semantic Versioning 2.0.0_[@semver] with published releases via Git tags on GitHub repositories and
+- adhere to _Semantic Versioning 2.0.0_[@semver] with published releases via Git tags on GitHub repositories,
+- follow the Airbnb JS style guide [@airbnb:standard] using ESLint and
 - have been developed via feature branch workflow.
 
 The editor `grissius/emily-editor` is published[@npm:emily] on NPM.
 
-This introduction sums up the aggregate information about the implementation source codes and in the rest of the chapter, instead of describing the whole process, I shall cover some of the major difficulties I faced throughout the implementation process and describe the solution I provided for each one.
+This introduction sums up the aggregate information about the implementation source codes.
+In the following section I will more notable dependencies used in the system and in the rest of the chapter, instead of describing the whole realisation development, I shall cover some of the major difficulties I faced throughout the implementation process and describe the solution I provided for each one.
 
