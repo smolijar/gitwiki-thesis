@@ -1,0 +1,71 @@
+@startuml
+skinparam handwritten true
+skinparam monochrome true
+skinparam state {
+  BackgroundColor<<Main>> #999
+}
+[*] -right-> views
+views -right-> [*]
+
+state "Main display modes" as views <<Main>> {
+  state "Source code" as source
+  state "Document preview" as preview
+  state "Two column: Source and preview" as twocol
+  [*] -right-> twocol
+  source --> preview
+  preview --> source
+  source --> twocol
+  twocol --> source
+  twocol --> preview
+  preview --> twocol
+}
+
+state "Appearance in browser" as embed {
+  [*] --> embedded
+  state "Embedded" as embedded
+  state "Fullscreen" as fullscreen
+  embedded --> fullscreen
+  fullscreen --> embedded
+}
+
+state "Other display options" as options {
+  state "Distraction free" as distractionFree
+  distractionFree: Přepne hlavní zobrazovací\nmód na Zdrojový kód
+  state "Line numbers" as ln
+  state "Text wrapping" as wrap
+  state "Outline" as outline
+  state "Spellcheck" as spellcheck
+  distractionFree --> [*]
+  ln --> [*]
+  wrap --> [*]
+  outline --> [*]
+  spellcheck --> [*]
+  [*] --> distractionFree
+  [*] --> ln
+  [*] --> wrap
+  [*] --> outline
+  [*] --> spellcheck
+}
+
+state "Navigation" as nav {
+  state "Line selection" as gotoline
+  state "Search" as search
+  gotoline --> [*]
+  search --> [*]
+  [*] --> gotoline
+  [*] --> search
+}
+
+state "Display help" as help
+help: Modální okno
+
+
+views --> embed
+embed --> views
+views -up-> options
+options --> views
+views --> nav
+nav --> views
+views --> help
+help --> views
+@enduml

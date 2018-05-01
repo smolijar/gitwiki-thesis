@@ -4,12 +4,12 @@ In this section the designed wireframe UI will be presented.
 
 The most significant part of the UI is doubtlessly the editor.
 For that reason, I have proposed it as a subject of MI-NUR term project.
-This has been accepted and I have lead and worked on the UI design with an assembled team. 
+This has been accepted and I have lead and worked on the UI design with an assembled team.
 The project has been completed and successfully submitted and is available[@nur:project] online.
 
 Therefore I will assume the editor UI is taken care of and will use a simple box in the Gitwiki wireframes.
 
-_On the UI design of the editor I have worked with a team. They only contributed only to the project [@nur:project] referred to, but not included in this thesis. I, the author of the thesis am also the author of all the following UI design regarding materials in this section. Members of the team have not contributed to the implementation of the editor nor the system._
+_On the UI design of the editor I have worked with a team. They only contributed only to the project [@nur:project] referred to, but not included in the main content of the thesis. The wireframes from the project are available in an \hyperref[chapter:ui-testing]{appendix}. I, the author of the thesis, am also the author of all the following UI design regarding materials in this section. Members of the team have not contributed to the implementation of the editor nor the system._
 
 ## Repository index
 
