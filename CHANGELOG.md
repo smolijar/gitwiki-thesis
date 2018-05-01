@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+## [0.6.0] - 2018-05-01
 ### Added
 - Chapter Implementation
 
@@ -64,7 +66,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.0.0] - 2017-03-29
 
-[Unreleased]: https://github.com/grissius/markup-editor/compare/v0.5.1...HEAD
+[Unreleased]: https://github.com/grissius/markup-editor/compare/v0.6.0...HEAD
+[0.6.0]: https://github.com/grissius/markup-editor/compare/v0.5.1...v0.6.0
 [0.5.1]: https://github.com/grissius/markup-editor/compare/v0.5.0...v0.5.1
 [0.5.0]: https://github.com/grissius/markup-editor/compare/v0.4.1...v0.5.0
 [0.4.1]: https://github.com/grissius/markup-editor/compare/v0.4.0...v0.4.1
