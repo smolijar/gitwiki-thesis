@@ -87,7 +87,7 @@ Having the proxy capable of handling requests made by server to itself is a smar
 
 `Redux` package includes codes for defining and managing the FE application state.
 
-`Action` package defines action types constants^[This is how action is identified. Every action in Redux is ought to have *type* property with an appropriate string identifier.] as well as action creators, which create action objects from given data^[Usually just setting the mentioned type property.].
+`Action` package defines action types constants^[This is how action is identified. Every action in Redux ought to have *type* property with an appropriate string identifier.] as well as action creators, which create action objects from given data^[Usually just setting the mentioned type property.].
 
 `Reducers` are functions which take the dispatched action and based on its type, transform existing state into a new one in a synchronous fashion.
 

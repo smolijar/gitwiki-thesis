@@ -62,7 +62,7 @@ An example interaction of how the circularity is broken is showed in the diagram
 
 ![Implementation: Emily editor on-scroll listeners 2](./src/assets/diagram/emily-scroll-fix){#fig:impl:emily-scroll-fix width=100%}
 
-The listing @lst:impl:emily:handleeditorscroll shows the authentic implementation of the `handleEditorScroll` event listener.
+The listing \ref{lst:impl:emily:handleeditorscroll} shows the authentic implementation of the `handleEditorScroll` event listener.
 Lines 2 through 6 implement the indicator logic^[`null` stands for *clear* value]
 After that a first visible line of the editor is computed and then preview is scrolled using the method `scrollPreviewToLine`^[This function takes the line, computes the top offset in pixels and sets the appropriate attribute in the `Preview` element.].
 Before asking the editor for the line, it is prompted to reconfigure its renderer, which force updates the editor to react to the current scrolling event, allowing us to get an un-delayed line number.
