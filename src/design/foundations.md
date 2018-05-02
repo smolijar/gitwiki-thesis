@@ -4,13 +4,13 @@ As I discussed the basic concepts of Gitwiki with my supervisor Ing. Jakub Jirů
 
 1. **Remote repository, limited permission control**
 
-This is the approach more or less taken by all reviewed systems in previous chapter.
-The premise is to allow users to work with their existing repositories and remain their remote locations.
+This is the approach more or less taken by all reviewed systems in the previous chapter.
+The premise is to allow the users to work with their existing repositories and remain their remote locations.
 The implementation I had in mind was akin to how Wiki.js handled this issue
--- the application works with local mirror of the repository which is kept synchronized with the remote, thanks to provided access data, like repository link and security configuration (HTTP basic or SSH key-pair authentication).
+-- the application works with the local mirror of the repository which is kept synchronized with the remote, thanks to provided access data, like repository link and security configuration (HTTP basic or SSH key-pair authentication).
 
 
-This approach has following features:
+This approach has the following features:
 
 * Easy setup and installation (no need to configure SSH server)
 * Central public application instance can be used by many users, who can drop in or out at their convenience
@@ -29,7 +29,7 @@ Custom Git hosting service implementation would allow to create (or use existing
     * decentralized organization administration is hard to tackle, even with a sophisticated tool as Gitolite
 * Thus, few users would actually get to use the system
 
-Driven by my desire to reach out to as many users as possible I did not want to leave the former suggestion, though I understood the power of latter.
+Driven by my desire to reach out to as many users as possible I did not want to leave the former suggestion, though I understood the power of the latter.
 Thusly I decided to thrive for the solution a true Meme Queen would suggest: _"Why not both?"_
 
 In the next section I shall describe the concept of _repository providers_, which is a solution I designed to overcome this obstacle.

@@ -71,7 +71,7 @@ It is not surprising that Markdown causes no problems in this matter, given its 
 #### Document outline preview
 
 Show document's TOC.
-This itself is a trivial matter, given that we already have a tool to generate HTML from source.
+This itself is a trivial matter, given that we already have a tool to generate HTML from the source.
 The only thing we need is to parse the HTML result, gather the headings and create a hierarchical structure.
 
 However, while this would work most of the time, Asciidoc for instance has syntax for excluding a section out of the TOC.
@@ -94,7 +94,7 @@ One could count the duplicates, but that would require detecting only the headin
 2. Filter heading markup, save the line number
 
 Let us not transform the document as a whole, but let us cherry-pick the heading lines first in source code and then transform them with provided function.
-Then we get the HTML heading as well as the line number in source code we remembered.
+Then we get the HTML heading as well as the line number in the source code we remembered.
 
 This approach seemed good enough to me at first, using simple regular expressions to pick the valid lines and worked flawlessly for the most part.
 
@@ -163,7 +163,7 @@ It will utterly fail on larger documents, even with regular markup.
 2. Synchronized cursor
 
 This is the solution I implemented in the early prototype.
-The idea is, to modify the source markup before rendering and sneakily insert a mark on the cursor that will be recognized and replaced in the HTML with invisible element.
+The idea is to modify the source markup before rendering and sneakily insert a mark on the cursor that will be recognized and replaced in the HTML with invisible element.
 
 That is generally not a terrible idea, but it requires the language mode to `safelyInsert` the ninja to any given line.
 Most of the time it is simple for Markdown and Asciidoc alike, though none of them have syntax for in-line comments.

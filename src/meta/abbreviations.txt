@@ -42,7 +42,6 @@ SHA-Secure Hash Algorithm
 HOC-Higher-Order Component
 XHR-XMLHttpRequest
 CSS-Cascading Style Sheets
-NUR-Návrh uživatelského rozhraní (User Interface Design)
 UID-User Identifier
 UNIX-Uniplexed Information Computing System
 NPM-Node.js Package Manager
@@ -70,3 +69,4 @@ wireframe-Low-fidelity, simplified outline of the product's UI
 404-HTTP Not Found
 Promise-Object representing the eventual completion (or failure) of an asynchronous operation, and its resulting value
 local storage-Window property which allows to save key/value pairs in a web browser
+NUR-Návrh uživatelského rozhraní (User Interface Design)

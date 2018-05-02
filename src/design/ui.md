@@ -36,8 +36,8 @@ From the breadcrumbs menu itself, there is a sidebar menu and the main content.
 
 The side-menu hold link to commit screen and list of files in the current directory.
 
-The main content is tabbed and provides interface for switching between following views of the current file:
- 
+The main content is tabbed and provides an interface for switching between following views of the current file:
+
  - Preview (if available)
  - Source code view
  - Editing form
@@ -52,7 +52,7 @@ This wireframe covers the following use cases: *UC-4 Show file*, *UC-7 Change co
 
 ![Wireframe: Repository tree](./src/assets/images/ui/tree){#fig:ui:tree width=100%}
 
-The image @fig:ui:tree holds wireframe to file index in the repository.
+The image @fig:ui:tree holds a wireframe to the file index in the repository.
 
 This is expanded side-menu from the previous wireframe with additional information, like SHA hash to better utilize the room given in the main content section.
 
@@ -62,8 +62,8 @@ This wireframe covers the *UC-3 Traverse tree* and *UC-6 Select revision*.
 
 ![Wireframe: Commit screen](./src/assets/images/ui/commit){#fig:ui:commit width=100%}
 
-I have decided to use modal window for the commit screen, as seen in the image @fig:ui:commit to have it easily accessible, no matter the current page.
+I have decided to use a modal window for the commit screen, as seen in the image @fig:ui:commit to have it easily accessible, no matter the current page.
 
-The window shows brief summary of the accumulated changes, input for the commit message and *Cancel*, *Commit* and *Discard changes* buttons.
+The window shows a brief summary of the accumulated changes, input for the commit message and the *Cancel*, *Commit* and *Discard changes* buttons.
 
 *UC-10 Create revision* is covered by this wireframe.

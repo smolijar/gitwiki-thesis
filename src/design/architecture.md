@@ -49,7 +49,7 @@ Providers generally access shared configuration through `Config` module's API, w
 
 ### Git module
 
-`Git` module is a set of higher-abstraction methods over Git repositories to suit Gitwiki needs.
+The Git module is a set of higher-abstraction methods over Git repositories to suit Gitwiki needs.
 
 It uses third party library NodeGit, which provides libgit2 bindings to Node.js.
 These two libraries are shown on the diagram, but only for the sake of communication.

@@ -1,7 +1,7 @@
 # Front-End
 
 The FE application is built of the following composites:
- 
+
  - Next.js pages^[Next.js pages are technically React components as well, only decorated with required features. Semantically however, they are distinct from simple components in Next.js application.]
  - React components
  - Redux actions, reducers and sagas
@@ -16,10 +16,10 @@ All crucial components and modules from categories above are on the diagram \ref
 
 ## Pages
 
-Pages are React components representing the individual web pages (HTTP responses) served by the server for a user's request.
+The pages are React components representing the individual web pages (HTTP responses) served by the server for a user's request.
 Basically they are responses for all non-API requests.
 
-When used correctly, Next.js will return the first requested page pre-rendered on the server and all the following navigation will happen inside the client application using XHR managed seamlessly by Next.js.
+When used correctly, Next.js will return the first requested page pre-rendered on the server and all the following navigation will happen inside the client application using Fetch API managed seamlessly by Next.js.
 
  - `Index` -- Homepage of Gitwiki
  - `Repo, Index` -- List of available repositories. This page delegates the rendering of the repository entries itself on the component `Index`.
@@ -32,17 +32,17 @@ Some pages may pass `Breadcrumbs` or `SideMenu` component to the `Layout`.
 
 ## Components
 
-Components represent composite or complex UI elements wrapped in a usable unit within Reach application.
+Components represent composite or complex UI elements wrapped in a usable unit within the React application.
 
 ### Layout
 - `Layout` -- HOC component wrapping page contents with reusable layout widgets. It uses `Widget` to display logged in user data in main navigation bar.
 - `SideMenu` -- Context-relevant secondary navigation. This includes button triggering commit modal, thusly using related component.
 - `Breadcrumbs` -- Breadcrumbs menu uses `References`.
 
-### User 
+### User
 
-- `User, Widget` -- Displays login button or logged-in user data.
-- `User, PersonalToken` -- Form control allowing user to publish GitHub personal access token to access their repositories.
+- `User, Widget` -- Displays the login button or logged-in user data.
+- `User, PersonalToken` -- Form control allowing the user to publish GitHub personal access token to access their repositories.
 
 ### Repo
 
@@ -66,10 +66,10 @@ All Pages and some components are connected to Redux store, from which they can 
 
 ## Client
 
-This package holds modules usable by client code and not the server.
+This package holds modules usable by the client code and not the server.
 
 There are PropTypes definitions, which is convenient, for they are usually shared and composited.
-Apart from that there is a small module for persisting user session in the _local storage_, for keeping the session in FE application.
+Apart from that there is a small module for persisting user session in the _local storage_, for keeping the session in the FE application.
 
 ## Common
 
@@ -85,14 +85,14 @@ Having the proxy capable of handling requests made by server to itself is a smar
 
 ## Redux
 
-`Redux` package includes codes for defining and managing the FE application state.
+The Redux package includes codes for defining and managing the FE application state.
 
 `Action` package defines action types constants^[This is how action is identified. Every action in Redux ought to have *type* property with an appropriate string identifier.] as well as action creators, which create action objects from given data^[Usually just setting the mentioned type property.].
 
 `Reducers` are functions which take the dispatched action and based on its type, transform existing state into a new one in a synchronous fashion.
 
-`Sagas` are like reducers in a way.
-They can react to triggered actions, but they cannot create a new state.
+`Sagas` are tools for creating side effects.
+They can react to the triggered actions, but they cannot create a new state.
 They can only trigger new actions.
 This is useful for asynchronous operations.
 

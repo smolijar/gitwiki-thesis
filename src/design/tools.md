@@ -39,12 +39,12 @@ The main idea behind Flux is to linearize the uncontrolled flow between models a
 
 This component is called _dispatcher_.
 It consumes _actions_ and updates the _store_ in reaction.
-The _store_ defines the _view_ (_view_ renders data from _store_), and can pass new _actions_ to the dispatcher.
+The _store_ defines the _view's_ state (_view_ renders data from _store_), and can pass new _actions_ to the dispatcher.
 This flow is displayed on the diagram @fig:design:flux.
 
 ![Design: Flux architecture](./src/assets/diagram/flux){#fig:design:flux width=65%}
 
-Flux is general architecture concept and though having its Facebook's implementation of the core modules, there are many other existing options.
+Flux is a general architecture concept and though having its Facebook's implementation of the core modules, there are many other existing options.
 
 One of those is Redux[@redux], which I shall use.
 It also offers Redux-Saga[@redux-saga] for asynchronous action consumption (synchronous consumptions are handled by so-called _reducers_^[Modules that produce new state based on the previous state with regard to dispatched action]) and works well with Next.js.

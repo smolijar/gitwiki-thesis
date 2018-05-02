@@ -1,6 +1,6 @@
 # Repository providers - Unified authorization {#sec:repository-providers}
 
-The key to bringing benefits of both, radically different architectural approaches, is to create a solid abstraction layer for the repository within the application as well for the means of retrieving and publishing them -- the repository providers.
+The key to bringing the benefits of both, radically different architectural approaches, is to create a solid abstraction layer for the repository within the application as well as for the means of retrieving and publishing -- the repository providers.
 
 ## What API must be provided?
 
@@ -57,23 +57,23 @@ It can, on application level, deny access depending on its own logic.
 This is required for the local provider.
 The paramount objective is to offer unified authorization mechanism over SSH and WUI.
 
-Instead of accessing the repositories directly, with concept of providers, we could design a local provider, that would fetch repositories from and publish to the local machine over SSH.
+Instead of accessing the repositories directly, with the concept of the providers, we could design a local provider, that would fetch the repositories from and publish to the local machine over SSH.
 It would be superb if we could simulate the user's remote control, which alas is not possible^[We would need the user's SSH private key for that.].
-Instead we will simulate the behavior though application logic.
+Instead we will simulate the behavior through application logic.
 
 Gitolite provides a CLI interface with humble but sufficient API to tell us, which user has access to which repository.
 
-You might ask yourself, why don't we use the permission rules directly, since it is stored in plain files.
+Why don't we use the permission rules directly, since it is stored in plain files?
 This could be arranged, but as showcased in section _\hyperref[gitolite]{Gitolite}_ from chapter _\hyperref[chapter:analysis]{Analysis}_, the configuration can be rather complicated.
 Thus it is better to use an existing parser, delivered by the same system.
 
 The solution is not ideal, but is the best available.
 A security bug in application would result in letting users tampering with the Gitolite repositories^[For the application to clone any repository, the application needs master SSH key-pair.], bypassing the Gitolite security system.
-As mentioned earlier, the only way to go through the Gitolite-standard SSH access would require users' private keys, acquiring which is naturally not possible as the result would compromise the core security principles of asymmetric cryptography.
+As mentioned earlier, the only way to go through the Gitolite-standard SSH access would require users' private keys, acquiring which is naturally not possible as it would compromise the core security principles of asymmetric cryptography.
 
-Letting repository providers to perform additional authorization check produces mechanism flexible enough to create even complex provider as local provider communicating with Gitolite.
+Letting repository providers to perform additional authorization check produces mechanism flexible enough to create even complex provider as local provider communication with Gitolite.
 
-Local provider interactions are shown in detail in the diagram @fig:design:local-provider, though some application logic is abstracted, since its goal is to focus on the local provider.
+Local provider interactions are shown in detail in the diagram @fig:design:local-provider, though some application logic is abstracted in order to focus on the local provider.
 
 ## Designed providers
 
@@ -83,7 +83,7 @@ There were several options available from Git hosting services, but for its popu
 
 This brings two main advantages for Gitwiki:
 
-* GitHub is still easily the most popular SCM service in comparison to GitLab or BitBucket; addressing GitHub's user base is far more efficient than other services'.
+* GitHub is still easily the most popular SCM service in comparison to GitLab or BitBucket; addressing the GitHub's user base is far more efficient than other services'.
 * GitHub OAuth 2 can be used in the system as authentication method and public keys can be loaded into Gitolite.
 
 ### Local repository provider
