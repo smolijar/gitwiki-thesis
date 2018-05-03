@@ -5,6 +5,24 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Chapter testing
+- CS and EN abstracts, keywords
+- Acknowledgement
+- NUR project appendix
+
+### Changed
+- Contents of the CD
+
+### Fixed
+- Thread vs Threat #10
+- Bibliography format and titles
+- Github instead of GitHub
+- ought to misuse
+- Messed Ikiwiki cite in listing
+- Wrapping with sloppy
+- Chapter 6, 7, NUR appendix, abstracts (my fixes)
+- Fix chapter design and UI testing (smoliji)
 
 ## [0.6.0] - 2018-05-01
 ### Added
