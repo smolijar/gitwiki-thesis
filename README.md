@@ -52,7 +52,7 @@
 
 #### Testing :construction:
 
-#### [Conclusion](./src/conclusion.md) :construction:
+#### [Conclusion](./src/conclusion.md)
 
 
 ### Appendix sections
