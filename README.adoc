@@ -2,7 +2,15 @@
 
 == Sections to read
 
-* link:./src/introduction.md[Introduction (todo)]
+=== Meta sections
+* link:./src/meta/thanks.md[Acknowlidgements]
+* link:./src/meta/abstract-cs.md[Abstract (cs)]
+* link:./src/meta/keywords-cs.md[Keywords (cs)]
+* link:./src/meta/abstract.md[Abstract]
+* link:./src/meta/keywords.md[Keywords]
+
+=== Tru sections
+* link:./src/introduction.md[Introduction]
 * link:./src/goal.md[Goal]
 * Analysis
 ** link:./src/analysis/business-process.md[Business process]
@@ -34,6 +42,11 @@
 ** link:./src/implementation/routes.md[Routes]
 ** link:./src/implementation/nodegit.md[Nodegit]
 ** link:./src/implementation/scrolling.md[Emily -- synchronized scrolling]
+* link:./src/conclusion.md[Conclusion]
+
+=== Appendix sections
+
+* link:./src/nur.md[MI-NUR project highlights]
 
 == PDF generate
 
@@ -51,6 +64,3 @@ More like notes for myself anyway.
  * pandoc (for markdown to latex)
  * plantuml (for UML diagrams; must be available under this name in PATH)
  * inkscape (for SVG to PDF)
-
-== Drafts
-See link:./drafts/[drafts folder]
