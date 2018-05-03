@@ -1,7 +1,7 @@
 In this chapter I shall subdue the designed wireframes to a static form of usability testing, the heuristic analysis.
 
-Jakob Nielsen's heuristics[@nn:heuristics] will be used to analyze existing wireframes.
-I will go through the 10 points of the heuristics individually and discuss how the design holds up to them.
+Jakob Nielsen's heuristics[@nn:heuristics] will be used to analyze the existing wireframes.
+I will go through the 10 points of the heuristic individually and discuss how the design holds up to them.
 
 _The names and brief descriptions are directly quoted from [@nn:heuristics]._
 
@@ -10,8 +10,8 @@ _The names and brief descriptions are directly quoted from [@nn:heuristics]._
 1. **Visibility of system status**
 _"The system should always keep users informed about what is going on, through appropriate feedback within reasonable time."_
 
-The trying part of the status are the changes.
-Though system provides summary through the commit modal, perhaps the status should be visible even without extra interaction, at least in form of binary indicator _clear -- no changes_ vs _modified -- some pending changes_.
+The trying part of the system status are the pending changes.
+Though the system provides a summary through the commit modal, perhaps the status should be visible even without the extra interaction, at least in form of a binary indicator _clear -- no changes_ vs _modified -- some pending changes_.
 
 The repository index is missing the breadcrumbs menu, which should be available, no matter it is less important than in the tree traversing.
 
@@ -28,7 +28,7 @@ Perhaps the tabular menu should only hold the different read-only views of the f
 _"Users often choose system functions by mistake and will need a clearly marked 'emergency exit' to leave the unwanted state without having to go through an extended dialogue. Support undo and redo."_
 
 This is achieved through the cumulative changes.
-Need of user to commit is thusly reduced to the bare minimum, when they can review changes before submitting.
+The need of the user to commit is thusly reduced to the bare minimum, when they can review changes before submitting.
 
 4. **Consistency and standards**
 _"Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform conventions."_
@@ -62,12 +62,12 @@ It is mostly delivered through direct SSH repository access and notable in the e
 _"Dialogues should not contain information which is irrelevant or rarely needed. Every extra unit of information in a dialogue competes with the relevant units of information and diminishes their relative visibility."_
 
 Only viable information is displayed.
-Some UI elements are compactly composed in order to diminish distraction, such as use of reference menu in breadcrubs. 
+Some UI elements are compactly composed in order to diminish distraction, such as use of reference menu in breadcrumbs.
 
 9. **Help users recognize, diagnose, and recover from errors**
 _"Error messages should be expressed in plain language (no codes), precisely indicate the problem, and constructively suggest a solution."_
 
-No error messages are present in current design.
+No error messages are present in the current design.
 
 10. **Help and documentation**
 _"Even though it is better if the system can be used without documentation, it may be necessary to provide help and documentation. Any such information should be easy to search, focused on the user's task, list concrete steps to be carried out, and not be too large."_
@@ -88,4 +88,4 @@ Each bullet also includes a number of the figure with corrected wireframe.
 - Visually distinguishable (via icons) provider indication added -- image @fig:ui:index-fix
 - Restructured tabular menu and moved items resembling actions into side menu -- image @fig:ui:blob-fix
 - Added simple indicator to pending changes for the commit^[Similar mechanism is used in Git CLI, when CLI prompt is decorated to indicate there are pending changes in working directory, index or in stash.] -- image @fig:ui:blob-fix
-- Prompt confirm for discarding changes in modal commit will be required.
+- Prompt confirm for discarding the changes in modal commit will be required.

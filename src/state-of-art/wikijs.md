@@ -3,7 +3,7 @@
 Wiki.js is a modern capable wiki software powered by Node.js, Markdown and Git[@wikijs], developed by Nicolas Giard et al.
 With the initial release in September 2016, Wiki.js is the youngest contestant.
 
-Being designed with the specific technologies in mind, specialized features are ought to be expected from the project.
+Being designed with the specific technologies in mind, the specialized features ought to be expected from the project.
 As far as non functional requirements and technological restrains go, Wiki.js being a Node.js application, backed by Git only^[The abstraction of used VCS could potentially be a threat, as seen with Gitit not supporting branches] and favoring modern popular LML like Markdown, is by far the closest to our project.
 
 After the installation user is prompted to run configuration wizard^[Configuration can also be set in the `config.yml` configuration file.], where user can set wiki's name, configure MongoDB^[Which is used for user data, not wiki's contents.] default permissions (e.g. is wiki public to anonymous users by default) and remote Git repository and SSH authentication.

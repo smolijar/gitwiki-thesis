@@ -1,17 +1,17 @@
-In this chapter I shall showcase the lo-fi prototype design of Emily editor from the MI-NUR project [@nur:project].
+In this chapter I shall showcase the lo-fi prototype design of the Emily editor from the MI-NUR project [@nur:project].
 
 # Acknowledgement
 
 Contents of this section are separated from the main content, since _all figures_ (diagram and wireframes) in this chapter are taken from the mentioned [@nur:project], which is a result of a teamwork.
 
-The diagram and wireframes have been translated to English.
+The diagram and wireframes have been translated to English by myself for the purpose of the thesis.
 
 I am the author of all texts in this chapter, which only briefly summarize or comment on the figures.
 If the reader is keen for more background information and development of the UI, they may read [@nur:project].
 
 # Task graph
 
-The diagram @fig:taskgraph displays state of the editor through transition of the UI screens.
+The diagram @fig:taskgraph displays transition of the editor states through relations between the UI screens.
 
 ![Emily UI: Task graph](./src/assets/diagram/taskgraph){#fig:taskgraph width=100%}
 

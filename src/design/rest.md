@@ -81,7 +81,7 @@ Its response codes are in the table \ref{tbl:design:rest:tree:get:res}
 Create a Git commit with supplied changes and given commit message on the repository defined by the request's URL as in previous example.
 Use user's credentials as _commiter_ and _author_ from `Authorization` header.
 
-Dear reader might object that using `PATCH`^[`PATCH` method semantics has far more relaxed specification compared to methods `POST`, `PUT`, `DELETE`, which could be used instead.] is impure with regard to REST.
+It might be objected that using `PATCH`^[`PATCH` method semantics has far more relaxed specification compared to methods `POST`, `PUT`, `DELETE`, which could be used instead.] is impure with regard to REST.
 However, there is a very special scenario calling for special solution, which is the `PATCH` method.
 If `POST` method was to be used on the tree, it would semantically only creating tree (or subtree at given path) and _not_ updating.
 Updating could be achieved by `PUT` on the tree, but then in the request the whole new subtree would need to provided.

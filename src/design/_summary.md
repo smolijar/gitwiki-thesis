@@ -1,6 +1,6 @@
 # Summary
 
-In this chapter I went through the design process from abstract concepts to module diagrams, API definitions and even UI.
+In this chapter I went through the design process from abstract concepts to module diagrams, the API definitions and even the UI.
 Though not covering all the components in the same level of detail, because of how vast the system is, I offered the design solutions for the most crucial problems and core components.
 
 On the way, I have provided solution for all problems I pointed out in the previous chapter _\hyperref[chapter:state]{State-of-the-art}_.
