@@ -14,7 +14,7 @@
 
 
 ### Tru sections
-#### [Introduction](./src/introduction.md) :construction:
+#### [Introduction](./src/introduction.md)
 #### [Goal](./src/goal.md) :octopus: :ram:
 #### Analysis
 * [Business process](./src/analysis/business-process.md) :octopus: :ram:
