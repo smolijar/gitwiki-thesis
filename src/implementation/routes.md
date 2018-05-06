@@ -1,5 +1,7 @@
 # Routes
 
+This section tackles the problem of unified, scalable configuration of application's HTTP routing logic, and reusing the setup in BE and FE alike.
+
 The routing in the application, needs to:
 
 - bind routes on Express.js routers and
@@ -10,7 +12,7 @@ Otherwise (in this case), the routing becomes annoying as the application grows.
 
 ## Independent routing logic
 
-Having the BE and FE completely independent is the easiest approach which I started with in the implementation.
+Having the BE and FE completely independent with each other is the easiest approach which I started with in the implementation.
 Than few routes that required formatting its arguments appeared.
 This made me refactor this logic into in-component helper functions as seen in listing \ref{lst:impl:routes:1}.
 
@@ -38,18 +40,18 @@ return(
 ```
 
 Since this is the first time we see the Next.js Link syntax, let me briefly explain what the component does.
-As I mentioned, Next.js provides implementation of client-side navigation, when the application runs in the browser and takes care of the communications with the server.
-This is done not through standard `<a>` anchor tag, but via a HOC `Link`.
+As I mentioned, Next.js provides implementation of client-side navigation, when the application runs in the browser and takes care of the communication with the server.
+This is done not through a standard `<a>` anchor tag, but via a HOC `Link`.
 
-The `Link` accepts (amongst others) the following *props*:
+The `Link` accepts (amongst others) the following React *props*^[React component's properties, are in the API documentation referred to as *props*.]:
 
 - **href**
     - This can be either a sting, referring to the name of the page^[`repo/tree` will load the component in `pages/repo/tree.js`]
-    - Or an object, as seen in the listing \ref{lst:impl:routes:1}, containing the page string under key `pathname` and query parameters in `query`
+    - Or an object, as seen in the listing \ref{lst:impl:routes:1}. The containing the page string under the key `pathname` and the query parameters in `query`
 
 - **as**
 
-If you are using URL parameters, they are internally handled in the Next.js application through query parameters.
+If you are using URL parameters, they are internally handled in the Next.js application through the query parameters.
 To use them in the URL you must define how the URL is going to look like in *as* property, in form of a string.
 
 The *as* property only works in the client navigation.

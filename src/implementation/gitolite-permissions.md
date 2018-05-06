@@ -28,9 +28,9 @@ Let us take a close look on the problems we encounter.
 With default installation, the CLI program, located at `/home/git/bin/gitolite`^[I presume Gitolite uses UNIX user *git*, as in installation manual.], is out of the box executable and lists valid help of the program.
 This seems uplifting but there are more troubles than meets the eye.
 
-When you try to run Gitolite CLI with default configuration, with any arguments that actually do something, for example `/home/git/bin/gitolite list-repos` the joyful expectations crumble.
+When you try to run Gitolite CLI with default configuration, with any arguments that actually do something, for example `/home/git/bin/gitolite list-repos` the hopeful expectations crumble.
 
-The output of the operation under user _smolijar_^[This is my workstation username, which I used to demonstrate issues in this section, thus you might see it in the logs.] is in listing \ref{lst:impl:gitolite:logs}.
+The output of the operation under user _smolijar_^[This is my workstation username, which I used to demonstrate issues in this section, thus you might see it in the logs, and I will use the name to refer to the user, which will run the application.] is in listing \ref{lst:impl:gitolite:logs}.
 
 ```{language=make caption="Implementation: Gitolite log error 1" label="lst:impl:gitolite:logs"}
 FATAL: errors found but logfile could not be created
@@ -39,7 +39,7 @@ FATAL: die	chdir /home/smolijar/.gitolite failed: No such file or directory<<new
 ```
 
 The problem is seemingly banal.
-The gitolite probably utilizes the `$HOME` variable.
+The gitolite probably^[While uncertain now, in a moment it will be apparent that this is true.] utilizes the `$HOME` variable.
 It is creating logs in my home directory in a non-existent folder and tries to access the same folder.
 It should operate on the user it is configured with, in my case the _git_ user.
 
@@ -53,10 +53,10 @@ FATAL: cli	gitolite	list-repos
 ```
 
 It might come as a surprise, but setting the `$HOME` variable worked, and we have successfully convinced Gitolite to use the default home directory.
-This however, brings another failure, which is an unknown error and insufficient permissions to log the error.
+This however, brings us to another failure, which is an unknown error and insufficient permissions to log the error.
 The unknown error might very possibly be caused by the same problem -- the insufficient permissions to access Gitolite's files.
 
-From the current trials we have come to an observation that we need access to _git's_ home directory, at least with write access for the `~/logs/` to successfully log errors and probably with a read access for the `/repositories`, which is most probably the cause of the unknown error.
+From the current trials we have come to an observation that we need an access to _git's_ home directory, at least with the write access for the `~/logs/` to successfully log the errors and probably with a read access for the `/repositories`, which is most probably the cause of the unknown error.
 
 Since we need to allow the access for another user, there are two options.
 
@@ -95,10 +95,10 @@ _"This is the default behavior for SSH. It protects user keys by enforcing `rwx-
 SSH for security reasons kills any incoming connections to users, whose home folders are by its standards insecure.
 
 This can be bypassed by disabling the SSHD option _strict modes_^[Defining `StrictModes no` in `sshd_config`, usually located in `/etc/ssh/sshd_config`.].
-This of course is dangerous and should not be performed on a machine, where the administrator does not have full control over the users, and can guarantee that no user with configured remote access in `authorized_keys` has write access in their home directory.
-If Gitolite is set up properly and only provides authorized access via Gitolite CLI^[As described in analysis, Gitolite authorizes new users but instead of providing them with full access, only allows them to run the Gitolite binary.], it should be due its `command` option safe.
+This of course is dangerous and should not be performed on a machine, where the administrator does not have full control over the users, and can guarantee that no user with a configured remote access in `authorized_keys` has a write access in their home directory.
+If Gitolite is set up properly and only provides authorized access via Gitolite CLI^[As described in the analysis, Gitolite authorizes new users but instead of providing them with the full access, only allows them to run the Gitolite binary.], it should be due its `command` option safe.
 
-*However, this is not required if setting the relaxed permissions only on the subfolder, as suggested!*
+*However, this is not required if setting the relaxed permissions only on the subfolder, as suggested in the previous section!*
 
 ### Owner of log files
 
@@ -108,10 +108,10 @@ It is again a permission problem, and again with log files.
 The issue triggers the same error, as shown in \ref{lst:impl:gitolite:logs2}, but this can happen for either of the users.
 
 The problem is that _the other account_, in my case _smolijar_, creates a new log file, when the log files are swapped or new log is created.
-The log file is created with correct GID (thanks to the `setguid` bit), by the user _smolijar_, but with wrong permissions (no group access).
+The log file is created with the correct GID (thanks to the `setguid` bit), by the user _smolijar_, but with the wrong permissions (no group access).
 
-This could be solved if we could possibly set default set of permissions to be applied on selected folder's new files.
-Not being a UNIX guru, I found the answer in [@stackexchange:def-perm].
+This could be solved if we could possibly set the default set of permissions to be applied on the selected folder's new files.
+A similar problem is discussed in [@stackexchange:def-perm].
 Desired effect can be achieved using the `setfacl` command:
 
 `sudo setfacl -d -m g::rwx /home/git/.gitolite/logs/`^[The `-d` means _use default_, `-m` _modify_ with argument.]
@@ -143,5 +143,5 @@ default:group::rwx
 default:other::r-x
 ```
 
-Notice that three default lines have been added.
+Notice that the three default lines have been added.
 Now all newly created log files by my user _smolijar_ will have the desired relaxed permissions for the group.
