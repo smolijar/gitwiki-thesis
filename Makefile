@@ -21,7 +21,7 @@ arara: md diagrams
 	make pdf
 
 pdf: md
-	xelatex -shell-escape -8bit DP_Smolik_Jaroslav_2018.tex
+	latexmk -xelatex -shell-escape -8bit DP_Smolik_Jaroslav_2018.tex
 
 clean:
 	rm -f DP_Smolik_Jaroslav_2018.aux
