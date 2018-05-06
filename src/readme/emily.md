@@ -34,16 +34,10 @@ npm install --save emily-editor
 3. Use component:
 
 ```{language=js}
-import Emily from 'emily-editor'
-// ...
-
-ReactDOM.render(
-  <Emily />,
-  document.getElementById('container')
-);
+<<readme/emily/use.js>>
 ```
 
-For examples, see [pages](./pages)
+For examples, see [pages](./pages).
 
 ## Props
 
@@ -55,13 +49,7 @@ Language mode object.
 You can use [`generateMode`](#-generatemode-) to create a mode from existing modules.
 
 ```{language=js}
-import Emily, { generateMode } from 'emily-editor'
-// ...
-
-ReactDOM.render(
-  <Emily language={generateMode(/*...*/)} />,
-  document.getElementById('container')
-);
+<<readme/emily/generateMode.js>>
 ```
 
 ### `listFiles(pfx)`
