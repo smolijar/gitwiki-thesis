@@ -50,13 +50,19 @@
 * [Nodegit](./src/implementation/nodegit.md) :octopus:
 * [Emily — synchronized scrolling](./src/implementation/scrolling.md) :octopus:
 
-#### Testing :construction:
+#### Testing
+* [Automatic testing](./src/test/auto.md) :octopus:
+* [Usability testing](./src/test/usability.md) :octopus: :construction:
 
 #### [Conclusion](./src/conclusion.md) :octopus:
 
 
 ### Appendix sections
 * [MI-NUR project highlights](./src/nur.md) :octopus:
+* [Emily user manual](./src/readme/emily.md) :octopus:
+* [Gitwiki user manual](./src/readme/gitwiki.md) :construction:
+* [Emily logo](./src/logo/emily.md) :octopus:
+* [Gitwiki logo](./src/logo/gitwiki.md) :construction:
 
 
 ## PDF generate
