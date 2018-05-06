@@ -13,7 +13,7 @@ While taking a very specific direction, the example case is convenient for two m
 1. it portraits usage of the system by software developers, who are example of _technically oriented users_, as stated in the thesis assignment instructions,
 2. it is elaborate enough to demonstrate the several user types with different needs and expectations of the system. This helps to model it and its variability.
 
-In the scenarios I assume a part of the development team is working on a user manual for their software product.
+In the scenarios it is assumed, a part of the development team is working on a user manual for their software product.
 The team consists of:
 
 * the head of the department, who takes care of the project management of the user manual development,
@@ -36,7 +36,7 @@ In the diagram \ref{fig:bp:release}, there is a possible scenario of the departm
 The head of the department orchestrates the team to start working on the manual for the new version.
 The two developers keep updating the manual pages, each for their module.
 The pages are reviewed by the reviewer.
-When they are satisfied with the text, it is submitted to the publisher, who will bundle the pages and create a single readable and printable document, which is submitted back to the head of the department.
+When they are satisfied with the text, it is submitted to the publisher, who bundles the pages and create a single readable and printable document, which is submitted back to the head of the department.
 
 A few observations from the diagram are made:
 
