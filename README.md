@@ -4,6 +4,7 @@
 
 * :octopus:: I reviewed
 * :ram:: @smoliji suggestions incorporated
+* :feelsgood:: The fascist version of myself on crack reviewed. Replacing informal words, depersonalizing, removing time references and generally making the text more boring to read.
 
 ### Meta sections
 * [Acknowledgements](./src/meta/thanks.md) :octopus:
@@ -15,11 +16,11 @@
 
 ### Tru sections
 #### [Introduction](./src/introduction.md) :octopus:
-#### [Goal](./src/goal.md) :octopus: :ram:
+#### [Goal](./src/goal.md) :octopus: :ram: :feelsgood:
 #### Analysis
-* [Business process](./src/analysis/business-process.md) :octopus: :ram:
-* [Persona](./src/analysis/persona.md) :octopus: :ram:
-* [User access](./src/analysis/user-access.md) :octopus: :ram:
+* [Business process](./src/analysis/business-process.md) :octopus: :ram: :feelsgood:
+* [Persona](./src/analysis/persona.md) :octopus: :ram: :feelsgood:
+* [User access](./src/analysis/user-access.md) :octopus: :ram: :feelsgood:
 * [Requirements](./src/analysis/requirements.md) :octopus: :ram:
 * [Use case](./src/analysis/use-case.md) :octopus: :ram:
 
