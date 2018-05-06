@@ -10,11 +10,14 @@ for f in $(find $DIR/../src -name '*.md'); do
   # I don't understand the thing either see SO if you care
   pandoc $f --biblatex --listings --filter pandoc-fignos -t latex |
     # replace lstlisting with listing and minted
-    # begin
+    # begin floating
     sed -r "s@^\\\begin\{lstlisting\}\[language=(\w+), caption=([^,]+), label=(\S+)\]@\\\begin{listing}\n\\\caption{\2}\\\label{\3}\n\\\begin{minted}{\1}@g" |
+    # begin inline
+    sed -r "s@^\\\begin\{lstlisting\}\[language=(\w+)\]@\\\begin{listing}\n\\\begin{minted}{\1}@g" |
+    sed -r "s@^\\\begin\{lstlisting\}@\\\begin{listing}\n\\\begin{minted}{text}@g" |
     # end
     sed "s@\\\end{lstlisting}@\\\end{minted}\n\\\end{listing}@g" |
-    
+
     $DIR/abbr.rb |
     # mint inline isntead of lstinline
     sed "s@\\\lstinline@\\\mintinline{text}@g"> "${f%.*}".tex
