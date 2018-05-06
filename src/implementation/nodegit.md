@@ -41,9 +41,9 @@ The clone options object is created from the credential callback on second line 
 
 Now the cloning itself is performed, delegated to the NodeGit library, which returns a Promise with the repository or error.
 
-If cloning succeeds, we just setup the repository with the prepared function, call `createLocalRefs`, to which I will get in a moment, and return it.
+If the cloning succeeds, we just setup the repository with the prepared function, call `createLocalRefs`, to which I will get in a moment, and return it.
 
-If cloning fails, we return the error, unless it is the error code `EEXISTS`, which indicates that the repository could not have been cloned, since the destination path points to a non-empty directory.
+If the cloning fails, we return the encountered error, unless it is the error code `EEXISTS`, which indicates that the repository could not have been cloned, since the destination path points to a non-empty directory.
 This happens rather often, since we often clone the repository for the first time only and then access the cached local mirror.
 On this error we lookup the repository and update it in the function `retrieveCachedRepo`.
 
@@ -71,7 +71,7 @@ The function is in the listing \ref{lst:impl:nodegit:createlocalrefs}.
 <<nodegit/createLocalRefs.js>>
 ```
 
-First, all available references are retrieved from the repository, from which we filter only the remote references.
+At first, all available references are retrieved from the repository, from which we filter only the remote references.
 Then for each remote reference, we must perform the following actions:
 
 - Find OID, so we know onto which commit we _hook_ the new branch^[The OID is available through a synchronous method `target`, as seen on line 5 if listing \ref{lst:impl:nodegit:createlocalrefs}.]

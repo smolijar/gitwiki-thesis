@@ -39,7 +39,7 @@ I assume the user interacts with the editor but the communication is symmetric i
 The loop theoretically runs forever.
 In practice it causes irritating scroll shivering momentum on the scrolled element.
 
-At first I naively though I could prevent this behavior, by forbidding the listeners to execute two times in a row through a variable -- meaning the other handler is required to run forcing a switched execution of the two.
+At first I naively thought I could prevent this behavior, by forbidding the listeners to execute two times in a row through a variable -- meaning the other handler is required to run forcing a switched execution of the two.
 I implemented this using one shared binary indicator.
 This however proved insufficient in practice, because, while it fixed the issue, it introduced an opposite problem -- blocking two fast consecutive scroll events on the single component.
 In testing it showed that the scroll events are fired more rapidly, than the circular loop-back is able to finish.
@@ -64,7 +64,7 @@ An example interaction of how the circularity is broken is showed in the diagram
 
 The listing \ref{lst:impl:emily:handleeditorscroll} shows the authentic implementation of the `handleEditorScroll` event listener.
 Lines 2 through 6 implement the indicator logic^[`null` stands for *clear* value]
-After that a first visible line of the editor is computed and then preview is scrolled using the method `scrollPreviewToLine`^[This function takes the line, computes the top offset in pixels and sets the appropriate attribute in the `Preview` element.].
+After that a first visible line of the editor is computed the preview is scrolled using the method `scrollPreviewToLine`^[This function takes the line, computes the top offset in pixels and sets the appropriate attribute in the `Preview` element.].
 Before asking the editor for the line, it is prompted to reconfigure its renderer, which force updates the editor to react to the current scrolling event, allowing us to get an un-delayed line number.
 
 ```{language=jsx caption="Implementation: Emily -- editor scroll listener" label="lst:impl:emily:handleeditorscroll"}
