@@ -43,12 +43,12 @@
 * [Summary](./src/design/_summary.md) :octopus: :ram:
 
 #### [UI wireframe testing](./src/heuristics.md) :octopus: :ram:
-#### [Implementation](./src/implementation/_intro.md) :octopus:
-* [Tools](./src/implementation/tools.md) :octopus:
-* [Gitolite Permissions](./src/implementation/gitolite-permissions.md) :octopus:
-* [Routes](./src/implementation/routes.md) :octopus:
-* [Nodegit](./src/implementation/nodegit.md) :octopus:
-* [Emily — synchronized scrolling](./src/implementation/scrolling.md) :octopus:
+#### [Implementation](./src/implementation/_intro.md) :octopus: :ram:
+* [Tools](./src/implementation/tools.md) :octopus: :ram:
+* [Gitolite Permissions](./src/implementation/gitolite-permissions.md) :octopus: :ram:
+* [Routes](./src/implementation/routes.md) :octopus: :ram:
+* [Nodegit](./src/implementation/nodegit.md) :octopus: :ram:
+* [Emily — synchronized scrolling](./src/implementation/scrolling.md) :octopus: :ram:
 
 #### Testing
 * [Automatic testing](./src/test/auto.md) :octopus:
@@ -62,7 +62,7 @@
 * [Emily user manual](./src/readme/emily.md) :octopus:
 * [Gitwiki user manual](./src/readme/gitwiki.md) :construction:
 * [Emily logo](./src/logo/emily.md) :octopus:
-* [Gitwiki logo](./src/logo/gitwiki.md) :construction:
+* [Gitwiki logo](./src/logo/gitwiki.md) :octopus:
 
 
 ## PDF generate
