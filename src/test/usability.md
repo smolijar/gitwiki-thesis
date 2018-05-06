@@ -1,5 +1,9 @@
 # Usability testing
 
+Apart from heuristic analysis of the UI in chapter _\hyperref[chapter:ui-testing]{UI testing}_, a live usability testing with working prototype and real users has been conducted.
+
+In this chapter I shall present testing scenarios and then briefly summarize the testing itself and proposed solutions to UI issues, I am likely to discover.
+
 ## Testing scenarios
 
 There are three short testing scenarios.
@@ -91,4 +95,26 @@ Review your changes and create a commit with a message `<message>`.
 1. Remove the comment in the current file and change the title of the document to `<newtitle>`
 2. Delete the remaining files in the folder, except the one you have just edited
 3. Review all the pending changes
-4. Create a revision from the changes with a comment `<message>`
+4. Create a revision from the changes with comment `<message>`
+
+
+## The course of the testing
+
+Four UI testers participated in the testing in total.
+
+No acceptance form inspecting the testers' background has been submitted, however, I either have known the testers, or have been briefly introduced and thus I can say that all the users:
+
+- are developers,
+- know Git fairly well and use it regularly^[except for one tester, who uses Subversion in their workspace, but uses Git on personal projects],
+- know Markdown syntax, two users are also familiar with Asciidoc, one of which prefers it to Markdown.
+
+All users qualified for the UI testing of the system^[This seems like a lucky coincidence, but I specifically searched people with such background. Nobody was turned down then and was about to fail the acceptance.].
+
+I have been conducting the UI testing of the system's prototype running on my laptop in combination of live testing and shared screen with voice chat.
+
+
+The testing provided only qualitative output in form of my notes I made during and after the testing.
+
+## Outcome
+
+TODO
