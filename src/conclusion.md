@@ -10,7 +10,7 @@ Acquiring the system definition in the analyses I discovered and reviewed the ex
 I designed the system to either avoid the disadvantages by the its nature or I provided solutions for them.
 The system design discusses its architecture, core components and UI.
 
-In the implementation chapter concludes the development process results and provides an in-depth view of selected problems I faced during the implementation.
+The implementation chapter concludes the development process results and provides an in-depth view of selected problems I faced during the implementation.
 
 The tools used for automated testing are described in the testing chapter.
 

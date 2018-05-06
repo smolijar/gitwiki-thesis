@@ -14,7 +14,7 @@
 
 
 ### Tru sections
-#### [Introduction](./src/introduction.md)
+#### [Introduction](./src/introduction.md) :octopus:
 #### [Goal](./src/goal.md) :octopus: :ram:
 #### Analysis
 * [Business process](./src/analysis/business-process.md) :octopus: :ram:
@@ -52,7 +52,7 @@
 
 #### Testing :construction:
 
-#### [Conclusion](./src/conclusion.md)
+#### [Conclusion](./src/conclusion.md) :octopus:
 
 
 ### Appendix sections

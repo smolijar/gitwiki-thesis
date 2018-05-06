@@ -1,23 +1,23 @@
 There is a large variety of specialized tools that can be used for managing wikis.
-Most of the systems however, are focused on ease of use for the new or unexperienced users, and lack features desired by the advanced users, such as software developers.
+Most of the systems however, are focused on the ease of use for the new or unexperienced users, and lack features desired by the advanced users, such as software developers.
 The thesis tackles to solve the issue by developing a wiki system for the unexperienced and the advanced users alike, to provide an interface for developing complex, structured documents.
 
 The means of achieving the goals, namely the potential to satisfy the advanced users are of architectural nature.
-They include, but are not limited to, the incorporation of years tested technologies to design the system upon.
-One of which is Git, which is a powerful VCS growing in popularity amongst OSS community and even corporate development.
-Another is an emphasis on using LML for the document notation.
-LMLs, like Markdown or Asciidoc are favored over binary document formats for their readability and line-oriented snapshot versioning potential; and even over complex and difficult to write markup languages, like \LaTeX or HTML for their simplicity.
-A strong aspect of the system supporting efficiency and comfort for use for the advanced users is to provide apart from a WUI a CLI via Git.
+They include, but are not limited to, the incorporation of years tested technologies used by developers, to design the system upon.
+One of which is Git, which is a powerful VCS, growing in popularity amongst OSS community and even corporate development.
+Another example is an emphasis on using a LML for the document notation.
+LMLs, like Markdown or Asciidoc are favored over binary document formats for their readability and line-oriented snapshot versioning potential; and even over the complex and difficult to write markup languages, like \LaTeX\ or HTML for their simplicity.
+A strong aspect of the system supporting efficiency and comfort for use for the advanced users is to provide a CLI via Git, apart from a WUI.
 The two interfaces will provide equal access options for the users.
 For better support of the collaborative development, the system will feature access control.
 
 In the chapter _\hyperref[chapter:goal]{Thesis' Goal}_ I will elaborate the assignment instructions and explain what is considered a _wiki system_.
 
 A high abstraction concept of the system from the user perspective will be demonstrated on the business process model in _\hyperref[chapter:analysis]{Analysis}_.
-The following section in the chapter will resolve fundamental architectural decisions regarding user access, force restrictions on the system requirements.
+The following section in the chapter, _\hyperref[user-access]{User access}_, will resolve fundamental architectural decisions regarding authorization, which force restrictions on the system requirements.
 Finally the system will be defined through the conventional means of requirements and use case model and then the relations between the individual use cases and the functional requirements will be commented on.
 
-Having the system definition from the analysis, I will review the existing wiki systems that use the Git VCS and review them from the perspective of criteria defined in the analysis.
+Having the system definition from the analysis, I will research the existing wiki systems that use the Git VCS and review them from the perspective of criteria defined in the analysis.
 Doing which I will point out the defects of the systems regarding the criteria in the summary.
 
 Solutions for the discovered imperfections in the systems will be proposed in the chapter _\hyperref[chapter:design]{Design}_.
