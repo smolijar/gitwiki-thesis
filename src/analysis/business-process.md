@@ -46,7 +46,7 @@ VCS and revision updates are required.
 * The publisher needs a direct access to the files.
 * The first developer only writes in pages regarding module A, while the second for module B.
 The publisher only needs a read access to the files.
-Potential mistakes could be avoided, if the VCS repository was divided into namespaces and edited with access control management.
+Potential mistakes can be avoided, if the VCS repository was divided into namespaces and edited with access control management.
 
 ## Business process scenario: Hotfix
 

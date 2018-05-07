@@ -60,11 +60,12 @@ The diagram @fig:uc:browsing displays the use cases for browsing section.
 - UC-5 **Select repository**
 
   User can select a repository.
-  This will affect the _Traverse tree_ UC.
+  This affects the _Traverse tree_ UC.
 
 - UC-6 **Select revision**
 
-  User can select a revision for the selected repository. This will affect the _Traverse tree_ and _Show file_ UC.
+  User can select a revision for the selected repository.
+  This affects the _Traverse tree_ and _Show file_ UC.
 
 
 ## Content management

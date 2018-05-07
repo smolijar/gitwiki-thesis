@@ -36,12 +36,12 @@ These self-hosted services include e.g. GitBucket [@gitbucket], GitLab [@gitlab]
 None of the services are suitable, since none of them by this time offer a modular usage, to utilize just the mere SSH authorization layer.
 GitLab is selected from the group to demonstrate this.
 
-Since none of the examples from the said group are convenient^[Not impossible -- they could be used. They are inconvenient however, because the system as a whole would need to be used, while only utilizing a mere fraction of it. The provided SCM features are not to be used.], software that serves only authorization purpose is discussed.
+Since none of the examples from the said group are convenient^[Not impossible -- they can be used. They are inconvenient however, because the system requires to be used as a whole, while only utilizing a mere fraction of it. The provided SCM features are not to be used.], software that serves only authorization purpose is discussed.
 There are two examples: Gitorious [@gitorious] and Gitolite [@gitolite].
 Gitorious is no longer maintained, since it has been acquired by GitLab in 2015 [@gitorious:gitlab].
 The fact that Gitolite, which is still maintained, was for a time used by GitLab as an authorization layer, renders it even more relevant, given the GitLab's popularity.
 One of the reasons for that is that GitLab faced performance issues with an extensive count of repositories and users. [@gitolite:gitlab]
-This might become an issue for the massive corporations, but since Gitolite performance issues with configuration parsing occurred at over 560 thousand LOC of configuration files and 42 thousand repositories reached by Fedora, it should be sufficient for the purpose. [@gitolite:perf]
+This might become an issue for the massive corporations, but since Gitolite performance issues with configuration parsing occurred at over 560 thousand LOC of configuration files and 42 thousand repositories reached by Fedora, it is sufficient for the purpose. [@gitolite:perf]
 
 
 Two examples are distinguished to compare in this section as possible candidates for the authorization tool to use in the project.
@@ -52,9 +52,9 @@ GitLab and Gitolite are inspected for the purpose closely in the rest of the sub
 _"GitLab is a single application with features for the whole software development and operations (DevOps) lifecycle."_ [@gitlab:about]
 It is an open source project started in 2011 with more than 1900 contributors and used by over 100 thousand organizations as a self hosted Git server with many development supportive features [@gitlab:about].
 
-It offers a rich, well documented GraphQL API (as well as a still maintained RESTful API), which could be well used to the benefit the application control.
+It offers a rich, well documented GraphQL API (as well as a still maintained RESTful API), which could become beneficial for the application control.
 
-Using GitLab would solve the issue of authentication as well, because GitLab comes bundled with an embedded user management service, storing user data in its own database.
+Using GitLab solves the issue of authentication as well, because GitLab comes bundled with an embedded user management service, storing user data in its own database.
 This is consider a great asset for the purpose.
 
 Regarding the access control, GitLab offers standard control over Git branches via user groups using the _protected branches_^[Protected branches are means of restricting the user access based on Git branches. It usually distinguishes between _read_, _write_ and _master_ permission, which allows force updates, delete etc.][@gitlab:branches], which is a feature well known amongst similar services.
@@ -164,7 +164,7 @@ The first step in the process is to run the `gitolite-shell` with the username a
 At this point, Gitolite can evaluate (and eventually deny) the access, because it already knows the authenticated username, as well as the repository name and the action (is it a read action, like `git fetch`, or write like `git push`).
 If Gitolite does not deny access at this point, Git standard command is invoked, e.g. `git-upload-pack` for cloning or pulling form a repository.
 
-For the read operations the first step would also be its final.
+For the read operations the first step is also its final.
 However that is not true for the writing operations such as `push`.
 For that, after the `gitolite-shell` command passes, `git-recieve-pack` is invoked instead.
 This receives and applies the data from the initial push, which eventually triggers an `update` hook.
