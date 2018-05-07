@@ -52,7 +52,7 @@ GitLab and Gitolite are inspected for the purpose closely in the rest of the sub
 _"GitLab is a single application with features for the whole software development and operations (DevOps) lifecycle."_ [@gitlab:about]
 It is an open source project started in 2011 with more than 1900 contributors and used by over 100 thousand organizations as a self hosted Git server with many development supportive features [@gitlab:about].
 
-It offers a rich, well documented GraphQL API (as well as a still maintained REST API), which could be well used to the benefit the application control.
+It offers a rich, well documented GraphQL API (as well as a still maintained RESTful API), which could be well used to the benefit the application control.
 
 Using GitLab would solve the issue of authentication as well, because GitLab comes bundled with an embedded user management service, storing user data in its own database.
 This is consider a great asset for the purpose.

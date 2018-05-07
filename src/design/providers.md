@@ -104,7 +104,7 @@ Local repository provider's implementation solves the issue of unified authoriza
 ### GitHub repository provider
 
 In contrast, see remote authority repository provider, in this case GitHub.
-Repository provider API allows it to use any form of communication, like in this case including GitHub's REST API calls.
+Repository provider API allows it to use any form of communication, like in this case including GitHub's RESTful API calls.
 
 
 ![Design: Local provider interactions](./src/assets/diagram/github-provider){#fig:design:github-provider width=100%}

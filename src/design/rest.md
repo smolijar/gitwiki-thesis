@@ -1,6 +1,6 @@
-# REST API
+# RESTful API
 
-In this section I shall document crucial parts of the REST API of BE application.
+In this section I shall document crucial parts of the RESTful API of BE application.
 
 For type definition I use Flow type alias[@flow:alias] syntax.
 For some objects types are reused, common _entity_ types are described in listing \ref{lst:design:types}.
@@ -44,7 +44,7 @@ type Repository = {
 ```
 
 \begin{table*}[]\centering
-\caption{REST API overview}\label{tbl:design:rest}
+\caption{RESTful API overview}\label{tbl:design:rest}
 \csvautobooktabular{src/design/rest/all.csv}
 \end{table*}
 
