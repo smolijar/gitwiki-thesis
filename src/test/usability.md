@@ -13,7 +13,7 @@ The first scenario tests user's understanding of the parallel content browsing, 
 
 The second scenario is designed to be more relaxing for the tester, inspecting the UI of basic navigation in the tree and the file detail.
 
-The final scenario ought to be the most challenging.
+The final scenario is the most challenging.
 Not only it is about the content editing but also it tests the concept of accumulating the pending changes in the application state, which is a feature not seen in any software mentioned in the chapter _\hyperref[chapter:state]{State-of-the-art}_ nor in any other wiki software mentioned in the text.
 
 ### Scenario A: Working with references
@@ -102,7 +102,8 @@ Review your changes and create a commit with a message `<message>`.
 
 Four UI testers participated in the testing in total.
 
-No acceptance form inspecting the testers' background has been submitted, however, I either have known the testers, or have been briefly introduced and thus I can say that all the users:
+No acceptance form inspecting the testers' background has been submitted.
+The testers were briefly introduces and thus it is known that they:
 
 - are developers,
 - know Git fairly well and use it regularly^[except for one tester, who uses Subversion in their workspace, but uses Git on personal projects],
@@ -110,7 +111,7 @@ No acceptance form inspecting the testers' background has been submitted, howeve
 
 All users qualified for the UI testing of the system.
 The UI of the system's prototype testing is conducted in combination of live testing and shared screen with voice chat.
-The testing provided only qualitative output in form of my notes I made during and after the testing.
+The testing provided only qualitative output in form a test log made during and after the testing.
 
 ## Outcome
 
