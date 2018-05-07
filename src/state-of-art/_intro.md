@@ -27,7 +27,7 @@ The remaining desired features, apart from Git VCS in the BE, are:
     * Parallel version development
 
 * **UI**
-    * The incorporation of the Git VCS into the UI^[It is useful, to observe how the UI is affected by the fact that the system runs on the VCS Git. UI presumably shifts slightly from a "document hub" (known from common wiki software like MediaWiki [@mediawiki] or DokuWiki [@dokuwiki]) to a broader perspective of a generic repository browser.]
+    * The incorporation of the Git VCS into the UI^[It is useful, to observe how the UI is affected by the fact that the system runs on the VCS Git. UI presumably shifts slightly from a "document hub" (known from common wiki software, e.g. MediaWiki [@mediawiki] or DokuWiki [@dokuwiki]) to a broader perspective of a generic repository browser.]
 
 
 The acceptance and quality criteria is defined.

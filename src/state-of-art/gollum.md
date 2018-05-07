@@ -4,7 +4,7 @@ Gollum is an OSS written in Ruby developed since 2009 that powers [@wikiwikiweb:
 The Gollum, though being a wiki system, is rather different from the other systems mentioned in this chapter.
 While its differences make it destined to fail in many criteria, it proves useful to review the system, notably from the UI perspective, especially given the fact that it has been used in GitHub Wikis.
 
-While Gollum does have wrappers or extensions that do provide, e.g. user authentication and permission control like [@omnigollum], the bare library is _just a WUI_ for the repository management with the focus on LMLs.
+While Gollum does have wrappers or extensions that do provide, e.g. user authentication and permission control, for instance [@omnigollum], the bare library is _just a WUI_ for the repository management with the focus on LMLs.
 
 ## User access control
 

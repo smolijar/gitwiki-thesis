@@ -4,7 +4,7 @@ Wiki.js is a modern capable wiki software powered by Node.js, Markdown and Git [
 With the initial release in September 2016, Wiki.js is the youngest software.
 
 Being designed with the specific technologies in mind, the specialized features are be expected from the project.
-As far as the non-functional requirements and technological restrains reach, Wiki.js, being a Node.js application, backed by Git only^[The abstraction of used VCS could potentially be a threat, as seen with Gitit not supporting branches] and favoring modern popular LML like Markdown, is by far the closest to the thesis' project.
+As far as the non-functional requirements and technological restrains reach, Wiki.js, being a Node.js application, backed by Git only^[The abstraction of used VCS can potentially be a threat, as seen with Gitit not supporting branches] and favoring modern popular LML Markdown, is by far the closest to the thesis' project.
 
 After the installation user is prompted to run the configuration wizard^[Configuration can also be set in the `config.yml` configuration file.], where user can set the name of the wiki, configure MongoDB^[Which is used for user data, not wiki's contents.], default permissions (e.g. is wiki public to anonymous users by default) and a remote Git repository with its SSH authentication data.
 
@@ -68,7 +68,7 @@ This approach however, is not useful for managing several versions of the same r
 
 ![Wiki.js: Page preview](./src/assets/images/wikijs-page){#fig:wikijs:page width=100%}
 
-Wiki.js offers the UI (image @fig:wikijs:page) which has the same widgets as we have seen before, though visually distinguished from other project. This is plausibly an effect of the fact that Wiki.js is the youngest software.
+Wiki.js offers the UI (image @fig:wikijs:page) which has the same widgets as  seen before, though visually distinguished from other project. This is plausibly an effect of the fact that Wiki.js is the youngest software.
 Apart from the website navigation there is a document TOC navigation placed under it in the left sidebar.
 
 ![Wiki.js: Page edit](./src/assets/images/wikijs-edit){#fig:wikijs:edit width=100%}
