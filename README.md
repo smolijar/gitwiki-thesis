@@ -31,17 +31,17 @@
 * [Wiki.js](./src/state-of-art/wikijs.md) :octopus: :ram: :feelsgood:
 * [Summary](./src/state-of-art/_summary.md) :octopus: :ram: :feelsgood:
 
-#### [Design](./src/design/_intro.md) :octopus: :ram:
-* [Foundations](./src/design/foundations.md) :octopus: :ram:
-* [Repository Providers](./src/design/providers.md) :octopus: :ram:
-* [Authentication](./src/design/authentication.md) :octopus: :ram:
-* [Tools](./src/design/tools.md) :octopus: :ram:
-* [Architecture](./src/design/architecture.md) :octopus: :ram:
-* [Rest API](./src/design/rest.md) :octopus: :ram:
-* [UI](./src/design/ui.md) :octopus: :ram:
-* [Front end](./src/design/fe.md) :octopus: :ram:
-* [Emily](./src/design/emily.md) :octopus: :ram:
-* [Summary](./src/design/_summary.md) :octopus: :ram:
+#### [Design](./src/design/_intro.md) :octopus: :ram: :feelsgood:
+* [Foundations](./src/design/foundations.md) :octopus: :ram: :feelsgood:
+* [Repository Providers](./src/design/providers.md) :octopus: :ram: :feelsgood:
+* [Authentication](./src/design/authentication.md) :octopus: :ram: :feelsgood:
+* [Tools](./src/design/tools.md) :octopus: :ram: :feelsgood:
+* [Architecture](./src/design/architecture.md) :octopus: :ram: :feelsgood:
+* [Rest API](./src/design/rest.md) :octopus: :ram: :feelsgood:
+* [UI](./src/design/ui.md) :octopus: :ram: :feelsgood:
+* [Front end](./src/design/fe.md) :octopus: :ram: :feelsgood:
+* [Emily](./src/design/emily.md) :octopus: :ram: :feelsgood:
+* [Summary](./src/design/_summary.md) :octopus: :ram: :feelsgood:
 
 #### [UI wireframe testing](./src/heuristics.md) :octopus: :ram:
 #### [Implementation](./src/implementation/_intro.md) :octopus: :ram:
