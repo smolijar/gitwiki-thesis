@@ -24,12 +24,12 @@
 * [Requirements](./src/analysis/requirements.md) :octopus: :ram: :feelsgood:
 * [Use case](./src/analysis/use-case.md) :octopus: :ram: :feelsgood:
 
-#### [State-of-the-art](./src/state-of-art/_intro.md) :octopus: :ram:
-* [Ikiwiki](./src/state-of-art/ikiwiki.md) :octopus: :ram:
-* [Gitit](./src/state-of-art/gitit.md) :octopus: :ram:
-* [Gollum](./src/state-of-art/gollum.md) :octopus: :ram:
-* [Wiki.js](./src/state-of-art/wikijs.md) :octopus: :ram:
-* [Summary](./src/state-of-art/_summary.md) :octopus: :ram:
+#### [State-of-the-art](./src/state-of-art/_intro.md) :octopus: :ram: :feelsgood:
+* [Ikiwiki](./src/state-of-art/ikiwiki.md) :octopus: :ram: :feelsgood:
+* [Gitit](./src/state-of-art/gitit.md) :octopus: :ram: :feelsgood:
+* [Gollum](./src/state-of-art/gollum.md) :octopus: :ram: :feelsgood:
+* [Wiki.js](./src/state-of-art/wikijs.md) :octopus: :ram: :feelsgood:
+* [Summary](./src/state-of-art/_summary.md) :octopus: :ram: :feelsgood:
 
 #### [Design](./src/design/_intro.md) :octopus: :ram:
 * [Foundations](./src/design/foundations.md) :octopus: :ram:
