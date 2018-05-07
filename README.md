@@ -21,8 +21,8 @@
 * [Business process](./src/analysis/business-process.md) :octopus: :ram: :feelsgood:
 * [Persona](./src/analysis/persona.md) :octopus: :ram: :feelsgood:
 * [User access](./src/analysis/user-access.md) :octopus: :ram: :feelsgood:
-* [Requirements](./src/analysis/requirements.md) :octopus: :ram:
-* [Use case](./src/analysis/use-case.md) :octopus: :ram:
+* [Requirements](./src/analysis/requirements.md) :octopus: :ram: :feelsgood:
+* [Use case](./src/analysis/use-case.md) :octopus: :ram: :feelsgood:
 
 #### [State-of-the-art](./src/state-of-art/_intro.md) :octopus: :ram:
 * [Ikiwiki](./src/state-of-art/ikiwiki.md) :octopus: :ram:
