@@ -7,7 +7,7 @@ That is the way the documents are persisted, and how the users access it.
 To this moment in order to remain at the abstract conceptual level, which was convenient for e.g. business process modeling,
 it has not been implied a specific VCS is used within the system, though it is stated in thesis assignment instructions.
 Git VCS is used for wiki contents persistence, as instructed.
-It has many advantages, including a branch model, a CLI repository access via SSH and it is decentralized, which ought to be convenient for Dump and Lump (the developers) when working out of the office, as pointed out by an observation in the business process model.
+It has many advantages, including a branch model, a CLI repository access via SSH and it is decentralized, which is convenient for Dump and Lump (the developers) when working out of the office, as pointed out by an observation in the business process model.
 Apart from that, it is fairly popular.
 According to [@openhub:vcs] up to 50% of the existing open source projects use Git, while the second place goes to Subversion with 42%.
 This applies only for the open source projects.
@@ -52,7 +52,7 @@ GitLab and Gitolite are inspected for the purpose closely in the rest of the sub
 _"GitLab is a single application with features for the whole software development and operations (DevOps) lifecycle."_ [@gitlab:about]
 It is an open source project started in 2011 with more than 1900 contributors and used by over 100 thousand organizations as a self hosted Git server with many development supportive features [@gitlab:about].
 
-It offers a rich, well documented GraphQL API (as well as a still maintained RESTful API), which could become beneficial for the application control.
+It offers a rich, well documented GraphQL API (as well as a still maintained RESTful API), which would become beneficial for the application control.
 
 Using GitLab solves the issue of authentication as well, because GitLab comes bundled with an embedded user management service, storing user data in its own database.
 This is consider a great asset for the purpose.
@@ -90,7 +90,7 @@ It grants unrestricted read-write access (`RW+`^[the "`+`" symbol means advanced
 
 This configuration sample demonstrates the power of the fine grain access control Gitolite provides, which is not only superior to GitLab in its expressiveness, but is also stored in simple configuration file in a Git repository available through Gitolite itself.
 
-Apart from that, Gitolite features group management like GitLab.
+Apart from that, Gitolite features a group management as does GitLab.
 
 ### Summary
 
@@ -161,7 +161,7 @@ The activity diagram, though simplifying the details to display the higher-order
 The diagram presumes that SSH authentication succeeds.
 
 The first step in the process is to run the `gitolite-shell` with the username and the repository name, supplied via SSH by the remote user.
-At this point, Gitolite can evaluate (and eventually deny) the access, because it already knows the authenticated username, as well as the repository name and the action (is it a read action, like `git fetch`, or write like `git push`).
+At this point, Gitolite can evaluate (and eventually deny) the access, because it already knows the authenticated username, as well as the repository name and the action (is it a read action, such as `git fetch`, or write, for instance `git push`).
 If Gitolite does not deny access at this point, Git standard command is invoked, e.g. `git-upload-pack` for cloning or pulling form a repository.
 
 For the read operations the first step is also its final.
@@ -189,7 +189,7 @@ If the user cannot be authenticated via key-pair, yet it must be guaranteed that
 Binding user and a public key is not possible in a secure way.
 The solution is then to use the standard ways of authentication on the web and let the user upload their public key via a web application, performing an authorized request under the identity of authenticated user.
 
-This solution is used by giants amongst SCM services like GitHub [@github], GitLab [@gitlab] or BitBucket [@bitbucket].
+This solution is used by giants amongst the SCM services, including GitHub [@github], GitLab [@gitlab] or BitBucket [@bitbucket].
 
 ### The standard ways of authentication
 
