@@ -7,7 +7,7 @@ The GitHub authentication is used as a form of authentication, but it does not s
 The same way, any form of external authority can be used as an authentication provider.
 Any SCM service^[Including GitLab, BitBucket and similar] is more suitable for the role of the authentication provider, because they provide the user's SSH public keys.
 
-In the same manner Google, Yahoo or any other service with OAuth 2.0 or OpenID Connect protocol support could be used.
+In the same manner Google, Yahoo or any other service with OAuth 2.0 or OpenID Connect protocol support could be used instead.
 GitHub is a reasonable choice in the scope of OSS projects hosting statistics.
 
 ![Design: Authentication via external provider](./src/assets/diagram/login){#fig:design:auth width=100%}

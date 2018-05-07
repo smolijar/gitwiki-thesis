@@ -6,7 +6,7 @@ For the type definition in this chapter, the Flow type alias [@flow:alias] synta
 Since some object types are reused in the data, common _entity_ types are described in listing \ref{lst:design:types}.
 
 The overall overview of the API is presented in the table \ref{tbl:design:rest}.
-The following subsections will describe the individual API endpoints.
+The following subsections describe the individual API endpoints.
 Only parts of the API that are interesting from the perspective of either data or design are covered in the chapter.
 The major logical issue is the design of a commit creation in REST architecture, which is discussed later in the section.
 

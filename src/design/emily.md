@@ -7,7 +7,7 @@ This required not only the wireframe modeling, but also the definition of the ed
 
 ## Editor's features
 
-The result of the feature brainstorming^[This list is taken from [@nur:project] and reduced to exclude features which we have decided to discard for various reasons.] within the team in the early stage of the project is as follows:
+The result of the feature brainstorming^[This list is taken from [@nur:project] and reduced to exclude features which have been discarded for various reasons.] within the team in the early stage of the project is as follows:
 
 ### Feature bag A
 

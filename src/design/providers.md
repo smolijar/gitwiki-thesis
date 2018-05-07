@@ -44,7 +44,7 @@ The paramount objective is to offer unified authorization mechanism over SSH and
 Instead of accessing the repositories directly, with the concept of the providers, a local provider can be designed.
 It fetches the repositories from (and publishes to) the local machine over SSH.
 
-Simulating the the user's remote control over SSH would be an ideal solution, if possible^[This requires user's SSH private key.].
+Simulating the the user's remote control over SSH would be an ideal solution, if it was possible^[This requires user's SSH private key.].
 Instead, the behavior is simulated through the application logic.
 Gitolite provides a CLI with a sufficient API to tell the user, which Gitolite user has access to which repository.
 

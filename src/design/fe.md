@@ -19,7 +19,7 @@ All crucial components and modules from categories above are on the diagram \ref
 The pages are React components representing individual web pages (HTTP responses) served by the server for a user's request.
 Simply, they are responses for all non-API requests.
 
-When used correctly, Next.js will return the first requested page pre-rendered on the server and all the following navigation will happen inside the FE application using Fetch API managed seamlessly by Next.js.
+When used correctly, Next.js returns the first requested page (pre-rendered on the server) and all the following navigation happens inside the FE application using Fetch API managed seamlessly by Next.js.
 
  - `Index` -- Homepage of the application
  - `Repo, Index` -- List of available repositories. This page delegates the rendering of the repository entries itself on the component `Index`.

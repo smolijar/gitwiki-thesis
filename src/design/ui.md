@@ -1,6 +1,6 @@
 # UI {#sec:design:ui}
 
-In this section, the designed WUI of the application will is presented in a form of wireframes.
+In this section, the designed WUI of the application is presented in a form of wireframes.
 
 The most significant part of the UI is doubtlessly the editor.
 For this reason, it has been designed separately by a team of students as a MI-NUR term project.
@@ -10,7 +10,7 @@ It contains evaluation of the testing methods and fixes the encountered errors.
 Therefore, since the project completed all the UI development process of the editor, it is not considered in the design of the remaining parts of the system.
 In the wireframes it is replaced by a simple box.
 
-_On the UI design of the editor I have worked with a team. My colleagues contributed only to the project [@nur:project] referred to, but not included in the main content of the thesis. The wireframes from the project are available in \hyperref[chapter:ui-testing]{appendix}. I, the author of the thesis, am also the author of all the following UI design regarding materials in this section. Members of the team have not contributed to the implementation of the editor nor the system._
+_I have worked with a team on the UI design of the editor. My colleagues contributed only to the project [@nur:project] referred to, but not included in the main content of the thesis. The wireframes from the project are available in \hyperref[chapter:ui-testing]{appendix}. I, the author of the thesis, am also the author of all the following UI design regarding materials in this section. Members of the team have not contributed to the implementation of the editor nor the system._
 
 ## Repository index
 
@@ -51,7 +51,7 @@ This wireframe covers the following use cases: *UC-4 Show file*, *UC-7 Change co
 ![Wireframe: Repository tree](./src/assets/images/ui/tree){#fig:ui:tree width=100%}
 
 In the image @fig:ui:tree, there is a wireframe to the file index in the repository.
-This is an expanded version of the side-menu from the previous wireframe with additional information, like SHA hash to better utilize the room given in the main content section.
+This is an expanded version of the side-menu from the previous wireframe with additional information, such as SHA hash to better utilize the room given in the main content section.
 This wireframe covers the *UC-3 Traverse tree* and *UC-6 Select revision*.
 
 ## Commit modal

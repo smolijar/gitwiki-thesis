@@ -10,7 +10,7 @@ There are two conceptually different approaches to the implementation of the uni
 This is the approach more or less taken by all the reviewed systems in the previous chapter.
 The premise is to allow the users to work with their existing repositories and remain their remote locations.
 The implementation is akin to how Wiki.js tackles the issue
--- the application works with the local mirror of the repository, which is kept synchronized with the remote, thanks to provided access data, like repository link and security configuration (either the HTTP Basic or the SSH key-pair authentication).
+-- the application works with the local mirror of the repository, which is kept synchronized with the remote, thanks to provided access data, such as repository link and security configuration (either the HTTP Basic or the SSH key-pair authentication).
 
 The implementation possess the following attributes:
 
