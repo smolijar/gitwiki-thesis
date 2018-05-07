@@ -1,11 +1,10 @@
-I have been working on the implementation of the system for seven months, since October 2017.
+The implementation of the system is in the development for seven months, since October 2017.
 The source codes to this day sum up to 3 863 LOC and 725 commits.
 The detail stats are displayed in the table \ref{impl:stats}.
-The implementation is an OSS published from its early stages on GitHub.
+The implementation is software, published from its early stages on GitHub.
 
-I begin developing the Emily editor and decided to keep the editor source code separated from the main system, since I saw potential of being used as an independent component, because of the rich and rather outstanding feature set mentioned in the design chapter.
-
-This lead to forking the project into two distinct repositories:
+The Emily editor source codes are separated from the main system for the potential of being used as an independent component, because of the rich and rather outstanding feature set mentioned in the design chapter.
+This lead to splitting the project into two distinct repositories:
 
  - `grissius/gitwiki`[@gitwiki] and
  - `grissius/emily-editor`[@emily].
@@ -24,23 +23,23 @@ grissius/emily-editor & 2235 & 538     & 16       \\
 \end{table*}
 
 The repositories are public -- potentially anyone can contribute to the source code via PR.
-To the day of submission of the thesis however, I am the sole contributor of the two mentioned projects.
+To the day of submission of the thesis however, the author is the sole contributor of the two projects.
 
 Both projects have been developed with good manners at heart, thus both include:
 
-- the readme file,
-- the version file with current version of the project,
-- and the changelog file following the _keepachangelog_ [@keepachangelog] _standard_^[Though being perhaps the only changelog guideline (thusly I refer to it as standard) its format is more akin to best practices and reccomendation on how to write the changelog.].
+- a readme file,
+- a version file with current version of the project,
+- and a changelog file following the _keepachangelog_ [@keepachangelog] _standard_^[Though being perhaps the only changelog guideline (thusly I refer to it as standard) its format is more akin to best practices and reccomendation on how to write the changelog.].
 
 The projects also:
 
 - adhere to _Semantic Versioning 2.0.0_ [@semver] with published releases via Git tags on GitHub repositories,
 - follow the Airbnb JS style guide [@airbnb:standard] using ESLint and
-- have been developed via feature branch workflow.
+- have been developed via a feature branch workflow.
 
-The editor `grissius/emily-editor` is published[@npm:emily] on NPM.
+The editor `grissius/emily-editor` is published on npm [@npm:emily].
 
 This introduction sums up the aggregate information about the implementation source codes.
-In the following section I will go over the more notable dependencies used in the system.
-In the rest of the chapter, instead of describing the development process as a whole, I shall cover some of the major difficulties I faced throughout the implementation process and describe the solutions I provided for each one.
+In the following section  the notable dependencies used in the system are mentioned.
+In the rest of the chapter, instead of describing the development process as a whole, covers some of the major difficulties that appeared throughout the implementation process and describes the solutions provided for each one.
 
