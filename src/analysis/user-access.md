@@ -205,15 +205,15 @@ For that reason (but not only as mentioned later) there are services that act as
 This allows other applications and services, regardless of the platform, to communicate via HTTPS with the authority and let it authenticate the user instead.
 This contributes to re-usability of the user's _key_^[Meaning means of authentication, not a asymmetric cryptography key-pair.] they have -- not only improving their comfort but also containment of the personal data in applications specialized for that purpose.
 
-A popular architecture of such service is OAuth 2.
-OAuth 2 is primarily an authorization service.
+A popular architecture of such service is OAuth 2.0.
+OAuth 2.0 is primarily an authorization service.
 The authority manages user's data.
 An existing application can request authorization for portion of the data.
 User (after a successful authentication) can grant or reject the authorization of the application for requested portion.
 When the access is granted, the application can manage the data.
-Requesting data about the user, the OAuth can be used as mere authentication provider.
+Requesting data about the user, the OAuth 2.0 can be used as mere authentication provider.
 
-This is utilized by the OpenID Connect [@openid], which is a standard based on the OAuth 2.
+This is utilized by the OpenID Connect [@openid], which is a standard based on the OAuth 2.0.
 It is not a general authorization provider, but an identity provider.
 
 Using an external provider is a viable solution for the system, since it simplifies the authentication process, allows the user to use an existing identity in the system and the application to access user data if convenient.

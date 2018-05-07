@@ -84,7 +84,7 @@ There were several options available from Git hosting services, but for its popu
 This brings two main advantages for Gitwiki:
 
 * GitHub is still easily the most popular SCM service in comparison to GitLab or BitBucket; addressing the GitHub's user base is far more efficient than other services'.
-* GitHub OAuth 2 can be used in the system as authentication method and public keys can be loaded into Gitolite.
+* GitHub OAuth 2.0 can be used in the system as authentication method and public keys can be loaded into Gitolite.
 
 ### Local repository provider
 

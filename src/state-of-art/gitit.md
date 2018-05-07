@@ -44,7 +44,7 @@ access-question-answers:
 ```
 
 Gitit provides permission control only in the global scope.
-It does however, let the user choose, whether to use implicit user file storage for the new users, or allow GitHub OAuth 2 authentication, setting the client's credentials in configuration file.
+It does however, let the user choose, whether to use implicit user file storage for the new users, or allow GitHub OAuth 2.0 authentication, setting the client's credentials in configuration file.
 
 ## Direct repository access
 
