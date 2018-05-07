@@ -29,7 +29,7 @@ Both projects have been developed with good manners at heart, thus both include:
 
 - a readme file,
 - a version file with current version of the project,
-- and a changelog file following the _keepachangelog_ [@keepachangelog] _standard_^[Though being perhaps the only changelog guideline (thusly I refer to it as standard) its format is more akin to best practices and reccomendation on how to write the changelog.].
+- and a changelog file following the _keepachangelog_ [@keepachangelog] _standard_^[Though being perhaps the only changelog guideline (thusly it is referred to it as standard) its format is more akin to best practices and reccomendation on how to write the changelog.].
 
 The projects also:
 

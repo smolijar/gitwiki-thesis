@@ -53,7 +53,7 @@ On this error the repository is retrieved and updated it in the function `retrie
 The existence of the function requires a comment, even for the people using Git CLI on their daily bases.
 When cloning a remote, all remote branches are stored in the local references^[e.g. `.git/refs/remotes/origin/master`].
 If the remote repository has more branches, all are correctly transfered and saved, but only the default branch (`master`) is created as a _local branch_^[e.g. `.git/refs/heads/master`].
-To these branches user can checkout^[By _checking out_ I mean setting the `HEAD` reference on a _branch_ -- not commit or tag; nor checking out files. Git terminology might be a little confusing at times overusing this word.], but they cannot checkout in other references cloned from the origin, since they are not _branches_ per se.
+To these branches user can checkout^[_Checking out_ refers to setting the `HEAD` reference on a _branch_ -- not commit or tag; nor checking out files. Git terminology might be a little confusing at times overusing this word.], but they cannot checkout in other references cloned from the origin, since they are not _branches_ per se.
 
 This is very much possible in Git CLI however.
 Though the _local branch_^[Reference in `.git/refs/heads`] does not exist, user can indeed `git checkout <branch>` to a branch that _only exists_ in the remote references in Git CLI.

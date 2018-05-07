@@ -28,7 +28,7 @@ With it, the line number can be extracted from the HTML heading and the source c
 
 ### Synchronized scrolling of the editor and preview
 
-Line ninja^[I made this name while developing a prototype to simplify terminology. Initially I wanted to call the mechanism _scrollspy_, but that is already reserved for the TOC menu on side highlighting items as scrolling through the document.]
+Line ninja^[The name was created while developing a prototype to simplify terminology.]
 
 The idea behind this is to smuggle the ninjas, into as many lines of the source code as possible.
 The ninjas must comply with the following rules:
@@ -63,7 +63,7 @@ For illustration, an example of the usage of line ninjas is demonstrated.
 
 Assume a Markdown source code in the listing \ref{lst:impl:emily:ninja1}.
 This is the plain source.
-As mentioned, before converting the document, we insert the ninjas using the `safelyInsert` function.
+As mentioned, before converting the document, the ninjas are inserted using the `safelyInsert` function.
 Its result is in the listing \ref{lst:impl:emily:ninja2}.
 Not all ninjas are perfectly smuggled into the code, as apparent.
 This depends on the implementation of the LML module.
@@ -161,7 +161,7 @@ The listing shows a body of the render method of the component.
 ```
 
 This is a minimalistic, yet logically complete schema of the components with regard to the discussed issue.
-We have the `SourceCodeEditor` with a default value and an on-change handler; and the `Preview` that contains inner HTML, since we need to set it from a string acquired by the converting tool.
+There is the `SourceCodeEditor` with a default value and an on-change handler; and the `Preview` that contains inner HTML, since it needs to be set from a string acquired by the converting tool.
 
 Both components are referenced by the higher component to access their DOM elements when performing the scroll and both also have an on-scroll handler.
 
@@ -169,7 +169,7 @@ The desired behavior of the on-scroll handler for `SourceCodeEditor`, is to find
 Vice versa for the other handler.
 
 Scrolling any element in the DOM is possible through the changing of its attribute `offsetTop`.
-Setting it to zero scrolls on the very top and any positive integer will set the scroll offset in pixels.
+Setting it to zero scrolls on the very top and any positive integer sets the scroll offset in pixels.
 Setting the `offsetTop` however, triggers a scroll event, the same was as if it has been scrolled by a user.
 
 The interactions are displayed in the diagram @fig:impl:emily-scroll.
@@ -220,10 +220,10 @@ Its counterpart implementation is in the listing \ref{lst:impl:emily:handleprevi
 
 It is very similar to the previous one, though bearing some differences.
 The `lastScrolled` indicator condition with the reset and the function's exit is present at the beginning of the function as in the previous case, but setting of the indicator is delayed.
-This is because at this point it is not sure that the scrolling will be performed.
+This is because at this point it is not sure that the scrolling is performed.
 
 The editor is checked if it is scrollable in the direction.
-This solves the issue of scrolling out of bounds when preview is scrolled over the generated content beyond source, like TOC, footnotes in appendix of the document etc.
+This solves the issue of scrolling out of bounds when preview is scrolled over the generated content beyond source, such as TOC, footnotes in appendix of the document etc.
 The source code editor provides an API to ask if it is scrollable by the given offset (line 10).
 
 For this API it is required to know the direction of the scroll, which can be acquired by comparing it to the editor's current location^[At this point an idea to use the scroll event data to get the direction instead of comparing the lines might occur. Alas the event provides only the offset, not the delta, so the value would need to be subtracted one way or the other.].

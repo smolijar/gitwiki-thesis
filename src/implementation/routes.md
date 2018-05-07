@@ -46,7 +46,7 @@ This is done not through a standard `<a>` anchor tag, but via a HOC `Link`.
 The `Link` accepts (amongst others) the following React *props*^[React component's properties, are in the API documentation referred to as *props*.]:
 
 - **href**
-    - This can be either a string, referring to the name of the page^[`repo/tree` will load the component in `pages/repo/tree.js`],
+    - This can be either a string, referring to the name of the page^[`repo/tree` loads the component in `pages/repo/tree.js`],
     - or an object, as seen in the listing \ref{lst:impl:routes:1}. The containing the page string under the key `pathname` and the query parameters in `query`.
 
 - **as**
@@ -57,7 +57,7 @@ The `Link` accepts (amongst others) the following React *props*^[React component
     The Next.js application sets the document location to match the URL alias.
     However, this is just a visual facade for the client.
     All the communication with the server is handled via the former property, the `href`.
-    The FE will prompt the server for the e.g. `repo/tree?name=foo&ref=master&path=src`, no matter the alias.
+    The FE prompts the server for the e.g. `repo/tree?name=foo&ref=master&path=src`, no matter the alias.
 
 This of course leads to a problem.
 If the user gets to the aliased URL not via the client navigation, but for instance by opening a shared link, the server responds with 404.
@@ -73,7 +73,7 @@ Anyway, it is clear that the previous solution has some issues.
 Namely:
 
 1. In-lining the `link` functions is not ideal for re-usability, since the same endpoint link is probably generated in several distinct components.
-It would be more appropriate to define the functions in separate module and import them at convenience into the components in FE.
+It is be more appropriate to define the functions in separate module and import them at convenience into the components in FE.
 
 2. As mentioned, Express.js route patterns need to be defined independently for custom BE handlers, delegating to Next.js handler.
 It is inconvenient to have Express.js and Next.js routing configuration separated, since the routes refer to the same thing.

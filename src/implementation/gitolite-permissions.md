@@ -4,7 +4,7 @@ As discussed in the analysis, Gitolite requires a single UNIX user to operate wi
 The remote users can use this Gitolite's user account to access the Git repositories using SSH.
 To prevent configuration errors and simplify the Gitolite setup process, it is encouraged to use a clean user account, with new UID for Gitolite.
 
-Since application needs to access `gitolite` CLI, installed in home directory of the user, and Gitolite recommends using a clean account, we face the following dilemma:
+Since application needs to access Gitolite CLI, installed in home directory of the user, and Gitolite recommends using a clean account, the following dilemma is confronted:
 
 1. Either run the application under the Gitolite's UNIX user,
 2. or run the application under any user, but solve the UNIX permissions.
@@ -14,7 +14,7 @@ The former represents the easier way -- it is only required to install all appli
 - If the system already has another user set up to run similar applications, the administrator is required to possibly create redundancy.
 - It pollutes the user with non-Gitolite data.
 This might not even unnecessarily complicate the Gitolite maintenance, but also, more importantly goes directly against the recommendations from Gitolite's manual.
-Disobeying the manual might discourage some users and also it will complicate the Gitolite installation, which itself is not trivial.
+Disobeying the manual might discourage some users and also it would complicate the Gitolite installation, which itself is not trivial.
 
 The latter is more complicated.
 When using another UNIX user, it requires an (executable) access to the Gitolite CLI program and also, all problems which arise from running the program in such manner solve, because it was not clearly designed with this scenario at mind.
@@ -23,7 +23,7 @@ The encountered issues are now discussed.
 
 ## Run gitolite CLI under another user
 
-With default installation, the CLI program, located at `/home/git/bin/gitolite`^[I presume Gitolite uses UNIX user *git*, as in installation manual, and its home directory is set according to the Gitolite installation manual as well, using the default location.], is out of the box executable and lists valid help of the program.
+With default installation, the CLI program, located at `/home/git/bin/gitolite`^[It is assumed Gitolite uses UNIX user *git*, as in installation manual, and its home directory is set according to the Gitolite installation manual as well, using the default location.], is out of the box executable and lists valid help of the program.
 
 However, when running the Gitolite with arguments that do something, e.g. `/home/git/bin/gitolite list-repos` an error occurs.
 The output of the operation under user _smolijar_^[This is a placeholder username used in the log files. In this section it refers to name of the account bound to Gitolite] is in the listing \ref{lst:impl:gitolite:logs}.
@@ -53,7 +53,7 @@ The unknown error might very possibly be caused by the same problem -- the insuf
 From the logs it is apparent and access to the _git's_ home directory is required.
 At least with the write access for the `~/logs/` to successfully log the errors and the read access for the `/repositories`, which is most probably the cause of the unknown error.
 
-Since we need to allow the access for another user, there are two options, setting permissions for user and for the group.
+The desired effect is to allow the access for another user, there are two options, setting permissions for user and for the group.
 Exposing any home directory _to all_ users is an incredible security threat, even more so, considering the home directory holds the entrusted repositories.
 Thus setting permission for the group is the remaining solution.
 
