@@ -10,7 +10,7 @@ This lead to splitting the project into two distinct repositories:
  - `grissius/emily-editor` [@emily].
 
 The repositories are published under the MIT and BSD 2-Clause Licenses respectively.
-Their user manuals and installation instructions are in appendices, along with their designed logotypes.
+Their user manuals and installation instructions are in appendices, along with their designed logotypes in the images \ref{fig:emily-logo} and \ref{fig:gitwiki-logo}.
 
 \begin{table*}[]
 \centering
