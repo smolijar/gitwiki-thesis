@@ -15,7 +15,7 @@ File.write(
 )
 
 input = ARGF.read
-abbreviations.each {|a,b| input.gsub! /(?<=[^A-Z])#{a}(?=[^A-Z])/, "\\gls{#{a}}" }
+abbreviations.each {|a,b| input.gsub! /(?<=[^A-Z])#{a}(?=[^A-Z])/, "\\acrshort{#{a}}" }
 glossaries.each {|a,b| input.gsub! /(?<=[^a-zA-Z])#{a}(?=[^a-zA-Z])/, "\\gls{#{a}}" }
 
 input.gsub! /<<[a-zA-Z\.\/]+>>/ do |s|
