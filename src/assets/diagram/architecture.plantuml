@@ -16,9 +16,9 @@ node "Client's Browser" as client {
 actor Alice
 
 
-fe -0)- be : "\n   REST API"
+fe -0)- be : "\n   REST"
 be -right0)- gitolite : "SSH"
-be -0)- gh : "REST    \nAPI    "
+be -0)- gh : "REST"
 be -0)- gh : "  HTTPS"
 note right on link
 This is used

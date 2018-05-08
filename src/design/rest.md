@@ -1,19 +1,14 @@
-# REST API
+# RESTful API
 
-In this section I shall document crucial parts of the REST API of BE application.
+In this section the crucial parts of the RESTful API of the BE application are documented.
 
-For type definition I use Flow type alias[@flow:alias] syntax.
-For some objects types are reused, common _entity_ types are described in listing \ref{lst:design:types}.
+For the type definition in this chapter, the Flow type alias [@flow:alias] syntax is used.
+Since some object types are reused in the data, common _entity_ types are described in the listing \ref{lst:design:types}.
 
 The overall overview of the API is presented in the table \ref{tbl:design:rest}.
-
-The following subsections will describe the individual API endpoints.
-
-
-For the most part, there is nothing surprising in the majority of the API.
-Thusly I shall only cover the sections of API that are interesting from the perspective of data or design.
-
-The only major problem with the design was to design a commit creation in REST architecture, which is perhaps not as straightforward as it seems it the first glance.
+The following subsections describe the individual API endpoints.
+Only parts of the API that are interesting from the perspective of either data or design are covered in the chapter.
+The major logical issue is the design of a commit creation in REST architecture, which is discussed later in the section.
 
 ```{language=ts caption="Entity types definitions" label="lst:design:types"}
 type Entry = {
@@ -44,7 +39,7 @@ type Repository = {
 ```
 
 \begin{table*}[]\centering
-\caption{REST API overview}\label{tbl:design:rest}
+\caption{RESTful API overview}\label{tbl:design:rest}
 \csvautobooktabular{src/design/rest/all.csv}
 \end{table*}
 
@@ -52,7 +47,7 @@ type Repository = {
 
 ## Tree
 
-### `GET /api/v1/repos/<provider>/<name>/tree/<ref>/<path>`
+### `GET /api/v1/repos/{provider}/{name}/tree/{ref}/{path}`
 
 ```{language=ts caption="REST: GET Tree response" label="lst:design:tree:return"}
 {
@@ -65,11 +60,11 @@ type Repository = {
 \csvautobooktabular[separator=semicolon]{src/design/rest/tree.csv}
 \end{table*}
 
-The tree defined by relative path `<path>` from repository `<name>` from provider `<provider>` at Git reference `<ref>` is returned.
+The tree defined by the relative path `{path}` from repository `{name}` from provider `{provider}` at Git reference `{ref}` is returned.
 The response JSON structure is defined in the listing \ref{lst:design:tree:return}.
-Its response codes are in the table \ref{tbl:design:rest:tree:get:res}
+Its response codes are displayed in the table \ref{tbl:design:rest:tree:get:res}
 
-### `PATCH /api/v1/repos/<provider>/<name>/tree/<ref>/<path>`
+### `PATCH /api/v1/repos/{provider}/{name}/tree/{ref}/{path}`
 
 ```{language=ts caption="REST: PATCH Tree request body" label="lst:design:tree:body"}
 {
@@ -78,39 +73,41 @@ Its response codes are in the table \ref{tbl:design:rest:tree:get:res}
 }
 ```
 
-Create a Git commit with supplied changes and given commit message on the repository defined by the request's URL as in previous example.
+A Git commit with supplied changes and given commit message on the repository defined by the request's URL as in the previous example is created.
 Use user's credentials as _commiter_ and _author_ from `Authorization` header.
 
-It might be objected that using `PATCH`^[`PATCH` method semantics has far more relaxed specification compared to methods `POST`, `PUT`, `DELETE`, which could be used instead.] is impure with regard to REST.
+The `PATCH`^[The `PATCH` method does not have as strictly defined semantics by the conventions in the RESTful APIs unlike methods `POST`, `PUT` or `DELETE`, which could be used instead.] is unusual with regard to RESTful APIs.
 However, there is a very special scenario calling for special solution, which is the `PATCH` method.
-If `POST` method was to be used on the tree, it would semantically only creating tree (or subtree at given path) and _not_ updating.
-Updating could be achieved by `PUT` on the tree, but then in the request the whole new subtree would need to provided.
-Not to mention that `DELETE` method should be used for the exotic case or only removing a single file or subtree.
+If a `POST` method would be invoked on the tree instead, its semantics would be *creating* a tree and _not_ updating (following the RESTful conventions).
+Updating (and creating alike) could be achieved by using a `PUT` method.
+When using `PUT` or `POST` however, it is expected to provide the resource, in this case the tree (not _changes_).
+Following the conventions, the `DELETE` method should be used only for the rare case of only removing a single file or subtree.
 This concept is very confusing and allows only one change per commit.
 
-Using `POST` on a resource `/commits`^[Hypothetical idea, the resource does not exist in the API] would allow to perform multiple changes in one commit.
+Using `POST` on a resource `/commits`^[Hypothetical idea, the resource does not exist in the API] allows to perform multiple changes in one commit.
 However the commit data are not available in the FE.
-What is available, is a sequence of changes on the tree describing the commit, then it cannot really be created via `POST` method.
+What is available, is a sequence of changes describing the commit.
+Thus using `POST` is again not an ideal solution with regard to RESTful API.
 Instead a `PATCH` is used.
 
-The request body JSON structure is defined in the listing \ref{lst:design:tree:body}.
+The JSON structure of the request body is defined in the listing \ref{lst:design:tree:body}.
 Its response codes are in the table \ref{tbl:design:rest:tree:get:res} (ditto).
 
-### `GET /api/v1/repos/<provider>/<name>/refs`
+### `GET /api/v1/repos/{provider}/{name}/refs`
 
 ```{language=ts caption="REST: GET Refs response" label="lst:design:refs:res"}
 Array<Reference>
 ```
 
-Get available refs from repository defined by URL.
-The response JSON structure is defined in the listing \ref{lst:design:refs:res}.
-Its response codes are in the table \ref{tbl:design:rest:tree:get:res} (ditto).
+Retrieve the available refs from the repository defined by the URL.
+The JSON structure of the response is defined in the listing \ref{lst:design:refs:res}.
+Its response codes are listed in the table \ref{tbl:design:rest:tree:get:res} (ditto).
 
 ## Repository
 
-Repository section contains endpoint for listing the available repositories.
-It has standard return codes as discussed in previous endpoints (excluding 404) and returns JSON `Array<Repository>` as defined in listing \ref{lst:design:types}.
+The repository section contains an endpoint for listing the available repositories.
+It has standard return codes as discussed in the previous endpoints (excluding 404) and returns JSON of `Array<Repository>` as defined in the listing \ref{lst:design:types}.
 
 ## Auth
 
-Auth sections provides endpoints for fetching user data, authentication via GitHub and uploading GitHub personal access token, which is used for cloning GitHub repositories via HTTPS.
+Auth section provides endpoints for fetching user data, the authentication via GitHub and uploading GitHub personal access token, which is used for cloning GitHub repositories via HTTPS.
