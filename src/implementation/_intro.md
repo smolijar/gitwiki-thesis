@@ -9,6 +9,9 @@ This lead to splitting the project into two distinct repositories:
  - `grissius/gitwiki` [@gitwiki] and
  - `grissius/emily-editor` [@emily].
 
+The repositories are published under the MIT and BSD 2-Clause Licenses respectively.
+Their user manuals and installation instructions are in appendices, along with their designed logotypes.
+
 \begin{table*}[]
 \centering
 \caption{Implementation repository statistics}
