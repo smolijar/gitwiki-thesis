@@ -8,14 +8,14 @@
 
 ### Meta sections
 * [Acknowledgements](./src/meta/thanks.md) :octopus:
-* [Abstract (cs)](./src/meta/abstract-cs.md) :octopus:
+* [Abstract (cs)](./src/meta/abstract-cs.md) :octopus: :feelsgood:
 * [Keywords (cs)](./src/meta/keywords-cs.md) :octopus:
-* [Abstract](./src/meta/abstract.md) :octopus:
+* [Abstract](./src/meta/abstract.md) :octopus: :feelsgood:
 * [Keywords](./src/meta/keywords.md) :octopus:
 
 
 ### Tru sections
-#### [Introduction](./src/introduction.md) :octopus:
+#### [Introduction](./src/introduction.md) :octopus: :feelsgood:
 #### [Goal](./src/goal.md) :octopus: :ram: :feelsgood:
 #### Analysis
 * [Business process](./src/analysis/business-process.md) :octopus: :ram: :feelsgood:
@@ -43,25 +43,25 @@
 * [Emily](./src/design/emily.md) :octopus: :ram: :feelsgood:
 * [Summary](./src/design/_summary.md) :octopus: :ram: :feelsgood:
 
-#### [UI wireframe testing](./src/heuristics.md) :octopus: :ram:
-#### [Implementation](./src/implementation/_intro.md) :octopus: :ram:
-* [Tools](./src/implementation/tools.md) :octopus: :ram:
-* [Gitolite Permissions](./src/implementation/gitolite-permissions.md) :octopus: :ram:
-* [Routes](./src/implementation/routes.md) :octopus: :ram:
-* [Nodegit](./src/implementation/nodegit.md) :octopus: :ram:
-* [Emily — synchronized scrolling](./src/implementation/scrolling.md) :octopus: :ram:
+#### [UI wireframe testing](./src/heuristics.md) :octopus: :ram: :feelsgood:
+#### [Implementation](./src/implementation/_intro.md) :octopus: :ram: :feelsgood:
+* [Tools](./src/implementation/tools.md) :octopus: :ram: :feelsgood:
+* [Gitolite Permissions](./src/implementation/gitolite-permissions.md) :octopus: :ram: :feelsgood:
+* [Routes](./src/implementation/routes.md) :octopus: :ram: :feelsgood:
+* [Nodegit](./src/implementation/nodegit.md) :octopus: :ram: :feelsgood:
+* [Emily — synchronized scrolling](./src/implementation/scrolling.md) :octopus: :ram: :feelsgood:
 
 #### Testing
-* [Automatic testing](./src/test/auto.md) :octopus:
-* [Usability testing](./src/test/usability.md) :octopus: :construction:
+* [Automatic testing](./src/test/auto.md) :octopus: :feelsgood:
+* [Usability testing](./src/test/usability.md) :octopus: :feelsgood:
 
-#### [Conclusion](./src/conclusion.md) :octopus:
+#### [Conclusion](./src/conclusion.md) :octopus: :feelsgood:
 
 
 ### Appendix sections
 * [MI-NUR project highlights](./src/nur.md) :octopus:
 * [Emily user manual](./src/readme/emily.md) :octopus:
-* [Gitwiki user manual](./src/readme/gitwiki.md) :construction:
+* [Gitwiki user manual](./src/readme/gitwiki.md) :octopus:
 * [Emily logo](./src/logo/emily.md) :octopus:
 * [Gitwiki logo](./src/logo/gitwiki.md) :octopus:
 
