@@ -36,5 +36,4 @@ The custom Git hosting service allows to create a complex permission control lay
 
 The former design likely reaches to more users, while the latter provides powerful control over the repositories, allowing for a solid authorization layer.
 
-Thusly, as true Meme Queen suggets: _"Why not both?"_
-The concept of _repository providers_ is described in the following section, which provides a solution to overcome the obstacle of having both, the remote repositories and the firm control over the local ones in parallel.
+The concept of _repository providers_ is described in the following section, which provides a solution to overcome the obstacle of having both: the remote repositories and the firm control over the local ones in parallel.
