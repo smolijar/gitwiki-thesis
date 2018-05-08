@@ -96,7 +96,7 @@ The repository provider API, allows for the providers to use any form of asynchr
 In this case, GitHub's RESTful API is used.
 
 
-![Design: Local provider interactions](./src/assets/diagram/github-provider){#fig:design:github-provider width=100%}
+![Design: GitHub provider interactions](./src/assets/diagram/github-provider){#fig:design:github-provider width=100%}
 
 The diagram @fig:design:github-provider shows the GitHub provider performing the same tasks as required from the local provider.
 For simplicity it is presumed that the user Alice has valid access and no errors occur.

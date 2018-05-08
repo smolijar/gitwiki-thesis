@@ -19,7 +19,7 @@ As seen in the diagram, server's repositories are exposed via SSH protocol.
 
 ## BE structure
 
-![Design: Architecture of the application](./src/assets/diagram/architecture-be){#fig:design:architecture:be width=100%}
+![Design: Architecture of the BE application](./src/assets/diagram/architecture-be){#fig:design:architecture:be width=100%}
 
 The essential BE structure is showed in the diagram @fig:design:architecture:be.
 
