@@ -118,20 +118,20 @@ The testing provided only qualitative output in form a test log made during and 
 The following issues are discovered during the testing:
 
 - The link in the repository index has incorrect cursor.
-*Solution: use pointer cursor to indicate the component is a link.*
+*Solution:\ use pointer cursor to indicate the component is a link.*
 
 - It is not apparent from the reference widget it is interactive.
 Its behavior surprises users.
-*Solution: add a caret icon to symbolize its function and use click event instead of hover to eliminate accidental interactions.*
+*Solution:\ add a caret icon to symbolize its function and use click event instead of hover to eliminate accidental interactions.*
 
 - When browsing the repository tree and currently a folder is selected, duplicate file listing is visible in the main content as well as in the side-menu.
-*Solution: remove the index from the side-menu when on a folder.*
+*Solution:\ remove the index from the side-menu when on a folder.*
 
 - In the side-menu, the listing of the current folder is titled *index*. Users stated that using label *files* is more self-explanatory.
-*Solution: change the label.*
+*Solution:\ change the label.*
 
 - The users find it difficult to use the breadcrumbs menu for navigating to the root of the repository, since the menu has links for the Repository index, the current repository, the reference and path fragments.
-*Solution: visually divide the repository with reference from the path in breadcrumbs menu; remove repository index link.*
+*Solution:\ visually divide the repository with reference from the path in breadcrumbs menu; remove repository index link.*
 
 - SHA hashes seem to have different lengths using a proportional font.
-*Solution: use monospace font for the SHA hashes.*
+*Solution:\ use mono-space font for the SHA hashes.*
