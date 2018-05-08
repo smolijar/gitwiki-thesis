@@ -49,16 +49,16 @@ OID-Object Identifier
 CI-Continuous Integration
 %glossaries
 ESLint-Pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript
-Angular 2-A TypeScript-based open-source front-end web application platform
-React-A JavaScript library for building user interfaces.
-Vue-An open-source JavaScript framework for building user interfaces.
-Ember-An open-source JavaScript web framework, based on the Model–view–viewmodel (MVVM) pattern.
-Redux-An open-source JavaScript library for managing application state.
-Next.js-Framework for server-rendered or statically-exported React applications.
-textarea-An HTML element
+Angular 2-TypeScript-based open-source front-end web application platform
+React-JavaScript library for building user interfaces
+Vue-Open-source JavaScript framework for building user interfaces
+Ember-Open-source JavaScript web framework, based on the Model–view–viewmodel (MVVM) pattern
+Redux-Open-source JavaScript library for managing application state
+Next.js-Framework for server-rendered or statically-exported React applications
+textarea-HTML element for multi-line input
 Git-Popular distributed VCS for non-linear workflow
-Pandoc-A universal document converter tool
-toolbar-A row of symbols (icons) on a screen that show the different things that you can do with a particular program
+Pandoc-Universal document converter tool
+toolbar-Row of symbols (icons) on a screen that show the different things that you can do with a particular program
 Flow-Static Type Checker for JavaScript
 PropTypes-Type-checking definitions for React components
 Express.js-Fast, unopinionated, minimalist web framework for Node.js
@@ -69,4 +69,4 @@ wireframe-Low-fidelity, simplified outline of the product's UI
 404-HTTP Not Found
 Promise-Object representing the eventual completion (or failure) of an asynchronous operation, and its resulting value
 local storage-Window property which allows to save key/value pairs in a web browser
-NUR-Návrh uživatelského rozhraní (User Interface Design)
+NUR-Návrh uživatelského rozhraní (Design of User Interface)
