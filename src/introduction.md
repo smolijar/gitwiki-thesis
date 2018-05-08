@@ -7,7 +7,7 @@ The means of achieving the goals, namely the potential to satisfy the advanced u
 They include, but are not limited to, the incorporation of years tested technologies used by developers, to design the system upon.
 One of which is Git, which is a powerful VCS, growing in popularity amongst OSS community and even corporate development.
 Another example is an emphasis on using a LML for the document notation.
-LMLs, such as Markdown or Asciidoc are favored over binary document formats for their readability and line-oriented snapshot versioning potential; and even over the complex and difficult to write markup languages (e.g. \LaTeX\ or HTML), for their simplicity.
+LMLs, such as Markdown or AsciiDoc are favored over binary document formats for their readability and line-oriented snapshot versioning potential; and even over the complex and difficult to write markup languages (e.g. \LaTeX\ or HTML), for their simplicity.
 A strong aspect of the system supporting efficiency and comfort of use for the advanced users is to provide a CLI via Git, apart from a WUI.
 The two interfaces provide equal access options for the users.
 For better support of the collaborative development, the system features access control.

@@ -18,5 +18,5 @@ The UI is tested for usability using Jakob Nielsen's heuristics [@nn:heuristics]
 
 In the future, the system can be extended to provide pre-rendering of the repository's pages into HTML.
 However, this requires a thorough analyses and design of the solution to handle the current parallel development capabilities of the system; for instance caching only a single branch or a user or heuristic selected subset.
-Apart from this, the designed LML editor can be extended by other language modes, apart from the existing support for Markdown and Asciidoc, or by richer user interactions inspired from IDE or coding editor development.
+Apart from this, the designed LML editor can be extended by other language modes, apart from the existing support for Markdown and AsciiDoc, or by richer user interactions inspired from IDE or coding editor development.
 

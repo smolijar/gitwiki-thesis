@@ -85,7 +85,7 @@ repo foo
     -   VREF/NAME/Makefile  =   @juniordevs
 ```
 
-The sample Gitolite configuration in listing \ref{lst:gitolite:sample} taken from [@gitolite:vref] showcases the access settings for the repository _foo_.
+The sample Gitolite configuration in the listing \ref{lst:gitolite:sample} taken from [@gitolite:vref] showcases the access settings for the repository _foo_.
 It grants unrestricted read-write access (`RW+`^[the "`+`" symbol means advanced access to e.g. force push branches]) to all developers (group called `@alldevs`) and restricts access for the junior developers (restriction using "`-`" symbol) to push more than 5 files and to change the `Makefile`.
 
 This configuration sample demonstrates the power of the fine grain access control Gitolite provides, which is not only superior to GitLab in its expressiveness, but is also stored in simple configuration file in a Git repository available through Gitolite itself.
@@ -105,7 +105,7 @@ Before resolving the second issue of user access revealed earlier, which is the 
 This is important because the system needs to have means of authenticating the user on the web as well as of checking the authorization rules for the repository access, which behaves in the exactly same fashion as the one over SSH.
 
 Note that these are neither an installation instructions, nor an in depth explanation of Gitolite works inside.
-Just bare essential to understand it's basic concepts.
+Just bare essential to understand its basic concepts.
 
 #### Install
 
@@ -139,7 +139,7 @@ command="/home/git/bin/gitolite-shell dump",no-port-forwarding,no-X11-forwarding
 # gitolite end
 ```
 Gitolite restricts incoming users from full access via SSH configuration.
-Notice the `authorized_keys` file with running Gitolite with several users in listing \ref{lst:gitolite:authkeys}.
+Notice the `authorized_keys` file with running Gitolite with several users in the listing \ref{lst:gitolite:authkeys}.
 The file `authorized_keys` does not only contain the public keys authorized for access, one per line.
 Apart from many options irrelevant at this moment, it contains an option `command`.
 It _"specifies that the command is executed whenever this key is used for authentication. The command supplied by the user (if any) is ignored. (...) This option might be useful to restrict certain public keys to perform just a specific operation. An example might be a key that permits remote backups but nothing else."_ [@openbsd:ssh:command]

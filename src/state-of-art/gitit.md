@@ -61,7 +61,7 @@ Though lacking the specialized tools for the selected LMLs, it offers
 2. an export option of the page into a rich set of document formats, including other LMLs (Markdown, MediaWiki, AsciiDoc, etc.), typesetting formats (e.g. \LaTeX, ConTeXt), office document formats, DocBook, sideshow formats and much more, using Pandoc [@pandoc].
 
 The documents are implicitly written in the Pandoc's extended version of Markdown.
-In a YFM (document preamble), meta-data including format can be set, as seen in listing \ref{lst:gitit:preamble}.
+In a YFM (document preamble), meta-data including format can be set, as seen in the listing \ref{lst:gitit:preamble}.
 The supported formats include reStructuredText, LaTeX, HTML, DocBook and Org [@org] markup. [@gitit]
 
 ```{language=latex caption="Gitit: Page preamble example" label="lst:gitit:preamble"}
@@ -87,7 +87,7 @@ Git repository itself is not limited to use a single branch, but the application
 ![Gitit: Page preview](./src/assets/images/gitit-page){#fig:gitit:page width=100%}
 
 The UI, though appearing more modern, is fairly similar to the previous entry Ikiwiki, as seen on the page detail in the image @fig:gitit:page.
-There are improvements, that include navigation tools: for instance _All pages_ index and _Categories_^[Categories can be assigned to individual pages in YFM as seen in listing \ref{lst:gitit:preamble}.].
+There are improvements, that include navigation tools: for instance _All pages_ index and _Categories_^[Categories can be assigned to individual pages in YFM as seen in the listing \ref{lst:gitit:preamble}.].
 Minor, yet welcoming change, is that links atop the page contents are tabular.
 The links are semantically more akin to tab widgets, than navigation links.
 This design option, known from other popular wiki software, e.g. [@mediawiki] is an appealing change, that eliminates user confusion with the navigation and current state of the view.

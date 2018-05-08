@@ -117,7 +117,7 @@ After the branches are reset, the function is done and it returns the repository
 <<nodegit/updateRemoteRefs.js>>
 ```
 
-As seen in listing \ref{lst:impl:nodegit:updateremoterefs} the function proceeds as follows:
+As seen in the listing \ref{lst:impl:nodegit:updateremoterefs} the function proceeds as follows:
 
 1. Fetch all remote references using NodeGit's `Repository.fetchAll`
 2. Create local references through a function that has already been discussed

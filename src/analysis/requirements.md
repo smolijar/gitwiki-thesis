@@ -6,7 +6,7 @@ The former is referred to as WUI and latter as CLI throughout the text.
 ## Functional requirements
 
 Wiki system works with text files formatted in a specific markup syntax.
-System must provide support for Asciidoc [@asciidoctor] and Markdown [@gruber:markdown] and must allow extensibility for other LMLs using modules.
+System must provide support for AsciiDoc [@asciidoctor] and Markdown [@gruber:markdown] and must allow extensibility for other LMLs using modules.
 The set of at least two mentioned LMLs (possibly extended by additional ones) is referred to as *supported markup*.
 
  - F-1\. **Authentication**
@@ -38,10 +38,10 @@ The set of at least two mentioned LMLs (possibly extended by additional ones) is
 
  - F-4\. **Content browsing**
 
-  Users can browse the published content; this action may or may not require authorization based on current ACL for WUI.
+  Users can browse the published content; this action may or may not require authorization based on the current ACL for WUI.
   The authorized users can access repository directly via CLI.
 
-  The WUI provides an interface for repository file browsing relevant to the given (or current by default) repository revision,
+  The WUI provides an interface for repository file browsing relevant to the current repository revision,
   as well as a file preview and a list of available revisions with their changes.
   File preview of the *supported markup* documents interprets the markup and displays a rendered document.
 

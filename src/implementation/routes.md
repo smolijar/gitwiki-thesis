@@ -14,7 +14,7 @@ Otherwise (in this case), the routing becomes unmaintainable as the application 
 
 Having the BE and FE completely independent with each other is the easiest approach.
 The problem appeared when more than few routes that required formatting its arguments appeared.
-This required a refactor of the logic into an in-component helper functions as seen in listing \ref{lst:impl:routes:1}.
+This required a refactor of the logic into an in-component helper functions as seen in the listing \ref{lst:impl:routes:1}.
 
 ```{language=jsx caption="Implementation: Generating routes via inline functions" label="lst:impl:routes:1"}
 import Link from 'next/link';

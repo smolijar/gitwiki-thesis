@@ -62,7 +62,7 @@ Thus setting permission for the group is the remaining solution.
 A UNIX group is created and setup in the following steps:
 
 1. Create group _gitolite_: `sudo groupadd gitolite`
-2. Add Gitolite and current user to the group: `sudo usermod -a -G gitolite git && sudo usermod -a -G gitolite smolijar`
+2. Add Gitolite and the current user to the group: `sudo usermod -a -G gitolite git && sudo usermod -a -G gitolite smolijar`
 3. Change the _git_ home repository's group ownership recursively: `sudo chgrp -R gitolite /home/git/`
 4. Allow the user to write in selected folders: `sudo chmod -R 2775 /home/git/.gitolite`
 

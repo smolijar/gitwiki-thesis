@@ -1,6 +1,6 @@
 # Usability testing
 
-Apart from heuristic analysis of the UI in chapter _\hyperref[chapter:ui-testing]{UI testing}_, a live usability testing with working prototype and real users has been conducted.
+Apart from heuristic analysis of the UI in the chapter _\hyperref[chapter:ui-testing]{UI testing}_, a live usability testing with working prototype and real users has been conducted.
 
 In this chapter the testing scenarios are presented and then the testing itself and proposed solutions to UI issues are briefly summarized.
 
@@ -107,7 +107,7 @@ The testers were briefly introduces and thus it is known that they:
 
 - are developers,
 - know Git fairly well and use it regularly^[except for one tester, who uses Subversion in their workspace, but uses Git on personal projects],
-- know Markdown syntax, two users are also familiar with Asciidoc, one of which prefers it to Markdown.
+- know Markdown syntax, two users are also familiar with AsciiDoc, one of which prefers it to Markdown.
 
 All users qualified for the UI testing of the system.
 The UI of the system's prototype testing is conducted in combination of live testing and shared screen with voice chat.
@@ -127,10 +127,10 @@ Its behavior surprises users.
 - When browsing the repository tree and currently a folder is selected, duplicate file listing is visible in the main content as well as in the side-menu.
 *Solution: remove the index from the side-menu when on a folder.*
 
-- In the side-menu, the listing of current folder is titled *index*. Users stated that using label *files* is more self-explanatory.
+- In the side-menu, the listing of the current folder is titled *index*. Users stated that using label *files* is more self-explanatory.
 *Solution: change the label.*
 
-- The users find it difficult to use the breadcrumbs menu for navigating to the root of the repository, since the menu has links for Repository index, current repository, reference and path fragments.
+- The users find it difficult to use the breadcrumbs menu for navigating to the root of the repository, since the menu has links for the Repository index, the current repository, the reference and path fragments.
 *Solution: visually divide the repository with reference from the path in breadcrumbs menu; remove repository index link.*
 
 - SHA hashes seem to have different lengths using a proportional font.

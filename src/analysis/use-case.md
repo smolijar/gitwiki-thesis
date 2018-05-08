@@ -5,7 +5,7 @@
 ![Use case model: Actors](./src/assets/diagram/actors){#fig:uc:actors height=60%}
 
 The system in general recognizes three types of users.
-The role hierarchy is illustrated in diagram @fig:uc:actors.
+The role hierarchy is illustrated in the diagram @fig:uc:actors.
 
 1. Anonymous user
 
@@ -23,7 +23,7 @@ The role hierarchy is illustrated in diagram @fig:uc:actors.
 
 ![Use case model: Browsing](./src/assets/diagram/uc-browsing){#fig:uc:browsing width=80%}
 
-The diagram @fig:uc:browsing displays the use cases for browsing section.
+The diagram @fig:uc:browsing displays the use cases for the browsing section.
 
 - UC-1 **Git remote access**
 
@@ -35,7 +35,7 @@ The diagram @fig:uc:browsing displays the use cases for browsing section.
   1. Read operations (`clone`, `fetch`, `pull` etc.)
   1. Write operations (`push` and its variations)
 
-  If the user is not authenticated and tries to access any repository (including the public ones)^[Necessity of this restriction has been discussed earlier in section _User access_], operation is not permitted.
+  If the user is not authenticated and tries to access any repository (including the public ones)^[Necessity of this restriction has been discussed earlier in the section _User access_], operation is not permitted.
 
 - UC-2 **Sign in**
 

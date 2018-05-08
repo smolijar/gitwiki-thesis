@@ -11,7 +11,7 @@ Having Wiki.js permissions compiled into the Gitolite configuration would degene
 
 Apart from that, there are few other important, though less fundamental issues.
 
-Firstly is the breach of the _F-3 Content management_ which demands support for Markdown and Asciidoc as well as modular extensibility.
+Firstly is the breach of the _F-3 Content management_ which demands support for Markdown and AsciiDoc as well as modular extensibility.
 Some systems, such as Wiki.js, are bound to specific formats, so extensibility is not in question.
 The only system that by brief glance plausibly satisfies the requirement is Gollum, which alas failed at the following issue.
 

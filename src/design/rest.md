@@ -3,7 +3,7 @@
 In this section the crucial parts of the RESTful API of the BE application are documented.
 
 For the type definition in this chapter, the Flow type alias [@flow:alias] syntax is used.
-Since some object types are reused in the data, common _entity_ types are described in listing \ref{lst:design:types}.
+Since some object types are reused in the data, common _entity_ types are described in the listing \ref{lst:design:types}.
 
 The overall overview of the API is presented in the table \ref{tbl:design:rest}.
 The following subsections describe the individual API endpoints.
@@ -73,7 +73,7 @@ Its response codes are displayed in the table \ref{tbl:design:rest:tree:get:res}
 }
 ```
 
-A Git commit with supplied changes and given commit message on the repository defined by the request's URL as in previous example is created.
+A Git commit with supplied changes and given commit message on the repository defined by the request's URL as in the previous example is created.
 Use user's credentials as _commiter_ and _author_ from `Authorization` header.
 
 The `PATCH`^[The `PATCH` method does not have as strictly defined semantics by the conventions in the RESTful APIs unlike methods `POST`, `PUT` or `DELETE`, which could be used instead.] is unusual with regard to RESTful APIs.
@@ -106,7 +106,7 @@ Its response codes are listed in the table \ref{tbl:design:rest:tree:get:res} (d
 ## Repository
 
 The repository section contains an endpoint for listing the available repositories.
-It has standard return codes as discussed in previous endpoints (excluding 404) and returns JSON of `Array<Repository>` as defined in listing \ref{lst:design:types}.
+It has standard return codes as discussed in the previous endpoints (excluding 404) and returns JSON of `Array<Repository>` as defined in the listing \ref{lst:design:types}.
 
 ## Auth
 

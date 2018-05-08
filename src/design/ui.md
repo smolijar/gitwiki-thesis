@@ -31,7 +31,7 @@ The wireframe on the image @fig:ui:blob, presents the file preview.
 
 The breadcrumbs menu contains not only the repository and the fragmented path navigation to the file, but more importantly, a fragment of the menu that displays the Git reference.
 That is an interactive widget user can use to swap branches.
-This solves another issue^[From the point of UI, the logic has been discussed in RESTful API design section.] from previous chapter's summary, which is branching model with a parallel development support.
+This solves another issue^[From the point of UI, the logic has been discussed in the RESTful API design section.] from the previous chapter's summary, which is branching model with a parallel development support.
 
 There is a sidebar menu and the main content.
 The side-menu holds the link to the commit screen and a list of the files in the current directory.

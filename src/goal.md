@@ -61,7 +61,7 @@ Once familiar with the basic syntax, it is not an issue to write documents in a 
 
 Most of these features, though not necessarily all, are typical for most LMLs.
 A form of a simpler markup language is used in almost every wiki system.
-The reason to favor Markdown [@gruber:markdown] and Asciidoc [@asciidoctor] over Wikitext [@wikitext], used by MediaWiki for example, is that the former are rooted in the developer community.
+The reason to favor Markdown [@gruber:markdown] and AsciiDoc [@asciidoctor] over Wikitext [@wikitext], used by MediaWiki for example, is that the former are rooted in the developer community.
 LMLs bring advantage of familiar syntax to users for the archetypal usage as well as the prioritized special syntax features for development, such as source code snippets etc.
 
 ## Focus on advanced users

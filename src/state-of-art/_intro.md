@@ -18,7 +18,7 @@ The remaining desired features, apart from Git VCS in the BE, are:
 
 * **Document format**
     * Variety of the supported languages
-    * Support for Markdown and Asciidoc
+    * Support for Markdown and AsciiDoc
     * Extensibility for the new LMLs
     * Language feature support
 
