@@ -1,7 +1,7 @@
 # Ikiwiki
 
-Ikiwiki is a software project licensed under GNU GPL version 2 or later[@ikiwiki:free], written in Perl and was first released in April 2006 by Joey Hess et al.
-_"Ikiwiki is a wiki compiler. It converts wiki pages into HTML pages suitable for publishing on a website."_[@ikiwiki]
+Ikiwiki is a software project licensed under GNU GPL version 2 or later [@ikiwiki:free], written in Perl and was first released in April 2006 by Joey Hess et al.
+_"Ikiwiki is a wiki compiler. It converts wiki pages into HTML pages suitable for publishing on a website."_ [@ikiwiki]
 What is the most admirable about Ikiwiki is that can use Subversion as well as Git, which implies a form of VCS abstraction is used throughout the system.
 This can result however, in the lack of features such as access control (because general implementation of this feature is exceptionally complex) or Git specific features such as branching model for parallel development.
 
@@ -16,10 +16,10 @@ Access control in the WUI is possible [@ikiwiki:httpauth] through the `httpauth`
 This allows to create a private wiki as a whole, as well as to pinpoint the pages that require authentication (and leaving rest implicitly public).
 
 
-The subset of pages that require authentication is defined using _PageSpec_[@ikiwiki:pagespec].
+The subset of pages that require authentication is defined using _PageSpec_ [@ikiwiki:pagespec].
 This allows to define the pages as a mere list of their names, but also using advanced functions for matching links to the pages, date creation or pages created by the given user.
 PageSpec is a surprisingly powerful tool, as shown in the following demonstration.
-"_For example, to match all pages in a blog that link to the page about music and were written in 2005_"[@ikiwiki:pagespec] use PageSpec displayed in listing \ref{lst:ikiwiki:pagespec}. [@ikiwiki:pagespec]
+"_For example, to match all pages in a blog that link to the page about music and were written in 2005_" [@ikiwiki:pagespec] use PageSpec displayed in listing \ref{lst:ikiwiki:pagespec}. [@ikiwiki:pagespec]
 
 ```{language=lisp caption="Ikiwiki: PageSpec example" label="lst:ikiwiki:pagespec"}
 blog/* and link(music) and creation_year(2005)
@@ -38,7 +38,7 @@ Serving the repository over SSH is not provided by the software.
 ## Document format
 
 Ikiwiki supports primarily Markdown with extended syntax^[Using _wiki links_(`[[WikiLink#foo]]`) and its akin _directives_.].
-However, via plug-ins it features support for HTML, WikiText [@wikitext], Textile [@textile] or reStructuredText[@rst]. [@ikiwiki:features]
+However, via plug-ins it features support for HTML, WikiText [@wikitext], Textile [@textile] or reStructuredText [@rst]. [@ikiwiki:features]
 
 Extensive document editing is expected to be handled with a direct file access in custom environment.
 The WUI offers only a simple textarea.

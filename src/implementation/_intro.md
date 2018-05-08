@@ -6,8 +6,8 @@ The implementation is software, published from its early stages on GitHub.
 The Emily editor source codes are separated from the main system for the potential of being used as an independent component, because of the rich and rather outstanding feature set mentioned in the design chapter.
 This lead to splitting the project into two distinct repositories:
 
- - `grissius/gitwiki`[@gitwiki] and
- - `grissius/emily-editor`[@emily].
+ - `grissius/gitwiki` [@gitwiki] and
+ - `grissius/emily-editor` [@emily].
 
 \begin{table*}[]
 \centering

@@ -72,7 +72,7 @@ This is a side issue encountered when greedily setting the group's permission fo
 
 After setting up the permissions like so, Gitolite CLI seemingly works, while the Gitolite SSH interface stops working, rejecting all the connections with error regarding a missing repository.
 
-_"This is the default behavior for SSH. It protects user keys by enforcing `rwx------` on `$HOME/.ssh` and ensuring only the owner has write permissions to `$HOME`. If a user other than the respective owner has write permission on the `$HOME` directory, they could maliciously modify the permissions on `$HOME/.ssh`, potentially hijacking the user keys, `known_hosts`, or something similar. In summary, the following permissions on `$HOME` will be sufficient for SSH to work."_[@stackexchange:ssh]
+_"This is the default behavior for SSH. It protects user keys by enforcing `rwx------` on `$HOME/.ssh` and ensuring only the owner has write permissions to `$HOME`. If a user other than the respective owner has write permission on the `$HOME` directory, they could maliciously modify the permissions on `$HOME/.ssh`, potentially hijacking the user keys, `known_hosts`, or something similar. In summary, the following permissions on `$HOME` will be sufficient for SSH to work."_ [@stackexchange:ssh]
 
 SSH for security reasons kills any incoming connections to a users, whose home folder is by its standards insecure.
 

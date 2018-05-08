@@ -1,13 +1,13 @@
 # Gitit
 
-Gitit[@gitit], a software by John MacFarlane, is written in Haskell.
+Gitit [@gitit], a software by John MacFarlane, is written in Haskell.
 It made its initial release in November 2008 and brings many features compared to the previous entry.
 The strongest of which is its flexibility, which can be seen in the VCS abstraction and the document format options as well.
 
 Gitit can use either a Git, Darcs [@darcs] or a Mercurial [@mercurial] repository.
 The rather remarkable document format options are discussed later in the appropriate section.
 
-From the user experience, it is incomparable to Ikiwiki^[Ikiwiki software and its homepage and documentation wiki are maintained in a single repository[@ikiwiki:git], with confusing user manual and installation instructions scattered in the wiki.] and can be set up in literally few minutes with basic configuration.
+From the user experience, it is incomparable to Ikiwiki^[Ikiwiki software and its homepage and documentation wiki are maintained in a single repository [@ikiwiki:git], with confusing user manual and installation instructions scattered in the wiki.] and can be set up in literally few minutes with basic configuration.
 
 
 ## User access control

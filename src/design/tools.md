@@ -27,7 +27,7 @@ The hardest problems face the clients that cannot interpret JS.
 This might seem banal, because generally speaking all the users browse the web with a browser which JS engine.
 The issue becomes more realistic, when non-user agents are considered, such as search engine spiders for instance.
 
-This issue is tacked by several libraries, from which Next.js[@next] with native support for React is selected.
+This issue is tacked by several libraries, from which Next.js [@next] with native support for React is selected.
 
 ## FE State container
 
@@ -43,7 +43,7 @@ This flow is displayed on the diagram @fig:design:flux.
 
 Flux is a general architecture concept and though having its Facebook's implementation of the core modules, there are many other existing options.
 
-One of those is Redux[@redux], which is used in the project.
+One of those is Redux [@redux], which is used in the project.
 There is also a Redux-Saga [@redux-saga] extension for asynchronous action consumption (synchronous consumptions are handled by so-called _reducers_^[Modules that produce new state based on the previous state with regard to dispatched action]) and works well with Next.js.
 
 ## Git library
