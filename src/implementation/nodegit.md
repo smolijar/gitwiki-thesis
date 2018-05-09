@@ -110,7 +110,7 @@ _Pull_ is a user abstraction and shortcut for the two consecutive commands: `fet
 
 `Fetch` for change is actually a command from Git core library and it updates the remote references to match the remote.
 After that (to complete the *pull*), it is required to update the local references to match the fresh remote references.
-This is achieved through resetting branches.
+This is achieved through hard resetting branches.
 After the branches are reset, the function is done and it returns the repository.
 
 ```{language=js caption="Implementation: NodeGit -- Update branches with remote upstreams" label="lst:impl:nodegit:updateremoterefs"}
@@ -121,6 +121,8 @@ As seen in the listing \ref{lst:impl:nodegit:updateremoterefs} the function proc
 
 1. Fetch all remote references using NodeGit's `Repository.fetchAll`
 2. Create local references through a function that has already been discussed
-3. Get pairs of local branch names and their upstreams, for all the local branches that have them configured
-4. Reset the branch-upstream pairs
+3. Get pairs of local branches and their upstreams
+4. For each pair:
+    - Retrieve the commit of the upstream
+    - Hard reset the branch to the commit
 
