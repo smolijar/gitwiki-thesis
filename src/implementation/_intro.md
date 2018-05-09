@@ -1,5 +1,5 @@
 The implementation of the system is in the development for seven months, since October 2017.
-The source codes to this day sum up to 3 863 LOC and 725 commits.
+The source codes to this day sum up to 4\ 161\ LOC and 770\ commits.
 The detail stats are displayed in the table \ref{impl:stats}.
 The implementation is software, published from its early stages on GitHub.
 
@@ -19,8 +19,8 @@ Their user manuals and installation instructions are in appendices, along with t
 \begin{tabular}{@{}llll@{}}
 \toprule
 Repository              & lines of code  & Commits & Releases \\ \midrule
-grissius/gitwiki      & 1628 & 187     & 8        \\
-grissius/emily-editor & 2235 & 538     & 16       \\
+grissius/gitwiki      & 1 820 & 206     & 10        \\
+grissius/emily-editor & 2 341 & 564     & 23       \\
 \bottomrule
 \end{tabular}
 \end{table*}
