@@ -1,6 +1,34 @@
-# GitWiki
+# Git-based Wiki System
 
-## Sections to read
+Text of my master's thesis. I actually used it formally for the development of the text. After the submission it is just a keepsake. A cool :sparkles: one though.
+
+## Result PDFs
+
+You can find them at [releases](https://github.com/grissius/gitwiki-thesis/releases) (where I always used to publish new PDFs for each version... ah, memories), or render them yourself!
+
+### Thesis
+
+`make arara` For full blown render (re-render diagrams, transform all markdown sources, bibtex and multiple xelatex passes)
+
+`make pdf` for only minor changes (only latex + markdown, one pass)
+
+### Defense
+
+1. `make diagrams` (if not created from thesis)
+2. `make defense`
+
+### Requirements
+
+Not sure it’s complete. More like notes for myself anyway.
+* xelatex (typesetting)
+* texlive-full (probably too greedy, lazy to nitpick the subpackages)
+* pandoc (for markdown to latex)
+* plantuml (for UML diagrams; must be available under this name in PATH)
+* inkscape (for SVG to PDF)
+
+## Current state of the sections
+
+_This is irrelevant now, that it's finished. Left here from nostalgia :heart:_
 
 * :octopus:: I reviewed
 * :ram:: @smoliji suggestions incorporated
@@ -64,19 +92,3 @@
 * [Gitwiki user manual](./src/readme/gitwiki.md) :octopus:
 * [Emily logo](./src/logo/emily.md) :octopus:
 * [Gitwiki logo](./src/logo/gitwiki.md) :octopus:
-
-
-## PDF generate
-
-`make arara` For full blown render (re-render diagrams, transform all markdown sources, bibtex and multiple xelatex passes)
-
-`make pdf` for only minor changes (only latex + markdown, one pass)
-
-### Requirements
-
-Not sure it’s complete. More like notes for myself anyway.
-* xelatex (typesetting)
-* texlive-full (probably too greedy, lazy to nitpick the subpackages)
-* pandoc (for markdown to latex)
-* plantuml (for UML diagrams; must be available under this name in PATH)
-* inkscape (for SVG to PDF)
